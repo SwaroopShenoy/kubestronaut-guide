@@ -1,0 +1,42 @@
+# Local Claude Code settings and memory
+.claude/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Credentials and cluster access (never commit)
+*.key
+*.pem
+*.p12
+*.pfx
+cosign.key
+kubeconfig
+*.kubeconfig
+.kube/
+.env
+.env.*
+secrets/
+
+# Build and scan output
+*.tar
+*.tar.gz
+sbom*.json
+trivy-results.*
+bench*.txt
+cis-report.json
+
+# Scratch and temp
+*.tmp
+*.log
+tmp/
+scratch/

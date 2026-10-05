@@ -1,0 +1,117 @@
+# Ingress TLS, Node Metadata and Binary Verification
+
+Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 1 — Cluster Setup (10%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
+
+This doc is **new** — the original course covered these only in passing. The three items are listed as cluster-setup concerns in the curriculum summaries we checked; confirm wording against the official curriculum before relying on it.
+
+## 1. TLS on Ingress
+
+Ingress terminates TLS with a secret of type `kubernetes.io/tls`, which must contain `tls.crt` and `tls.key`.
+
+```bash
+# Self-signed certificate for a lab
+openssl req -x509 -newkey rsa:2048 -nodes -days 365 \
+  -keyout tls.key -out tls.crt -subj "/CN=api.example.com"
+
+kubectl create secret tls api-tls --cert=tls.crt --key=tls.key -n production
+```
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api
+  namespace: production
+spec:
+  tls:
+  - hosts:
+    - api.example.com
+    secretName: api-tls
+  rules:
+  - host: api.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: api
+            port:
+              number: 8080      # plain HTTP inside the cluster, TLS ends at the ingress
+```
+
+Check it:
+
+```bash
+kubectl get ingress api -n production
+kubectl describe ingress api -n production
+```
+
+Pitfalls:
+
+- The backend port is the Service port, not 443 unless the Service listens on 443. TLS terminates at the ingress; the backend usually speaks plain HTTP.
+- Ingress TLS does not protect pod-to-pod traffic. For that you need mTLS or a sidecar, which is outside the core scope.
+- Ingress controllers vary. If a lab uses a specific controller, its `ingressClassName` must match.
+
+## 2. Protecting cloud instance metadata
+
+Cloud instances expose a metadata endpoint at `169.254.169.254`. A compromised pod that reaches it can often obtain node credentials.
+
+Two layers:
+
+**Pod layer (works without node access):** a NetworkPolicy egress rule that excludes the metadata IP.
+
+```yaml
+egress:
+- to:
+  - ipBlock:
+      cidr: 0.0.0.0/0
+      except:
+      - 169.254.169.254/32
+```
+
+**Node layer:** pod traffic is forwarded, so rules on the `OUTPUT` chain do not catch it. Use `FORWARD` (or `DOCKER-USER` if Docker is the runtime):
+
+```bash
+sudo iptables -I FORWARD -d 169.254.169.254/32 -j DROP
+```
+
+Verify from a pod:
+
+```bash
+kubectl run metadata-test --rm -it --image=curlimages/curl:8.10.1 -- \
+  curl -m 3 http://169.254.169.254/latest/meta-data/ || echo "blocked"
+```
+
+On AWS, IMDSv2 with a hop limit of 1 also stops containers from reaching the endpoint through the node's network namespace.
+
+## 3. Verifying Kubernetes binaries
+
+Download the per-binary checksum from the same release path and compare:
+
+```bash
+VER=v1.34.0            # use the version actually installed: kubelet --version
+ARCH=amd64
+curl -LO "https://dl.k8s.io/release/${VER}/bin/linux/${ARCH}/kubelet"
+curl -LO "https://dl.k8s.io/release/${VER}/bin/linux/${ARCH}/kubelet.sha256"
+echo "$(cat kubelet.sha256)  kubelet" | sha256sum --check
+# kubelet: OK
+```
+
+If the check fails, do not run the binary. Repeat for `kube-apiserver`, `kube-controller-manager`, `kube-scheduler`, `kubectl`, and `kubeadm` as needed.
+
+The checksum file name and path are part of the release layout; if the URL 404s, look up the current layout in the Kubernetes install docs rather than guessing.
+
+## Practice
+
+1. Create a TLS secret and an Ingress that references it; confirm `describe` shows the TLS host.
+2. Add the metadata-blocking egress exception to a namespace's allow-list and test from a pod.
+3. Verify the kubelet binary checksum on a node.
+
+## Quick reference
+
+```bash
+kubectl create secret tls <name> --cert=tls.crt --key=tls.key -n <ns>
+sudo iptables -I FORWARD -d 169.254.169.254/32 -j DROP
+echo "$(cat X.sha256)  X" | sha256sum --check
+```
