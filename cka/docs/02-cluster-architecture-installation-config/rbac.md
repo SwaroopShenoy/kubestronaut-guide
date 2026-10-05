@@ -1,6 +1,6 @@
 # RBAC
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 2 — Cluster Architecture (25%) · Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)
+Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)
 
 For the security view of RBAC (auditing wildcards and dangerous verbs), see [CKS RBAC](../../../cks/docs/02-cluster-hardening/rbac.md).
 

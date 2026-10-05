@@ -1,6 +1,6 @@
 # Jobs and CronJobs
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 1 — Application Design and Build (20%) · Prev: [Multi-container patterns](multi-container-patterns.md) · Next: [Container images](container-images.md)
+Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Prev: [Multi-container patterns](multi-container-patterns.md) · Next: [Container images](container-images.md)
 
 ## Job
 

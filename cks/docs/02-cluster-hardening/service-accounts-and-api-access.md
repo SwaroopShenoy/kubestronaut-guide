@@ -1,6 +1,6 @@
 # Service Accounts and API Access
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 2 — Cluster Hardening (15%) · Prev: [RBAC](rbac.md) · Next: [Cluster upgrades](cluster-upgrades.md)
+Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [RBAC](rbac.md) · Next: [Cluster upgrades](cluster-upgrades.md)
 
 This doc is **new**. The original course had no coverage of service-account token handling or API server access restriction.
 

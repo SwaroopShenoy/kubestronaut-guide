@@ -1,6 +1,6 @@
 # Logs, Debugging and API Deprecations
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Probes](probes.md) · Next: [ConfigMaps and Secrets](../04-application-environment-config-security/configmaps-and-secrets.md)
+Up: [CKAD hub](../../README.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Probes](probes.md) · Next: [ConfigMaps and Secrets](../04-application-environment-config-security/configmaps-and-secrets.md)
 
 ## Logs
 

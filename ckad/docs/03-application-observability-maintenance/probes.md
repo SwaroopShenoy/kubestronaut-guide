@@ -1,6 +1,6 @@
 # Probes
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and deprecations](logs-debugging-and-deprecations.md)
+Up: [CKAD hub](../../README.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and deprecations](logs-debugging-and-deprecations.md)
 
 ## The three probes
 

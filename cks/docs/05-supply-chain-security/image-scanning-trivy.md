@@ -1,6 +1,6 @@
 # Image Scanning with Trivy
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Runtime sandboxes](../04-microservice-vulnerabilities/runtime-sandboxes.md) · Next: [Image signing with Cosign](image-signing-cosign.md)
+Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Runtime sandboxes](../04-microservice-vulnerabilities/runtime-sandboxes.md) · Next: [Image signing with Cosign](image-signing-cosign.md)
 
 ## Exam scope
 

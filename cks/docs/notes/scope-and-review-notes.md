@@ -1,6 +1,6 @@
 # Scope and Review Notes
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Read this before studying the topic docs.
+Up: [CKS hub](../../README.md) · Read this before studying the topic docs.
 
 This file records what was checked, what was corrected from the original course, what is assumed rather than confirmed, and what the syllabus is missing.
 
@@ -8,7 +8,8 @@ This file records what was checked, what was corrected from the original course,
 
 | Item | Status | Source |
 |---|---|---|
-| Domain weights: Cluster Setup 10%, Cluster Hardening 15%, System Hardening 15%, Minimize Microservice Vulnerabilities 20%, Supply Chain Security 20%, Monitoring/Logging/Runtime Security 20% | Confirmed (sums to 100) | CNCF CKS certification page |
+| Domain weights per the official curriculum PDF (CKS v1.34): Cluster Setup 15%, Cluster Hardening 15%, System Hardening 10%, Minimize Microservice Vulnerabilities 20%, Supply Chain Security 20%, Monitoring/Logging/Runtime Security 20% | Confirmed from the curriculum PDF | CNCF CKS Exam Curriculum PDF |
+| Weights on the CNCF certification page checked earlier: Cluster Setup 10%, System Hardening 15% | Conflicts with the curriculum PDF for two domains. The curriculum PDF is used here; confirm with CNCF before relying on either | CNCF CKS certification page |
 | Duration 2 hours, performance-based, command line | Confirmed | CNCF CKS certification page |
 | Prerequisite: CKA passed at any time before registering; CKA need not be active | Confirmed | CNCF CKS certification page and CNCF sample path PDF |
 | Certification valid 2 years | Confirmed | CNCF CKS certification page |
@@ -20,17 +21,16 @@ Not confirmed in this review:
 - Number of tasks. The original says 15–20. Not verified.
 - The exact competency bullets under each domain. The CNCF curriculum PDF is the authority; the Linux Foundation sample-path PDF checked did not contain it, and the curriculum file on GitHub returned a 404 during this review. Pull the current curriculum PDF from the cncf/curriculum repository and compare each topic in this course against it.
 
-## 2. Your scope question: rego, seccomp, AppArmor
+## 2. Scope question: rego, Falco, seccomp, AppArmor
 
-Your assumption is mostly right, with one correction.
+What the official CKS curriculum (v1.34 PDF) says:
 
-- **Writing Rego policies from scratch** — not expected to be a core skill. Reading and adapting a template is the realistic level. See [Rego basics](../reference/rego-basics.md).
-- **Writing seccomp and AppArmor profiles from scratch** — same: understand the format and be able to load and apply one. See [AppArmor and seccomp](../03-system-hardening/apparmor-and-seccomp.md).
-- **Using them correctly** — this is the part that is expected. Applying `RuntimeDefault` or a `Localhost` profile, applying an AppArmor profile to a pod, confirming it is loaded on the node, and reading why a pod was blocked.
+- System Hardening: "Appropriately use kernel hardening tools such as AppArmor, seccomp". The verb is *use*.
+- Monitoring, Logging and Runtime Security: "Perform behavioral analytics", "Detect threats", "Investigate and identify phases of attack", "Ensure immutability of containers at runtime", "Use Kubernetes audit logs". No tool is named.
+- Microservice Vulnerabilities: "Use appropriate pod security standards", "Manage kubernetes secrets", "Understand and implement isolation techniques", "Implement Pod-to-Pod encryption (Cilium, Istio)".
+- Rego, OPA Gatekeeper, Kyverno and Falco rule authoring are **not mentioned** anywhere in the curriculum.
 
-Correction: the earlier course treated "AppArmor and seccomp" as entirely in scope with full authoring examples. The authoring examples are kept for understanding, but they should not be memorized as exam steps.
-
-Gatekeeper is not named in the curriculum summaries checked. It is kept as reference material; see [OPA Gatekeeper](../reference/opa-gatekeeper.md).
+Conclusion: the official curriculum does not say writing Falco rules, Rego policies, or AppArmor or seccomp profiles is expected. It asks you to use kernel hardening tools and detect threats. Some community blogs say Falco rule writing is almost certain on the exam; those claims are unverified and not from the curriculum. The safe plan is to read and modify an existing rule or profile, and not to rely on writing one from scratch.
 
 ## 3. Corrections to the original course
 
@@ -97,7 +97,7 @@ From the syllabus areas that the original course did not cover, or covered only 
 ## 5. Still uncertain — check before exam day
 
 - Exact competency bullets per domain (see section 1).
-- Whether Istio mTLS is in scope. The original course had a section on it; no official source checked confirmed it. It is not in the topic docs. Add it back only if the curriculum lists service mesh or pod-to-pod encryption.
+- Pod-to-pod encryption (Cilium, Istio) is in the official curriculum and is covered in [Pod-to-pod encryption](../04-microservice-vulnerabilities/pod-to-pod-encryption.md).
 - Whether Gatekeeper, Kyverno, and Cosign are named or only implied. The docs treat them as tools to understand, not to master.
 - Kubernetes version of the exam environment. Commands here are written for current releases (1.30+); check the version the exam uses.
 - Tool versions: Trivy, Falco, Cosign, kube-bench all change flags. Confirm with `--help` on the installed version.

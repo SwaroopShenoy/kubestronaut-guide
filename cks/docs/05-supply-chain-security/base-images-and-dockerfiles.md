@@ -1,6 +1,6 @@
 # Base Images and Dockerfiles
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)
+Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)
 
 This doc is **new**. The original course said Dockerfile security is out of scope. The curriculum summaries we checked list minimizing base image footprint under Supply Chain Security, so this topic is probably in scope. Confirm against the official curriculum.
 

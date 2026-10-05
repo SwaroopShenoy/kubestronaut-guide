@@ -1,6 +1,6 @@
 # Audit Logging
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md) · Next: [Falco](falco.md)
+Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md) · Next: [Falco](falco.md)
 
 ## Exam scope
 
@@ -187,3 +187,15 @@ sudo tail -f /var/log/kubernetes/audit/audit.log | jq -c .
 jq -c 'select(.objectRef.subresource=="exec")' /var/log/kubernetes/audit/audit.log
 jq -s 'length' /var/log/kubernetes/audit/audit.log      # count events
 ```
+
+## Investigating an attack
+
+The curriculum asks you to investigate and identify the phases of an attack and the actors involved. Map what the audit log shows to the phases:
+
+- **Initial access:** unexpected `401` or `403` responses, or successful requests from unfamiliar `sourceIPs` or identities.
+- **Execution:** `create` on `pods/exec` or `pods/attach`, or creation of workloads that do not match the team's normal pattern.
+- **Persistence:** new RoleBindings, ClusterRoleBindings, CronJobs or webhooks created shortly after suspicious access.
+- **Privilege escalation:** requests that bind or escalate roles, or that create pods with host mounts or privileged settings.
+- **Access to data:** `get` or `list` on `secrets`, which the default policy above logs only at metadata level.
+
+Group events by user and time window with `jq`, then check which identity performed each phase. Preserve the log files before analysis, since they can be rotated or overwritten.

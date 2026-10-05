@@ -1,6 +1,6 @@
 # Admission and Policy
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 5 — Platform Security (16%) · Prev: [Supply chain and images](supply-chain-and-images.md) · Next: [Runtime security](runtime-security.md)
+Up: [KCSA hub](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Supply chain and images](supply-chain-and-images.md) · Next: [Runtime security](runtime-security.md)
 
 ## Where policy runs
 

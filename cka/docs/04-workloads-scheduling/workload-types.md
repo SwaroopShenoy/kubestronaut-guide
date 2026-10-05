@@ -1,6 +1,6 @@
 # Workload Types
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Deployments and scaling](deployments-and-scaling.md) · Next: [Scheduling](scheduling.md)
+Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Deployments and scaling](deployments-and-scaling.md) · Next: [Scheduling](scheduling.md)
 
 ## Choosing a type
 

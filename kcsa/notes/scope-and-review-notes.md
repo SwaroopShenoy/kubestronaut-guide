@@ -1,6 +1,10 @@
 # KCSA Scope and Review Notes
 
-Up: [KCSA hub](../KCSA_Crash_Course.md) · Read before studying the topic docs.
+Up: [KCSA hub](../README.md) · Read before studying the topic docs.
+
+## Official curriculum check
+
+Checked against the official KCSA Exam Curriculum PDF in the cncf/curriculum repository. The six domain weights match (14/22/22/16/16/10). The topic lists in each domain were mapped to docs in this guide; the earlier version missed several listed topics (isolation techniques, container runtime, kube-proxy, container networking, client security, storage, authentication, service mesh, PKI, connectivity, persistence, network attacker, threat modeling frameworks, automation and tooling). Those now have docs or sections. Writing policies or rules is not in the curriculum.
 
 ## Confirmed against the CNCF KCSA page
 

@@ -1,6 +1,6 @@
 # jq for Audit and JSON Data
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Falco](falco.md) · Next: [Rego basics](../reference/rego-basics.md)
+Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Falco](falco.md) · Next: [Rego basics](../reference/rego-basics.md)
 
 jq is a tool, not a domain. It is in the course because audit logs are JSON and the exam expects quick answers from them.
 

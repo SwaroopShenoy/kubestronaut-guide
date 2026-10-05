@@ -1,6 +1,6 @@
 # Ingress and Gateway API
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 3 — Services and Networking (20%) · Prev: [NetworkPolicy](network-policy.md) · Next: [Deployments and scaling](../04-workloads-scheduling/deployments-and-scaling.md)
+Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Prev: [NetworkPolicy](network-policy.md) · Next: [Deployments and scaling](../04-workloads-scheduling/deployments-and-scaling.md)
 
 ## Ingress
 

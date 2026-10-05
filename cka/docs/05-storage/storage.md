@@ -1,6 +1,6 @@
 # Storage
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 5 — Storage (10%) · Prev: [Helm and Kustomize](../04-workloads-scheduling/helm-and-kustomize.md)
+Up: [CKA hub](../../README.md) · Domain 5 — Storage (10%) · Prev: [Helm and Kustomize](../04-workloads-scheduling/helm-and-kustomize.md)
 
 ## Objects
 

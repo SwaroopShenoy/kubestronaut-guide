@@ -1,6 +1,6 @@
 # RBAC Hardening
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 2 — Cluster Hardening (15%) · Prev: [Ingress, TLS and node metadata](../01-cluster-setup/ingress-tls-and-node-metadata.md) · Next: [Service accounts and API access](service-accounts-and-api-access.md)
+Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [Ingress, TLS and node metadata](../01-cluster-setup/ingress-tls-and-node-metadata.md) · Next: [Service accounts and API access](service-accounts-and-api-access.md)
 
 ## Exam scope
 

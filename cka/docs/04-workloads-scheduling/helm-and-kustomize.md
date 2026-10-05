@@ -1,6 +1,6 @@
 # Helm and Kustomize
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Scheduling](scheduling.md) · Next: [Storage](../05-storage/storage.md)
+Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Scheduling](scheduling.md) · Next: [Storage](../05-storage/storage.md)
 
 Helm and Kustomize were added to the CKA curriculum in the 2025 update. Confirm exact scope against the current curriculum; the tasks are usually install, upgrade, roll back, or apply an overlay.
 

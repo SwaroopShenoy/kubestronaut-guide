@@ -1,6 +1,6 @@
 # kubectl Speed and vim
 
-Up: [CKA hub](../CKA_2026_Complete_Crash_Course.md) · Reference
+Up: [CKA hub](../README.md) · Reference
 
 ## Aliases and completion
 

@@ -1,6 +1,6 @@
 # Kubernetes Architecture
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 1 — Kubernetes Fundamentals (44%) · Next: [API objects and workloads](api-objects-and-workloads.md)
+Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Next: [API objects and workloads](api-objects-and-workloads.md)
 
 ## Control plane
 

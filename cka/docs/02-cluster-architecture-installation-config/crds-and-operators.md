@@ -1,6 +1,6 @@
 # CRDs and Operators
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 2 — Cluster Architecture (25%) · Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Services and DNS](../03-services-networking/services-and-dns.md)
+Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Services and DNS](../03-services-networking/services-and-dns.md)
 
 A CustomResourceDefinition (CRD) adds a new resource type to the API. An operator is a controller that watches those resources and acts on them.
 

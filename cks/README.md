@@ -1,5 +1,15 @@
 # CKS Complete Crash Course
 
+> **Read first: status and limits**
+>
+> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+>
+> - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
+> - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
+> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
+> - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
+
 Certified Kubernetes Security Specialist — hub document. Start here; each domain links to a topic doc with full detail.
 
 Last reviewed: 2026-10-05. Exam facts confirmed against the CNCF certification page. See [scope and review notes](docs/notes/scope-and-review-notes.md) for what is confirmed, what is assumed, and what was corrected from the earlier version.
@@ -17,15 +27,15 @@ Last reviewed: 2026-10-05. Exam facts confirmed against the CNCF certification p
 
 ## Domains and weights
 
-Weights are from the CNCF CKS certification page.
+Weights are from the official CNCF CKS exam curriculum PDF (v1.34). The CNCF certification page checked earlier showed different Cluster Setup and System Hardening weights; see the notes.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
-| 1 | Cluster Setup | 10% | [Network policy](docs/01-cluster-setup/network-policy.md) · [CIS benchmark and kube-bench](docs/01-cluster-setup/cis-benchmark-kube-bench.md) · [Ingress TLS, node metadata, binary verification](docs/01-cluster-setup/ingress-tls-and-node-metadata.md) |
+| 1 | Cluster Setup | 15% | [Network policy](docs/01-cluster-setup/network-policy.md) · [CIS benchmark and kube-bench](docs/01-cluster-setup/cis-benchmark-kube-bench.md) · [Ingress TLS, node metadata, binary verification](docs/01-cluster-setup/ingress-tls-and-node-metadata.md) |
 | 2 | Cluster Hardening | 15% | [RBAC](docs/02-cluster-hardening/rbac.md) · [Service accounts and API access](docs/02-cluster-hardening/service-accounts-and-api-access.md) · [Cluster upgrades](docs/02-cluster-hardening/cluster-upgrades.md) |
-| 3 | System Hardening | 15% | [Host hardening](docs/03-system-hardening/host-hardening.md) · [AppArmor and seccomp](docs/03-system-hardening/apparmor-and-seccomp.md) |
-| 4 | Minimize Microservice Vulnerabilities | 20% | [Security context and PSS](docs/04-microservice-vulnerabilities/security-context-and-pss.md) · [Secrets and encryption at rest](docs/04-microservice-vulnerabilities/secrets-and-encryption-at-rest.md) · [Runtime sandboxes](docs/04-microservice-vulnerabilities/runtime-sandboxes.md) |
-| 5 | Supply Chain Security | 20% | [Image scanning with Trivy](docs/05-supply-chain-security/image-scanning-trivy.md) · [Image signing with Cosign](docs/05-supply-chain-security/image-signing-cosign.md) · [Admission control](docs/05-supply-chain-security/admission-control.md) · [Base images and Dockerfiles](docs/05-supply-chain-security/base-images-and-dockerfiles.md) |
+| 3 | System Hardening | 10% | [Host hardening](docs/03-system-hardening/host-hardening.md) · [AppArmor and seccomp](docs/03-system-hardening/apparmor-and-seccomp.md) |
+| 4 | Minimize Microservice Vulnerabilities | 20% | [Security context and PSS](docs/04-microservice-vulnerabilities/security-context-and-pss.md) · [Secrets and encryption at rest](docs/04-microservice-vulnerabilities/secrets-and-encryption-at-rest.md) · [Runtime sandboxes and isolation](docs/04-microservice-vulnerabilities/runtime-sandboxes.md) · [Pod-to-pod encryption (Cilium, Istio)](docs/04-microservice-vulnerabilities/pod-to-pod-encryption.md) |
+| 5 | Supply Chain Security | 20% | [Image scanning with Trivy](docs/05-supply-chain-security/image-scanning-trivy.md) · [Image signing with Cosign](docs/05-supply-chain-security/image-signing-cosign.md) · [Admission control](docs/05-supply-chain-security/admission-control.md) · [Base images and Dockerfiles](docs/05-supply-chain-security/base-images-and-dockerfiles.md) · [Static analysis (Kubesec, KubeLinter)](docs/05-supply-chain-security/static-analysis.md) |
 | 6 | Monitoring, Logging and Runtime Security | 20% | [Audit logging](docs/06-monitoring-logging-runtime/audit-logging.md) · [Falco](docs/06-monitoring-logging-runtime/falco.md) · [jq for audit data](docs/06-monitoring-logging-runtime/jq-for-audit-data.md) |
 
 Supporting references (read as needed, not separate exam domains):
@@ -40,7 +50,7 @@ Your question about Rego, seccomp and AppArmor is answered in full in the notes.
 - **Use** seccomp and AppArmor profiles on pods, and confirm they are loaded and working: expected.
 - **Author** them from scratch, or write Rego from scratch: not expected under exam time. Read and adapt them.
 
-Other items in the earlier course that are not core: PodSecurityPolicy (removed in 1.25), Istio mTLS (not confirmed by any source checked), Kyverno and Gatekeeper internals (treat as reference).
+Pod-to-pod encryption with Cilium or Istio is named in the official curriculum and is covered. PodSecurityPolicy was removed in Kubernetes 1.25 and is not studied. Kyverno and Gatekeeper are named as tools only in the community guides; their internals are reference material.
 
 ## Exam habits
 
@@ -88,9 +98,8 @@ Other items in the earlier course that are not core: PodSecurityPolicy (removed 
 - NetworkPolicy does nothing without a supporting CNI.
 - `runAsNonRoot` fails for images that default to root without an explicit `runAsUser`.
 
-## Adjacent topics (not confirmed as exam scope)
+## Adjacent topics (not in the official curriculum)
 
-- **Istio / mTLS:** the earlier course covered it; no source checked confirmed it is tested. Read the official curriculum before spending time here.
 - **PodSecurityPolicy:** removed in Kubernetes 1.25. Do not study it except to recognize old manifests.
 - **Dockerfile security:** partly in scope via base-image footprint; see [Base images](docs/05-supply-chain-security/base-images-and-dockerfiles.md).
 
@@ -130,7 +139,7 @@ kubectl logs -n falco -l app.kubernetes.io/name=falco --tail=100
 ## Document map
 
 ```
-CKS_2026_Complete_Crash_Course.md          this hub
+README.md          this hub
 docs/
   01-cluster-setup/                        network policy, CIS, ingress and metadata
   02-cluster-hardening/                    RBAC, service accounts, upgrades
@@ -142,4 +151,3 @@ docs/
   notes/                                   scope, corrections and open questions
 _archive/                                  the original 12 files, unmodified
 ```
-

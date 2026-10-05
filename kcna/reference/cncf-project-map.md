@@ -1,6 +1,6 @@
 # CNCF Project Map
 
-Up: [KCNA hub](../KCNA_Crash_Course.md) · Reference
+Up: [KCNA hub](../README.md) · Reference
 
 Use this to map a problem to a project name. Project maturity (graduated, incubating, sandbox) changes over time; check [landscape.cncf.io](https://landscape.cncf.io/) for the current status before relying on it.
 

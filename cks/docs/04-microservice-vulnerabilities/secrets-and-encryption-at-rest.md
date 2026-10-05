@@ -1,6 +1,6 @@
 # Secrets and Encryption at Rest
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes](runtime-sandboxes.md)
+Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes](runtime-sandboxes.md)
 
 This doc is **new as a standalone page**. Its content was previously scattered across the original CKS file.
 

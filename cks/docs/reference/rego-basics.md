@@ -1,6 +1,6 @@
 # Rego Basics
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Reference · Prev: [jq for audit data](../06-monitoring-logging-runtime/jq-for-audit-data.md) · Next: [OPA Gatekeeper](opa-gatekeeper.md)
+Up: [CKS hub](../../README.md) · Reference · Prev: [jq for audit data](../06-monitoring-logging-runtime/jq-for-audit-data.md) · Next: [OPA Gatekeeper](opa-gatekeeper.md)
 
 ## Scope
 

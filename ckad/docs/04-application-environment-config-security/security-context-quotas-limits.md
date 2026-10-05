@@ -1,6 +1,6 @@
 # SecurityContext, Quotas and Limits
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Prev: [ConfigMaps and Secrets](configmaps-and-secrets.md) · Next: [ServiceAccounts and RBAC](serviceaccounts-and-rbac.md)
+Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Prev: [ConfigMaps and Secrets](configmaps-and-secrets.md) · Next: [ServiceAccounts and RBAC](serviceaccounts-and-rbac.md)
 
 The security depth is in [CKS security context and PSS](../../../cks/docs/04-microservice-vulnerabilities/security-context-and-pss.md). This page covers what CKAD asks you to set.
 

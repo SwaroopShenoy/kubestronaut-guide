@@ -1,6 +1,6 @@
 # Scheduling and Scaling
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 2 — Container Orchestration (28%) · Prev: [Runtimes, networking and interfaces](runtimes-networking-interfaces.md) · Next: [Security basics](security-basics.md)
+Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Runtimes, networking and interfaces](runtimes-networking-interfaces.md) · Next: [Security basics](security-basics.md)
 
 ## How a pod gets a node
 

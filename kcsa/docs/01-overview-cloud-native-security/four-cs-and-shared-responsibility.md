@@ -1,6 +1,6 @@
 # The 4Cs and Shared Responsibility
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 1 — Overview of Cloud Native Security (14%) · Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)
+Up: [KCSA hub](../../README.md) · Domain 1 — Overview of Cloud Native Security (14%) · Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)
 
 ## The 4Cs
 

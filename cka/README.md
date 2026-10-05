@@ -1,5 +1,15 @@
 # CKA Complete Crash Course
 
+> **Read first: status and limits**
+>
+> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+>
+> - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
+> - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
+> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
+> - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
+
 Certified Kubernetes Administrator — hub document. Start here; each domain links to topic docs.
 
 Source material: the 2026 guide and the 2025 crash course (archived in [_archive](_archive/)). This hub supersedes both.
@@ -18,12 +28,12 @@ Source material: the 2026 guide and the 2025 crash course (archived in [_archive
 
 ## Domains and weights
 
-Weights from the CNCF CKA certification page.
+Weights from the official CNCF exam curriculum PDF.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
 | 1 | Troubleshooting | 30% | [Troubleshooting method](docs/01-troubleshooting/troubleshooting-method.md) · [Control plane and nodes](docs/01-troubleshooting/control-plane-and-nodes.md) · [Services, DNS and networking](docs/01-troubleshooting/services-dns-and-networking.md) |
-| 2 | Cluster Architecture, Installation and Configuration | 25% | [RBAC](docs/02-cluster-architecture-installation-config/rbac.md) · [kubeadm install and upgrade](docs/02-cluster-architecture-installation-config/kubeadm-install-and-upgrade.md) · [Certificates and kubeconfig](docs/02-cluster-architecture-installation-config/certificates-and-kubeconfig.md) · [etcd backup and restore](docs/02-cluster-architecture-installation-config/etcd-backup-restore.md) · [CRDs and operators](docs/02-cluster-architecture-installation-config/crds-and-operators.md) |
+| 2 | Cluster Architecture, Installation and Configuration | 25% | [RBAC](docs/02-cluster-architecture-installation-config/rbac.md) · [kubeadm install and upgrade](docs/02-cluster-architecture-installation-config/kubeadm-install-and-upgrade.md) · [Certificates and kubeconfig](docs/02-cluster-architecture-installation-config/certificates-and-kubeconfig.md) · [etcd backup and restore](docs/02-cluster-architecture-installation-config/etcd-backup-restore.md) · [CRDs and operators](docs/02-cluster-architecture-installation-config/crds-and-operators.md) · [Highly available control plane](docs/02-cluster-architecture-installation-config/high-availability-control-plane.md) |
 | 3 | Services and Networking | 20% | [Services and DNS](docs/03-services-networking/services-and-dns.md) · [NetworkPolicy](docs/03-services-networking/network-policy.md) · [Ingress and Gateway API](docs/03-services-networking/ingress-and-gateway-api.md) |
 | 4 | Workloads and Scheduling | 15% | [Deployments and scaling](docs/04-workloads-scheduling/deployments-and-scaling.md) · [Workload types](docs/04-workloads-scheduling/workload-types.md) · [Scheduling](docs/04-workloads-scheduling/scheduling.md) · [Helm and Kustomize](docs/04-workloads-scheduling/helm-and-kustomize.md) |
 | 5 | Storage | 10% | [Storage](docs/05-storage/storage.md) |
@@ -68,7 +78,7 @@ kubectl explain <resource>.<field>
 ## Document map
 
 ```
-CKA_2026_Complete_Crash_Course.md   this hub
+README.md   this hub
 docs/01-troubleshooting/            method, control plane and nodes, services and networking
 docs/02-cluster-architecture.../    RBAC, kubeadm, certificates, etcd, CRDs
 docs/03-services-networking/        services and DNS, NetworkPolicy, ingress and Gateway API

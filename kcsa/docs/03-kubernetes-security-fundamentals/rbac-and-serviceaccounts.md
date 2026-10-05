@@ -1,6 +1,6 @@
 # RBAC and ServiceAccounts
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [etcd and node security](../02-kubernetes-cluster-component-security/etcd-and-node-security.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)
+Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [etcd and node security](../02-kubernetes-cluster-component-security/etcd-and-node-security.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)
 
 For hands-on RBAC work see the [CKA RBAC doc](../../../cka/docs/02-cluster-architecture-installation-config/rbac.md); for auditing see the [CKS RBAC doc](../../../cks/docs/02-cluster-hardening/rbac.md).
 

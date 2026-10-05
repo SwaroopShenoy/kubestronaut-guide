@@ -1,6 +1,6 @@
 # CI/CD and GitOps
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [Security basics](../02-container-orchestration/security-basics.md) · Next: [Packaging with Helm and Kustomize](packaging-helm-kustomize.md)
+Up: [KCNA hub](../../README.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [Security basics](../02-container-orchestration/security-basics.md) · Next: [Packaging with Helm and Kustomize](packaging-helm-kustomize.md)
 
 ## Continuous integration, delivery and deployment
 

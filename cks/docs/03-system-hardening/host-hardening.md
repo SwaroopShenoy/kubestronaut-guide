@@ -1,6 +1,6 @@
 # Host (Node) Hardening
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 3 — System Hardening (15%) · Prev: [Cluster upgrades](../02-cluster-hardening/cluster-upgrades.md) · Next: [AppArmor and seccomp](apparmor-and-seccomp.md)
+Up: [CKS hub](../../README.md) · Domain 3 — System Hardening (10%) · Prev: [Cluster upgrades](../02-cluster-hardening/cluster-upgrades.md) · Next: [AppArmor and seccomp](apparmor-and-seccomp.md)
 
 This doc is **new**. The original course had only SSH and kernel module snippets; this fills in the host-footprint and access items.
 

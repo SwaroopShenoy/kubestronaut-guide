@@ -1,6 +1,6 @@
 # Ingress TLS, Node Metadata and Binary Verification
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 1 — Cluster Setup (10%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
+Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
 
 This doc is **new** — the original course covered these only in passing. The three items are listed as cluster-setup concerns in the curriculum summaries we checked; confirm wording against the official curriculum before relying on it.
 

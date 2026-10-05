@@ -1,6 +1,6 @@
 # Packaging with Helm and Kustomize
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [CI/CD and GitOps](cicd-and-gitops.md) · Next: [Principles and patterns](../04-cloud-native-architecture/principles-and-patterns.md)
+Up: [KCNA hub](../../README.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [CI/CD and GitOps](cicd-and-gitops.md) · Next: [Principles and patterns](../04-cloud-native-architecture/principles-and-patterns.md)
 
 ## Helm
 

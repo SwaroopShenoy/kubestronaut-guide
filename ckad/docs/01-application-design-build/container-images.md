@@ -1,6 +1,6 @@
 # Container Images
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 1 — Application Design and Build (20%) · Prev: [Jobs and CronJobs](jobs-and-cronjobs.md) · Next: [Volumes and workload choice](volumes-and-workload-choice.md)
+Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Prev: [Jobs and CronJobs](jobs-and-cronjobs.md) · Next: [Volumes and workload choice](volumes-and-workload-choice.md)
 
 The CKAD curriculum lists defining and building container images. Confirm current scope against the official curriculum.
 

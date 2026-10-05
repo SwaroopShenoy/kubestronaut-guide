@@ -1,6 +1,6 @@
 # CIS Benchmark and Audit Logging
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [Runtime security](../05-platform-security/runtime-security.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)
+Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [Runtime security](../05-platform-security/runtime-security.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)
 
 ## CIS Kubernetes Benchmark
 

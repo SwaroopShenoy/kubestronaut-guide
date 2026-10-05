@@ -1,6 +1,6 @@
 # API Objects and Workloads
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [Kubernetes architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)
+Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [Kubernetes architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)
 
 ## Every object has the same shape
 

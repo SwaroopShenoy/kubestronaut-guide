@@ -1,6 +1,10 @@
 # CKAD Scope and Review Notes
 
-Up: [CKAD hub](../CKAD_2026_Complete_Crash_Course.md) · Read before studying the topic docs.
+Up: [CKAD hub](../README.md) · Read before studying the topic docs.
+
+## Official curriculum check
+
+Checked against the official CKAD Exam Curriculum PDF (v1.35) in the cncf/curriculum repository. The five domain weights match. The repository also contains a v1.37 curriculum, which was not checked. The curriculum lists CRDs and operators under Environment, Configuration and Security, which is now linked from the hub. Writing Rego or Falco rules is not in the curriculum.
 
 ## Confirmed against the CNCF CKAD page
 

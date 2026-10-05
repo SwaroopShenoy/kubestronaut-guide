@@ -1,6 +1,6 @@
 # Principles and Patterns
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Packaging with Helm and Kustomize](../03-cloud-native-application-delivery/packaging-helm-kustomize.md) · Next: [Observability](observability.md)
+Up: [KCNA hub](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Packaging with Helm and Kustomize](../03-cloud-native-application-delivery/packaging-helm-kustomize.md) · Next: [Observability](observability.md)
 
 ## What cloud native means
 

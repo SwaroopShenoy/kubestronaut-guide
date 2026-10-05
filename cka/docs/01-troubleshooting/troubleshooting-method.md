@@ -1,6 +1,6 @@
 # Troubleshooting Method
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 1 — Troubleshooting (30%) · Next: [Control plane and nodes](control-plane-and-nodes.md)
+Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Next: [Control plane and nodes](control-plane-and-nodes.md)
 
 Troubleshooting is the largest CKA domain. Use one method every time instead of guessing.
 

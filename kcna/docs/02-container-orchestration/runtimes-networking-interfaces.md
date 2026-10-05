@@ -1,6 +1,6 @@
 # Runtimes, Networking and Interfaces
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 2 — Container Orchestration (28%) · Prev: [Services, storage and configuration](../01-kubernetes-fundamentals/services-storage-config.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)
+Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Services, storage and configuration](../01-kubernetes-fundamentals/services-storage-config.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)
 
 ## Container runtimes
 

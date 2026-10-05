@@ -1,6 +1,6 @@
 # OPA Gatekeeper
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Reference · Prev: [Rego basics](rego-basics.md) · Related: [Admission control](../05-supply-chain-security/admission-control.md)
+Up: [CKS hub](../../README.md) · Reference · Prev: [Rego basics](rego-basics.md) · Related: [Admission control](../05-supply-chain-security/admission-control.md)
 
 ## Scope
 

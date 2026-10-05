@@ -1,6 +1,6 @@
 # CIS Benchmark and kube-bench
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 1 — Cluster Setup (10%) · Prev: [Network policy](network-policy.md) · Next: [Ingress, TLS and node metadata](ingress-tls-and-node-metadata.md)
+Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [Network policy](network-policy.md) · Next: [Ingress, TLS and node metadata](ingress-tls-and-node-metadata.md)
 
 ## Exam scope
 

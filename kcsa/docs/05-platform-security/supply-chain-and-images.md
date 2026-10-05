@@ -1,6 +1,6 @@
 # Supply Chain and Images
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 5 — Platform Security (16%) · Prev: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md) · Next: [Admission and policy](admission-and-policy.md)
+Up: [KCSA hub](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md) · Next: [Admission and policy](admission-and-policy.md)
 
 ## Software supply chain
 

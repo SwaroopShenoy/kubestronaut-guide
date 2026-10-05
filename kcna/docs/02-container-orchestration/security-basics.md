@@ -1,8 +1,8 @@
 # Security Basics
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 2 — Container Orchestration (28%) · Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)
+Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)
 
-KCNA covers security at the concept level. The deeper treatment is in the [KCSA hub](../../../kcsa/KCSA_Crash_Course.md) and the [CKS hub](../../../cks/CKS_2026_Complete_Crash_Course.md).
+KCNA covers security at the concept level. The deeper treatment is in the [KCSA hub](../../../kcsa/README.md) and the [CKS hub](../../../cks/README.md).
 
 ## Authentication and authorization
 

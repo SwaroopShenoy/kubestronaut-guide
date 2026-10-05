@@ -1,6 +1,6 @@
 # Services, NetworkPolicy and Ingress
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 5 — Services and Networking (20%) · Prev: [ServiceAccounts and RBAC](../04-application-environment-config-security/serviceaccounts-and-rbac.md)
+Up: [CKAD hub](../../README.md) · Domain 5 — Services and Networking (20%) · Prev: [ServiceAccounts and RBAC](../04-application-environment-config-security/serviceaccounts-and-rbac.md)
 
 Full treatments are in the CKA docs. This page lists the CKAD checks, with links.
 

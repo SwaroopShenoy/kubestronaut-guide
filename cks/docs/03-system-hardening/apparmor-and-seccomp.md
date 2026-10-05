@@ -1,6 +1,6 @@
 # AppArmor and Seccomp
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 3 — System Hardening (15%) · Prev: [Host hardening](host-hardening.md) · Next: [Security context and PSS](../04-microservice-vulnerabilities/security-context-and-pss.md)
+Up: [CKS hub](../../README.md) · Domain 3 — System Hardening (10%) · Prev: [Host hardening](host-hardening.md) · Next: [Security context and PSS](../04-microservice-vulnerabilities/security-context-and-pss.md)
 
 ## Scope: what to learn and what not to
 

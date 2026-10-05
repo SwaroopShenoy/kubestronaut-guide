@@ -1,6 +1,6 @@
 # Services, DNS and Networking Troubleshooting
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 1 — Troubleshooting (30%) · Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [RBAC](../02-cluster-architecture-installation-config/rbac.md)
+Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [RBAC](../02-cluster-architecture-installation-config/rbac.md)
 
 ## Service has no endpoints
 

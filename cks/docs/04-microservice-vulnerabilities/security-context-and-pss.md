@@ -1,6 +1,6 @@
 # Security Context and Pod Security Standards
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [AppArmor and seccomp](../03-system-hardening/apparmor-and-seccomp.md) · Next: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md)
+Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [AppArmor and seccomp](../03-system-hardening/apparmor-and-seccomp.md) · Next: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md)
 
 Pod Security Admission (PSA) replaced PodSecurityPolicy, which was removed in Kubernetes 1.25. Do not use PSP in new work.
 

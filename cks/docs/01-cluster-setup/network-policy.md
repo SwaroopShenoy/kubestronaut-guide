@@ -1,6 +1,6 @@
 # Network Policy
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 1 — Cluster Setup (10%) · Next: [CIS benchmark](cis-benchmark-kube-bench.md)
+Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Next: [CIS benchmark](cis-benchmark-kube-bench.md)
 
 ## Exam scope
 

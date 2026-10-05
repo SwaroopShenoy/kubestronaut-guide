@@ -1,6 +1,6 @@
 # API Discovery and Documentation Navigation
 
-Up: [CKA hub](../CKA_2026_Complete_Crash_Course.md) · Reference
+Up: [CKA hub](../README.md) · Reference
 
 ## Find a resource
 

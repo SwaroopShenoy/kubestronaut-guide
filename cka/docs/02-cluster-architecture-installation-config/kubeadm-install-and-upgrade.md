@@ -1,6 +1,6 @@
 # kubeadm Install and Upgrade
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 2 — Cluster Architecture (25%) · Prev: [RBAC](rbac.md) · Next: [Certificates and kubeconfig](certificates-and-kubeconfig.md)
+Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [RBAC](rbac.md) · Next: [Certificates and kubeconfig](certificates-and-kubeconfig.md)
 
 ## Install a control plane
 

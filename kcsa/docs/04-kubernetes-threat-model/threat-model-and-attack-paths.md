@@ -1,6 +1,6 @@
 # Threat Model and Attack Paths
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 4 — Kubernetes Threat Model (16%) · Prev: [Secrets](../03-kubernetes-security-fundamentals/secrets.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)
+Up: [KCSA hub](../../README.md) · Domain 4 — Kubernetes Threat Model (16%) · Prev: [Secrets](../03-kubernetes-security-fundamentals/secrets.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)
 
 ## STRIDE
 
@@ -57,3 +57,12 @@ Containment actions in Kubernetes:
 - Block egress to known command-and-control addresses.
 
 Forensics sources: API audit log, container logs, runtime alerts, network flow records, and the node itself if it can be preserved.
+
+## Threats the curriculum names explicitly
+
+- **Persistence:** an attacker keeps access after the first foothold is closed. Examples: a rogue CronJob or DaemonSet, a modified RBAC binding, a malicious admission webhook, a backdoored image tag that is re-pulled, or an added SSH key on a node. Detect with audit logs on RBAC and workload changes, and with image digest checks.
+- **Denial of service:** exhausting cluster resources or the API. Controls: resource requests and limits, ResourceQuota, API priority and fairness, and rate limits at the ingress.
+- **Malicious code execution and compromised applications:** a vulnerable app runs attacker code inside a container. Controls: non-root, read-only filesystem, dropped capabilities, seccomp and AppArmor, NetworkPolicy egress limits, and runtime detection.
+- **Attacker on the network:** an attacker who can sniff or reach pod traffic. Controls: TLS and mTLS between services, default-deny NetworkPolicy, and encryption in the CNI where supported.
+- **Access to sensitive data:** reads of Secrets, ConfigMaps, volumes and etcd. Controls: encryption at rest, narrow RBAC on secrets, audit logging of reads, and external secret stores.
+- **Privilege escalation:** moving from a low-privilege identity to cluster-admin. Common paths are `create pods` with a host mount, `escalate` or `bind` on RBAC, and access to the node's kubelet or the runtime socket.

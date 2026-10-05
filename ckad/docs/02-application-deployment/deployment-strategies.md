@@ -1,6 +1,6 @@
 # Deployment Strategies
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 2 — Application Deployment (20%) · Prev: [Volumes and workload choice](../01-application-design-build/volumes-and-workload-choice.md) · Next: [Probes](../03-application-observability-maintenance/probes.md)
+Up: [CKAD hub](../../README.md) · Domain 2 — Application Deployment (20%) · Prev: [Volumes and workload choice](../01-application-design-build/volumes-and-workload-choice.md) · Next: [Probes](../03-application-observability-maintenance/probes.md)
 
 Deployments and Helm/Kustomize basics are in the CKA docs: [Deployments and scaling](../../../cka/docs/04-workloads-scheduling/deployments-and-scaling.md) and [Helm and Kustomize](../../../cka/docs/04-workloads-scheduling/helm-and-kustomize.md). This page covers the strategies CKAD asks you to build by hand.
 

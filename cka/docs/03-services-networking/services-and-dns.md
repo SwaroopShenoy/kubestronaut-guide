@@ -1,6 +1,6 @@
 # Services and DNS
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 3 — Services and Networking (20%) · Next: [NetworkPolicy](network-policy.md)
+Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Next: [NetworkPolicy](network-policy.md)
 
 ## Service types
 

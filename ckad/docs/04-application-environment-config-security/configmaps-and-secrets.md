@@ -1,6 +1,6 @@
 # ConfigMaps and Secrets
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)
+Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)
 
 ## Create
 

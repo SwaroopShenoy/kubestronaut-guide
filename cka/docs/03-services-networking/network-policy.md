@@ -1,6 +1,6 @@
 # NetworkPolicy
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 3 — Services and Networking (20%) · Prev: [Services and DNS](services-and-dns.md) · Next: [Ingress and Gateway API](ingress-and-gateway-api.md)
+Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Prev: [Services and DNS](services-and-dns.md) · Next: [Ingress and Gateway API](ingress-and-gateway-api.md)
 
 The full security treatment (selector semantics, debugging, zero-trust patterns) is in [CKS NetworkPolicy](../../../cks/docs/01-cluster-setup/network-policy.md). This page covers what the CKA task usually asks for.
 

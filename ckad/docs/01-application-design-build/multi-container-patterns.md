@@ -1,6 +1,6 @@
 # Multi-Container Patterns
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 1 — Application Design and Build (20%) · Next: [Jobs and CronJobs](jobs-and-cronjobs.md)
+Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Next: [Jobs and CronJobs](jobs-and-cronjobs.md)
 
 Four patterns cover most multi-container questions. Each container in a pod shares the network namespace (same IP, `localhost`) and any volumes you mount into both.
 

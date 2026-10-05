@@ -1,6 +1,6 @@
 # Image Signing and Verification with Cosign
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Image scanning with Trivy](image-scanning-trivy.md) · Next: [Admission control](admission-control.md)
+Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Image scanning with Trivy](image-scanning-trivy.md) · Next: [Admission control](admission-control.md)
 
 ## Exam scope
 

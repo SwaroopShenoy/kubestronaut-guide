@@ -1,6 +1,6 @@
 # Falco (Runtime Threat Detection)
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Audit logging](audit-logging.md) · Next: [jq for audit data](jq-for-audit-data.md)
+Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Audit logging](audit-logging.md) · Next: [jq for audit data](jq-for-audit-data.md)
 
 ## Exam scope
 

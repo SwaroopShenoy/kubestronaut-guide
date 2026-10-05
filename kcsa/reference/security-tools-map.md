@@ -1,6 +1,6 @@
 # Security Tools Map
 
-Up: [KCSA hub](../KCSA_Crash_Course.md) · Reference
+Up: [KCSA hub](../README.md) · Reference
 
 | Problem | Tool | Category |
 |---|---|---|

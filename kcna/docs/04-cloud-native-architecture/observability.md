@@ -1,6 +1,6 @@
 # Observability
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Principles and patterns](principles-and-patterns.md)
+Up: [KCNA hub](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Principles and patterns](principles-and-patterns.md)
 
 The 2025 source guide had a separate Observability domain at 8%. The CNCF KCNA page lists four domains and does not include observability as its own domain. Observability content is kept here because it is commonly tested as a concept; confirm against the current KCNA curriculum.
 

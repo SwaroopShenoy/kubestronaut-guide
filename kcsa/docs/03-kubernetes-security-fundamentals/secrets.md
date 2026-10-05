@@ -1,6 +1,6 @@
 # Secrets
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)
+Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)
 
 ## What a Kubernetes Secret is
 

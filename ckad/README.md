@@ -1,5 +1,15 @@
 # CKAD Complete Crash Course
 
+> **Read first: status and limits**
+>
+> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+>
+> - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
+> - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
+> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
+> - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
+
 Certified Kubernetes Application Developer — hub document. Start here; each domain links to topic docs.
 
 Source material: the 2026 guide and the 2025 crash course (archived in [_archive](_archive/)). This hub supersedes both.
@@ -19,14 +29,14 @@ Many CKAD topics are shared with CKA. Those link to the CKA docs rather than rep
 
 ## Domains and weights
 
-Weights from the CNCF CKAD certification page.
+Weights from the official CNCF exam curriculum PDF.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
 | 1 | Application Design and Build | 20% | [Multi-container patterns](docs/01-application-design-build/multi-container-patterns.md) · [Jobs and CronJobs](docs/01-application-design-build/jobs-and-cronjobs.md) · [Container images](docs/01-application-design-build/container-images.md) · [Volumes and workload choice](docs/01-application-design-build/volumes-and-workload-choice.md) |
 | 2 | Application Deployment | 20% | [Deployment strategies](docs/02-application-deployment/deployment-strategies.md) · [Helm and Kustomize](../cka/docs/04-workloads-scheduling/helm-and-kustomize.md) (shared with CKA) |
 | 3 | Application Observability and Maintenance | 15% | [Probes](docs/03-application-observability-maintenance/probes.md) · [Logs, debugging and API deprecations](docs/03-application-observability-maintenance/logs-debugging-and-deprecations.md) |
-| 4 | Application Environment, Configuration and Security | 25% | [ConfigMaps and Secrets](docs/04-application-environment-config-security/configmaps-and-secrets.md) · [SecurityContext, quotas and limits](docs/04-application-environment-config-security/security-context-quotas-limits.md) · [ServiceAccounts and RBAC](docs/04-application-environment-config-security/serviceaccounts-and-rbac.md) |
+| 4 | Application Environment, Configuration and Security | 25% | [ConfigMaps and Secrets](docs/04-application-environment-config-security/configmaps-and-secrets.md) · [SecurityContext, quotas and limits](docs/04-application-environment-config-security/security-context-quotas-limits.md) · [ServiceAccounts and RBAC](docs/04-application-environment-config-security/serviceaccounts-and-rbac.md) · [Extending Kubernetes (CRDs, operators)](../cka/docs/02-cluster-architecture-installation-config/crds-and-operators.md) |
 | 5 | Services and Networking | 20% | [Services, NetworkPolicy and Ingress](docs/05-services-networking/services-networking.md) |
 
 Shared with CKA (read those docs too):
@@ -67,7 +77,7 @@ kubectl create quota q --hard=cpu=2,memory=2Gi,pods=5
 ## Document map
 
 ```
-CKAD_2026_Complete_Crash_Course.md   this hub
+README.md   this hub
 docs/01-application-design-build/        multi-container, jobs, images, volumes
 docs/02-application-deployment/          strategies (Helm and Kustomize shared with CKA)
 docs/03-application-observability-.../   probes, logs, deprecations

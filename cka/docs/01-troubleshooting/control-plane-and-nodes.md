@@ -1,6 +1,6 @@
 # Control Plane and Nodes
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 1 — Troubleshooting (30%) · Prev: [Troubleshooting method](troubleshooting-method.md) · Next: [Services, DNS and networking](services-dns-and-networking.md)
+Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Prev: [Troubleshooting method](troubleshooting-method.md) · Next: [Services, DNS and networking](services-dns-and-networking.md)
 
 ## Model
 

@@ -1,6 +1,6 @@
 # Runtime Sandboxes (RuntimeClass)
 
-Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md) · Next: [Image scanning with Trivy](../05-supply-chain-security/image-scanning-trivy.md)
+Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md) · Next: [Image scanning with Trivy](../05-supply-chain-security/image-scanning-trivy.md)
 
 This doc is **new**. The original course referenced RuntimeClass but used incorrect handler names.
 
@@ -85,3 +85,7 @@ scheduling:
 kubectl get runtimeclass
 kubectl get pod <pod> -o jsonpath='{.spec.runtimeClassName}'
 ```
+
+## Isolation for multi-tenancy
+
+The curriculum asks for isolation techniques such as multi-tenancy and sandboxed containers. For shared clusters, layer the controls: a namespace per tenant, RBAC scoped to that namespace, ResourceQuota and LimitRange, default-deny NetworkPolicy, a Pod Security level on each namespace, and dedicated node pools or sandboxed runtimes for untrusted workloads. Namespaces alone do not stop a determined attacker from reaching the node kernel.

@@ -1,6 +1,10 @@
 # KCNA Scope and Review Notes
 
-Up: [KCNA hub](../KCNA_Crash_Course.md) · Read before studying the topic docs.
+Up: [KCNA hub](../README.md) · Read before studying the topic docs.
+
+## Official curriculum check
+
+Checked against the official KCNA Exam Curriculum PDF in the cncf/curriculum repository. The four domain weights match (44/28/16/12). The PDF lists Observability under Cloud Native Architecture, so the placement in this guide is correct; the earlier note that observability was "not a listed domain" was wrong. The PDF also lists Troubleshooting under Container Orchestration, Debugging under Application Delivery, and Cloud Native Community and Collaboration under Architecture. Those are now covered.
 
 ## Confirmed against the CNCF KCNA page
 
@@ -37,4 +41,3 @@ Not confirmed (stated only in the source guide or third-party sites):
 ## Gaps
 
 - The source guide did not cover CSI in depth; expanded in [runtimes, networking and interfaces](../docs/02-container-orchestration/runtimes-networking-interfaces.md).
-- Observability is a judgment call. If the current curriculum lists it separately, move it back to its own domain.

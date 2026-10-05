@@ -1,6 +1,10 @@
 # CKA Scope and Review Notes
 
-Up: [CKA hub](../CKA_2026_Complete_Crash_Course.md) · Read before studying the topic docs.
+Up: [CKA hub](../README.md) · Read before studying the topic docs.
+
+## Official curriculum check
+
+Checked against the official CKA Exam Curriculum PDF (v1.35) in the cncf/curriculum repository. The five domain weights match. The curriculum adds these items, which are now covered: highly available control plane (see [HA control plane](../docs/02-cluster-architecture-installation-config/high-availability-control-plane.md)), Helm and Kustomize to install cluster components, extension interfaces (CNI, CSI, CRI), and CRDs with operators. Writing Rego or Falco rules is not in the curriculum. Only v1.35 was checked; confirm newer curriculum versions before relying on this.
 
 ## Confirmed against the CNCF CKA page
 

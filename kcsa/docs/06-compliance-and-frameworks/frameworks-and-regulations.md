@@ -1,6 +1,6 @@
 # Frameworks and Regulations
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [CIS benchmark and audit](cis-benchmark-and-audit.md)
+Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [CIS benchmark and audit](cis-benchmark-and-audit.md)
 
 The exam tests recognition: what each framework is for and which Kubernetes controls map to it. It does not expect legal detail.
 

@@ -1,5 +1,15 @@
 # KCNA Crash Course
 
+> **Read first: status and limits**
+>
+> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+>
+> - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
+> - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
+> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
+> - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
+
 Kubernetes and Cloud Native Associate — hub document. Start here; each domain links to topic docs.
 
 Source material: the 2025 weekend crash course (archived in [_archive](_archive/)). This hub supersedes it.
@@ -17,14 +27,14 @@ Source material: the 2025 weekend crash course (archived in [_archive](_archive/
 
 ## Domains and weights
 
-Weights from the CNCF KCNA certification page. The 2025 guide used a different five-domain split (46/22/16/8/8) that does not match the official page; this hub follows the official four domains.
+Weights from the official CNCF exam curriculum PDF. The 2025 guide used a different five-domain split (46/22/16/8/8) that does not match the official page; this hub follows the official four domains.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
 | 1 | Kubernetes Fundamentals | 44% | [Architecture](docs/01-kubernetes-fundamentals/kubernetes-architecture.md) · [API objects and workloads](docs/01-kubernetes-fundamentals/api-objects-and-workloads.md) · [Services, storage and configuration](docs/01-kubernetes-fundamentals/services-storage-config.md) |
-| 2 | Container Orchestration | 28% | [Runtimes, networking and interfaces](docs/02-container-orchestration/runtimes-networking-interfaces.md) · [Scheduling and scaling](docs/02-container-orchestration/scheduling-and-scaling.md) · [Security basics](docs/02-container-orchestration/security-basics.md) |
+| 2 | Container Orchestration | 28% | [Runtimes, networking and interfaces](docs/02-container-orchestration/runtimes-networking-interfaces.md) · [Scheduling and scaling](docs/02-container-orchestration/scheduling-and-scaling.md) · [Security basics](docs/02-container-orchestration/security-basics.md) · [Troubleshooting and debugging](docs/02-container-orchestration/troubleshooting-and-debugging.md) |
 | 3 | Cloud Native Application Delivery | 16% | [CI/CD and GitOps](docs/03-cloud-native-application-delivery/cicd-and-gitops.md) · [Packaging with Helm and Kustomize](docs/03-cloud-native-application-delivery/packaging-helm-kustomize.md) |
-| 4 | Cloud Native Architecture | 12% | [Principles and patterns](docs/04-cloud-native-architecture/principles-and-patterns.md) · [Observability](docs/04-cloud-native-architecture/observability.md) |
+| 4 | Cloud Native Architecture | 12% | [Principles and patterns](docs/04-cloud-native-architecture/principles-and-patterns.md) · [Observability](docs/04-cloud-native-architecture/observability.md) · [Ecosystem and community](docs/04-cloud-native-architecture/cloud-native-community.md) |
 
 Reference:
 
@@ -45,7 +55,7 @@ Reference:
 ## Document map
 
 ```
-KCNA_Crash_Course.md              this hub
+README.md              this hub
 docs/01-kubernetes-fundamentals/   architecture, API objects, services/storage/config
 docs/02-container-orchestration/   runtimes and networking, scheduling, security basics
 docs/03-cloud-native-application-delivery/   CI/CD and GitOps, Helm and Kustomize

@@ -1,6 +1,6 @@
 # Certificates and kubeconfig
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 2 — Cluster Architecture (25%) · Prev: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md) · Next: [etcd backup and restore](etcd-backup-restore.md)
+Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md) · Next: [etcd backup and restore](etcd-backup-restore.md)
 
 ## Where kubeadm keeps certificates
 

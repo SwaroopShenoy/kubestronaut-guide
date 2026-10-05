@@ -1,6 +1,6 @@
 # Pod Security and NetworkPolicy
 
-Up: [KCSA hub](../../KCSA_Crash_Course.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [RBAC and ServiceAccounts](rbac-and-serviceaccounts.md) · Next: [Secrets](secrets.md)
+Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [RBAC and ServiceAccounts](rbac-and-serviceaccounts.md) · Next: [Secrets](secrets.md)
 
 ## Pod Security Standards
 

@@ -1,6 +1,6 @@
 # Services, Storage and Configuration
 
-Up: [KCNA hub](../../KCNA_Crash_Course.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Runtimes, networking and interfaces](../02-container-orchestration/runtimes-networking-interfaces.md)
+Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Runtimes, networking and interfaces](../02-container-orchestration/runtimes-networking-interfaces.md)
 
 ## Services
 

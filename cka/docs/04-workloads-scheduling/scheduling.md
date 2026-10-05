@@ -1,6 +1,6 @@
 # Scheduling
 
-Up: [CKA hub](../../CKA_2026_Complete_Crash_Course.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Workload types](workload-types.md) · Next: [Helm and Kustomize](helm-and-kustomize.md)
+Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Workload types](workload-types.md) · Next: [Helm and Kustomize](helm-and-kustomize.md)
 
 ## How scheduling works
 

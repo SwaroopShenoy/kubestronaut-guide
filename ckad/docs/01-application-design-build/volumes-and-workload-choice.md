@@ -1,6 +1,6 @@
 # Volumes and Workload Choice
 
-Up: [CKAD hub](../../CKAD_2026_Complete_Crash_Course.md) · Domain 1 — Application Design and Build (20%) · Prev: [Container images](container-images.md) · Next: [Deployment strategies](../02-application-deployment/deployment-strategies.md)
+Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Prev: [Container images](container-images.md) · Next: [Deployment strategies](../02-application-deployment/deployment-strategies.md)
 
 ## Pick the workload type from the requirement
 
