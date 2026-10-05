@@ -68,3 +68,8 @@ hadolint flags missing `USER`, unpinned tags, and `apt-get` without `--no-instal
 docker inspect --format '{{.Config.User}}' <image>
 hadolint Dockerfile
 ```
+
+---
+
+Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

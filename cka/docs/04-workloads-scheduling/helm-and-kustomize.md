@@ -67,7 +67,8 @@ resources:
 - ../../base
 namespace: prod
 labels:
-- pairs: {env: prod}
+- pairs:
+    env: prod
   includeSelectors: false
 replicas:
 - name: web
@@ -107,3 +108,8 @@ helm rollback <r> <rev>
 kubectl apply -k <dir>
 kubectl kustomize <dir>
 ```
+
+---
+
+Prev: [Scheduling](scheduling.md) · Next: [Storage](../05-storage/storage.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

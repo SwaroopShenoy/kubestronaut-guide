@@ -89,3 +89,8 @@ kubectl get pod <pod> -o jsonpath='{.spec.runtimeClassName}'
 ## Isolation for multi-tenancy
 
 The curriculum asks for isolation techniques such as multi-tenancy and sandboxed containers. For shared clusters, layer the controls: a namespace per tenant, RBAC scoped to that namespace, ResourceQuota and LimitRange, default-deny NetworkPolicy, a Pod Security level on each namespace, and dedicated node pools or sandboxed runtimes for untrusted workloads. Namespaces alone do not stop a determined attacker from reaching the node kernel.
+
+---
+
+Prev: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md) · Next: [Image scanning with Trivy](../05-supply-chain-security/image-scanning-trivy.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

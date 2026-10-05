@@ -71,3 +71,7 @@ Useful keys: `dd` delete line, `yy` copy, `p` paste, `:%s/old/new/g` replace, `>
 - Generate with `--dry-run=client -o yaml`, edit, apply. Faster than writing from memory.
 - Prefer `kubectl edit` for a one-field change to an existing object.
 - Use `k explain <kind>.<field>` instead of guessing field names.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

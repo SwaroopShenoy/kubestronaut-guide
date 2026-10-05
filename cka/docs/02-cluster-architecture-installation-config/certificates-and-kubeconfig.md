@@ -113,3 +113,8 @@ sudo kubeadm certs renew all
 kubectl certificate approve <csr>
 kubectl config view --minify
 ```
+
+---
+
+Prev: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md) · Next: [etcd backup and restore](etcd-backup-restore.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

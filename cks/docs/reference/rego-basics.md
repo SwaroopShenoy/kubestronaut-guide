@@ -101,3 +101,8 @@ some item in list                   iterate
 startswith(s, p)                    string prefix
 count(list)                         length
 ```
+
+---
+
+Prev: [jq for audit data](../06-monitoring-logging-runtime/jq-for-audit-data.md) · Next: [OPA Gatekeeper](opa-gatekeeper.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

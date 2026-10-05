@@ -57,7 +57,7 @@ spec:
       readOnly: true
   volumes:
   - name: cache
-    emptyDir: {}
+    emptyDir:
   - name: config
     configMap:
       name: app-config
@@ -77,7 +77,7 @@ spec:
       mountPath: /tmp
   volumes:
   - name: tmp
-    emptyDir: {}
+    emptyDir:
 ```
 
 ## Common mistakes
@@ -92,3 +92,8 @@ spec:
 kubectl exec <pod> -c <container> -- ls <mountPath>
 kubectl describe pod <pod> | grep -A3 Mounts
 ```
+
+---
+
+Prev: [Container images](container-images.md) · Next: [Deployment strategies](../02-application-deployment/deployment-strategies.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -69,3 +69,8 @@ Pods in a namespace without injection cannot talk to strict mTLS workloads. Plan
 - Setting STRICT mode before every client has a sidecar, which breaks traffic.
 - Forgetting that Cilium encryption is per node pair, not per pod identity.
 - Skipping the check: confirm encryption and mTLS are active with the tool's status command.
+
+---
+
+Prev: [Runtime sandboxes](runtime-sandboxes.md) · Next: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

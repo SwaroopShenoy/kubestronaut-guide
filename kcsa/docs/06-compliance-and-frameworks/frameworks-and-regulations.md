@@ -26,3 +26,8 @@ The exam tests recognition: what each framework is for and which Kubernetes cont
 | Image scanning and signing | SOC 2, NIST SP 800-190 |
 
 A framework is a set of requirements; a Kubernetes setting is evidence that you meet section of one. Passing a CIS check does not make a cluster compliant with a regulation on its own.
+
+---
+
+Prev: [CIS benchmark and audit](cis-benchmark-and-audit.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

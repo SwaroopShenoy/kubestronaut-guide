@@ -63,3 +63,7 @@ docs/04-cloud-native-architecture/ principles, observability
 reference/                         CNCF project map
 notes/                             sources and verification
 ```
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../LICENSE)</sub>

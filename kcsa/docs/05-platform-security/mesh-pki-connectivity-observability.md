@@ -29,3 +29,8 @@ Official curriculum topics covered here: service mesh, PKI, connectivity and obs
 - Audit logs record API activity. Runtime alerts record suspicious behavior on nodes and in containers.
 - Metrics and logs help detect abnormal behavior (for example, a spike in 403 responses or unexpected outbound connections).
 - Logs must be shipped off the node. A node compromise can otherwise erase its own evidence.
+
+---
+
+Prev: [Runtime security](runtime-security.md) · Next: [CIS benchmark and audit](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

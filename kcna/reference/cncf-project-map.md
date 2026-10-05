@@ -36,3 +36,7 @@ Use this to map a problem to a project name. Project maturity (graduated, incuba
 - Prometheus does not store data long term by itself.
 - Grafana is not a CNCF project; Grafana and Loki come from the same company.
 - Helm is a package manager; Argo CD and Flux deploy from Git.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

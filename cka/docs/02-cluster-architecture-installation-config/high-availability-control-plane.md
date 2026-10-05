@@ -51,3 +51,8 @@ Confirm that each control-plane node runs the API server and that etcd reports h
 - A load balancer address missing from the certificate SANs, so clients fail TLS validation.
 - An even number of etcd members, which adds cost without improving fault tolerance.
 - Forgetting that stacked etcd on two nodes cannot survive one failure.
+
+---
+
+Prev: [CRDs and operators](crds-and-operators.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

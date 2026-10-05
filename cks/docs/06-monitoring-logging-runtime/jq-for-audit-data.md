@@ -85,3 +85,8 @@ jq -c 'select(...)' file
 jq -s 'length' file
 jq -r '[fields] | @csv' file
 ```
+
+---
+
+Prev: [Falco](falco.md) · Next: [Rego basics](../reference/rego-basics.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

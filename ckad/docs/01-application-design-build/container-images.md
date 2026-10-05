@@ -75,3 +75,8 @@ docker build -t <name>:<tag> .
 docker inspect --format '{{.Config.User}}' <image>
 kind load docker-image <image>
 ```
+
+---
+
+Prev: [Jobs and CronJobs](jobs-and-cronjobs.md) · Next: [Volumes and workload choice](volumes-and-workload-choice.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

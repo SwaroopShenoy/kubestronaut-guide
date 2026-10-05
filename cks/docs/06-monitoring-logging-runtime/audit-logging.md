@@ -201,3 +201,8 @@ The curriculum asks you to investigate and identify the phases of an attack and 
 - **Access to data:** `get` or `list` on `secrets`, which the default policy above logs only at metadata level.
 
 Group events by user and time window with `jq`, then check which identity performed each phase. Preserve the log files before analysis, since they can be rotated or overwritten.
+
+---
+
+Prev: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md) · Next: [Falco](falco.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -41,3 +41,8 @@ A CNI plugin that supports NetworkPolicy (Calico, Cilium) enforces policy rules.
 
 - An image is a layered, read-only template. A tag names a version; a digest identifies exact content.
 - Prefer pinned tags or digests. `latest` changes without warning.
+
+---
+
+Prev: [Services, storage and configuration](../01-kubernetes-fundamentals/services-storage-config.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

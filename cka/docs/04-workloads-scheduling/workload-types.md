@@ -85,3 +85,8 @@ kubectl create job <n> --image=<i> -- <cmd>
 kubectl create cronjob <n> --image=<i> --schedule="<cron>" -- <cmd>
 kubectl get deploy,sts,ds,job,cronjob
 ```
+
+---
+
+Prev: [Deployments and scaling](deployments-and-scaling.md) · Next: [Scheduling](scheduling.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

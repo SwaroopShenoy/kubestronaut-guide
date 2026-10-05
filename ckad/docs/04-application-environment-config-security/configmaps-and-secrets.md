@@ -92,3 +92,8 @@ kubectl create secret generic <n> --from-literal=K=V
 kubectl exec <pod> -- ls /etc/<mount>
 kubectl rollout restart deploy/<n>
 ```
+
+---
+
+Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

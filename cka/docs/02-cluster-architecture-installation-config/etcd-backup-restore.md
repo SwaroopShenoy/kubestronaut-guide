@@ -86,3 +86,8 @@ ETCDCTL_API=3 etcdctl snapshot save <file> --endpoints=... --cacert=... --cert=.
 ETCDCTL_API=3 etcdutl snapshot status <file> --write-out=table
 etcdutl snapshot restore <file> --data-dir=<new-dir> ...
 ```
+
+---
+
+Prev: [Certificates and kubeconfig](certificates-and-kubeconfig.md) · Next: [CRDs and operators](crds-and-operators.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

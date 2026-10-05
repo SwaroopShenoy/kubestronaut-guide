@@ -68,3 +68,8 @@ Forensics sources: API audit log, container logs, runtime alerts, network flow r
 - **Attacker on the network:** an attacker who can sniff or reach pod traffic. Controls: TLS and mTLS between services, default-deny NetworkPolicy, and encryption in the CNI where supported.
 - **Access to sensitive data:** reads of Secrets, ConfigMaps, volumes and etcd. Controls: encryption at rest, narrow RBAC on secrets, audit logging of reads, and external secret stores.
 - **Privilege escalation:** moving from a low-privilege identity to cluster-admin. Common paths are `create pods` with a host mount, `escalate` or `bind` on RBAC, and access to the node's kubelet or the runtime socket.
+
+---
+
+Prev: [Secrets](../03-kubernetes-security-fundamentals/secrets.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

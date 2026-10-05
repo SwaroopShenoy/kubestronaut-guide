@@ -30,3 +30,8 @@ Environment variables are visible through `kubectl describe` output, to child pr
 - `kubernetes.io/tls`: certificate and key for Ingress TLS.
 - `kubernetes.io/dockerconfigjson`: registry credentials.
 - `kubernetes.io/service-account-token`: legacy long-lived ServiceAccount tokens; avoid creating these.
+
+---
+
+Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -45,3 +45,8 @@ Official curriculum topics covered here: controller manager, scheduler, containe
 - Restrict which pods can mount which volumes. A hostPath mount is a host-access risk.
 - Encrypt data at rest in the storage backend, and enable encryption for Secrets in etcd.
 - Use StorageClass parameters to enforce encryption where the provider supports it.
+
+---
+
+Prev: [etcd and node security](etcd-and-node-security.md) · Next: [RBAC and ServiceAccounts](../03-kubernetes-security-fundamentals/rbac-and-serviceaccounts.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

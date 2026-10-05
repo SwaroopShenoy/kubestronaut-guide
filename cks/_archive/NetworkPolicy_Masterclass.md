@@ -3,7 +3,7 @@
 
 ---
 
-# Section 1: NetworkPolicy Fundamentals
+# Part 1: NetworkPolicy Fundamentals
 
 ## What is NetworkPolicy?
 
@@ -92,7 +92,7 @@ spec:
 
 ---
 
-# Section 2: Ingress Rules (Inbound Traffic)
+# Part 2: Ingress Rules (Inbound Traffic)
 
 ## Ingress Rule Structure
 
@@ -349,7 +349,7 @@ ingress:
 
 ---
 
-# Section 3: Egress Rules (Outbound Traffic)
+# Part 3: Egress Rules (Outbound Traffic)
 
 ## Egress Rule Structure
 
@@ -505,7 +505,7 @@ egress:
 
 ---
 
-# Section 4: Default Deny Policies
+# Part 4: Default Deny Policies
 
 ## Strategy: Deny All, Then Allow What's Needed
 
@@ -611,7 +611,7 @@ All other traffic blocked (default deny)
 
 ---
 
-# Section 5: Debugging NetworkPolicies
+# Part 5: Debugging NetworkPolicies
 
 ## Troubleshooting Workflow
 
@@ -652,7 +652,7 @@ k exec <pod> -- nslookup example.com
 
 ---
 
-# Section 6: Real Exam Scenarios
+# Part 6: Real Exam Scenarios
 
 ## Scenario 1: Implement Zero-Trust Network
 
@@ -829,7 +829,7 @@ k run test -n frontend --image=curlimages/curl -it -- curl http://api.backend:80
 
 ---
 
-# Section 7: Cheat Sheets
+# Part 7: Cheat Sheets
 
 ## NetworkPolicy Template (Copy-Paste Ready)
 

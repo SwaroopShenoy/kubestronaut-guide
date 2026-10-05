@@ -108,3 +108,8 @@ kubeadm upgrade apply v<version>
 kubectl drain <node> --ignore-daemonsets --delete-emptydir-data
 kubectl uncordon <node>
 ```
+
+---
+
+Prev: [RBAC](rbac.md) · Next: [Certificates and kubeconfig](certificates-and-kubeconfig.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

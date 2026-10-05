@@ -46,3 +46,8 @@ Image scanners such as Trivy read the image's packages (see [Trivy](../05-supply
 - Running the tool but ignoring its output.
 - Suppressing findings without a recorded reason.
 - Treating a clean scan as proof that a workload is safe.
+
+---
+
+Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -28,3 +28,7 @@ Every topic listed under each domain in the curriculum has a topic or section in
 - Duration, number of questions and passing score. The CNCF page checked does not state them.
 - Writing policies or rules is not section of the curriculum.
 - Commands and tool behaviour have not all been executed on a live cluster.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

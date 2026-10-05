@@ -26,3 +26,8 @@ Frameworks are thinking tools. The output is a list of threats, each with a cont
 - Policy as code and scanning in CI: block risky changes before merge.
 - Continuous compliance: admission policies and scheduled scans, with results stored and reviewed.
 - Automation reduces human error, but its own credentials and pipelines become targets. Protect them like production systems.
+
+---
+
+Prev: [Frameworks and regulations](frameworks-and-regulations.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

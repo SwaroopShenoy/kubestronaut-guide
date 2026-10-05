@@ -166,3 +166,8 @@ sudo apparmor_parser -r -W /etc/apparmor.d/<profile>
 ls /var/lib/kubelet/seccomp/
 grep Seccomp /proc/self/status
 ```
+
+---
+
+Prev: [Host hardening](host-hardening.md) · Next: [Security context and PSS](../04-microservice-vulnerabilities/security-context-and-pss.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

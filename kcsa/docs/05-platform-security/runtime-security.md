@@ -35,3 +35,8 @@ A rule has a condition (what to match), an output message, and a priority. Teams
 | Trivy (scanner) | Does this image contain known vulnerabilities? (before running) |
 | Falco (runtime) | Is this running workload doing something suspicious? (while running) |
 | Audit log | What requests did the API server receive? |
+
+---
+
+Prev: [Admission and policy](admission-and-policy.md) · Next: [CIS benchmark and audit](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

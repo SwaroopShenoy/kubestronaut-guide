@@ -107,3 +107,8 @@ kubectl create cronjob <n> --image=<i> --schedule="<cron>" -- <cmd>
 kubectl create job <n> --from=cronjob/<cj>
 kubectl wait --for=condition=complete job/<n>
 ```
+
+---
+
+Prev: [Multi-container patterns](multi-container-patterns.md) · Next: [Container images](container-images.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

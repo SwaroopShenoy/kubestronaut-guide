@@ -104,3 +104,8 @@ systemctl list-unit-files --state=enabled
 sudo sshd -t
 sudo modprobe -r <module>
 ```
+
+---
+
+Prev: [Cluster upgrades](../02-cluster-hardening/cluster-upgrades.md) · Next: [AppArmor and seccomp](apparmor-and-seccomp.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

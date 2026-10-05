@@ -73,3 +73,8 @@ kubectl create role <name> --verb=<v1,v2> --resource=<r> -n <ns>
 kubectl create rolebinding <name> --role=<role> --user=<u> -n <ns>
 kubectl auth can-i <verb> <resource> --as=<subject> -n <ns>
 ```
+
+---
+
+Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

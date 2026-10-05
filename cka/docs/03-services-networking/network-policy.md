@@ -22,8 +22,10 @@ metadata:
   name: default-deny-all
   namespace: prod
 spec:
-  podSelector: {}
-  policyTypes: [Ingress, Egress]
+  podSelector:
+  policyTypes:
+  - Ingress
+  - Egress
 ```
 
 ## Allow ingress from one app
@@ -36,14 +38,18 @@ metadata:
   namespace: prod
 spec:
   podSelector:
-    matchLabels: {app: backend}
-  policyTypes: [Ingress]
+    matchLabels:
+      app: backend
+  policyTypes:
+  - Ingress
   ingress:
   - from:
     - podSelector:
-        matchLabels: {app: frontend}
+        matchLabels:
+          app: frontend
     ports:
-    - {protocol: TCP, port: 8080}
+    - protocol: TCP
+      port: 8080
 ```
 
 ## Egress with DNS
@@ -60,13 +66,17 @@ egress:
       matchLabels:
         k8s-app: kube-dns
   ports:
-  - {protocol: UDP, port: 53}
-  - {protocol: TCP, port: 53}
+  - protocol: UDP
+    port: 53
+  - protocol: TCP
+    port: 53
 - to:
   - podSelector:
-      matchLabels: {app: database}
+      matchLabels:
+        app: database
   ports:
-  - {protocol: TCP, port: 5432}
+  - protocol: TCP
+    port: 5432
 ```
 
 Namespace selectors use the automatic label `kubernetes.io/metadata.name`.
@@ -93,3 +103,8 @@ kubectl get netpol -A
 kubectl describe netpol <name> -n <ns>
 kubectl get pods --show-labels -n <ns>
 ```
+
+---
+
+Prev: [Services and DNS](services-and-dns.md) · Next: [Ingress and Gateway API](ingress-and-gateway-api.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -87,3 +87,7 @@ docs/05-storage/                    PV, PVC, StorageClass
 reference/                          kubectl speed, API discovery
 notes/                              sources and verification
 ```
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../LICENSE)</sub>

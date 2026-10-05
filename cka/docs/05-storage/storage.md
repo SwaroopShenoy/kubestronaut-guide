@@ -34,8 +34,10 @@ kind: PersistentVolume
 metadata:
   name: pv-demo
 spec:
-  capacity: {storage: 1Gi}
-  accessModes: [ReadWriteOnce]
+  capacity:
+    storage: 1Gi
+  accessModes:
+  - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   hostPath:
     path: /mnt/data
@@ -45,9 +47,11 @@ kind: PersistentVolumeClaim
 metadata:
   name: pvc-demo
 spec:
-  accessModes: [ReadWriteOnce]
+  accessModes:
+  - ReadWriteOnce
   resources:
-    requests: {storage: 500Mi}
+    requests:
+      storage: 500Mi
 ```
 
 `hostPath` is for labs only. Real clusters use a CSI-backed StorageClass.
@@ -125,3 +129,8 @@ kubectl get pv,pvc,sc -A
 kubectl describe pvc <name>
 kubectl patch pvc <name> -p '{"spec":{"resources":{"requests":{"storage":"<size>"}}}}'
 ```
+
+---
+
+Prev: [Helm and Kustomize](../04-workloads-scheduling/helm-and-kustomize.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -77,7 +77,8 @@ metadata:
 spec:
   parentRefs:
   - name: web-gateway
-  hostnames: ["web.example.com"]
+  hostnames:
+  - web.example.com
   rules:
   - matches:
     - path:
@@ -114,3 +115,8 @@ kubectl get ingress,ingressclass
 kubectl get gateway,httproute
 kubectl describe httproute <name>
 ```
+
+---
+
+Prev: [NetworkPolicy](network-policy.md) · Next: [Deployments and scaling](../04-workloads-scheduling/deployments-and-scaling.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

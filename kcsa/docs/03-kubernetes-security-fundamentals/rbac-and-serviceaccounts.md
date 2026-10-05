@@ -38,3 +38,8 @@ RBAC is additive. There are no deny rules, so the sum of all bindings is the eff
 - Identity for pods. Each namespace has a `default` ServiceAccount.
 - Pods receive a projected token by default. Turn this off when the app does not call the API (`automountServiceAccountToken: false`).
 - Tokens are time-limited and bound to the pod, which is safer than the long-lived token Secrets of older versions.
+
+---
+
+Prev: [etcd and node security](../02-kubernetes-cluster-component-security/etcd-and-node-security.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

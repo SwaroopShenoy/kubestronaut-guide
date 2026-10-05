@@ -51,7 +51,8 @@ spec:
     podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
-          matchLabels: {app: web}
+          matchLabels:
+            app: web
         topologyKey: kubernetes.io/hostname
 ```
 
@@ -81,8 +82,12 @@ Requests drive scheduling. Limits cap usage.
 
 ```yaml
 resources:
-  requests: {cpu: 250m, memory: 64Mi}
-  limits: {cpu: 500m, memory: 128Mi}
+  requests:
+    cpu: 250m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi
 ```
 
 A pod whose requests exceed every node's allocatable capacity stays Pending.
@@ -108,3 +113,8 @@ kubectl label node <n> <k>=<v>
 kubectl taint node <n> <k>=<v>:NoSchedule
 kubectl describe node <n> | grep -A6 Taints
 ```
+
+---
+
+Prev: [Workload types](workload-types.md) · Next: [Helm and Kustomize](helm-and-kustomize.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

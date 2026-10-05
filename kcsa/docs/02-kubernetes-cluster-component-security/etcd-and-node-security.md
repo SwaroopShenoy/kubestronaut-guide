@@ -40,3 +40,8 @@ Node OS hardening:
 ## kube-proxy
 
 Runs on every node and programs Service routing rules. Keep it updated and restrict its credentials to what it needs.
+
+---
+
+Prev: [Control plane security](control-plane-security.md) · Next: [RBAC and ServiceAccounts](../03-kubernetes-security-fundamentals/rbac-and-serviceaccounts.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

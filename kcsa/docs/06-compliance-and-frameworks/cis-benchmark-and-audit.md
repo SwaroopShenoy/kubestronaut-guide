@@ -36,3 +36,8 @@ Worth logging: Secret access (including reads), RBAC changes, exec and attach in
 Backends: a log file, or a webhook that forwards events to a SIEM. The old dynamic audit sink (AuditSink) was removed; use the webhook backend.
 
 Caution: request bodies can contain secrets. Use `RequestResponse` for a narrow set of resources only.
+
+---
+
+Prev: [Runtime security](../05-platform-security/runtime-security.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

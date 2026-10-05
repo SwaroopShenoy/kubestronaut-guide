@@ -68,3 +68,7 @@ docs/06-compliance-and-frameworks/            CIS, audit, regulations
 reference/                                    security tools map
 notes/                                        sources and verification
 ```
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../LICENSE)</sub>

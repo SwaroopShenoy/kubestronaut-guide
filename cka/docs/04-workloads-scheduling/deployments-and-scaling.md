@@ -28,17 +28,23 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchLabels: {app: web}
+    matchLabels:
+      app: web
   template:
     metadata:
-      labels: {app: web}
+      labels:
+        app: web
     spec:
       containers:
       - name: web
         image: nginx:1.27
         resources:
-          requests: {cpu: 200m, memory: 256Mi}
-          limits: {cpu: 500m, memory: 512Mi}
+          requests:
+            cpu: 200m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
         env:
         - name: MODE
           value: prod
@@ -100,3 +106,8 @@ kubectl create deploy <n> --image=<i> --replicas=<r> --dry-run=client -o yaml
 kubectl set image deploy/<n> <container>=<image>
 kubectl rollout undo deploy/<n> [--to-revision=<r>]
 ```
+
+---
+
+Next: [Workload types](workload-types.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

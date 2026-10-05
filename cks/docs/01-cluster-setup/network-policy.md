@@ -31,17 +31,21 @@ Network policy is the first line of defence between workloads. This topic goes d
 ingress:
 - from:
   - podSelector:
-      matchLabels: {app: frontend}
+      matchLabels:
+        app: frontend
   - namespaceSelector:
-      matchLabels: {environment: prod}
+      matchLabels:
+        environment: prod
 
 # AND: one list item with both selectors. frontend pods that live in a prod namespace
 ingress:
 - from:
   - podSelector:
-      matchLabels: {app: frontend}
+      matchLabels:
+        app: frontend
     namespaceSelector:
-      matchLabels: {environment: prod}
+      matchLabels:
+        environment: prod
 ```
 
 The difference is a single dash. Get this wrong and you silently widen access.
@@ -71,7 +75,7 @@ metadata:
   name: default-deny-all
   namespace: production
 spec:
-  podSelector: {}
+  podSelector:
   policyTypes:
   - Ingress
   - Egress
@@ -110,8 +114,10 @@ metadata:
   name: default-deny-all
   namespace: production
 spec:
-  podSelector: {}
-  policyTypes: [Ingress, Egress]
+  podSelector:
+  policyTypes:
+  - Ingress
+  - Egress
 ---
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
@@ -120,12 +126,15 @@ metadata:
   namespace: production
 spec:
   podSelector:
-    matchLabels: {app: backend}
-  policyTypes: [Ingress]
+    matchLabels:
+      app: backend
+  policyTypes:
+  - Ingress
   ingress:
   - from:
     - podSelector:
-        matchLabels: {app: frontend}
+        matchLabels:
+          app: frontend
     ports:
     - protocol: TCP
       port: 8080
@@ -137,28 +146,36 @@ metadata:
   namespace: production
 spec:
   podSelector:
-    matchLabels: {app: backend}
-  policyTypes: [Egress]
+    matchLabels:
+      app: backend
+  policyTypes:
+  - Egress
   egress:
   - to:
     - namespaceSelector:
         matchLabels:
           kubernetes.io/metadata.name: kube-system
       podSelector:
-        matchLabels: {k8s-app: kube-dns}
+        matchLabels:
+          k8s-app: kube-dns
     ports:
-    - {protocol: UDP, port: 53}
-    - {protocol: TCP, port: 53}
+    - protocol: UDP
+      port: 53
+    - protocol: TCP
+      port: 53
   - to:
     - podSelector:
-        matchLabels: {app: database}
+        matchLabels:
+          app: database
     ports:
-    - {protocol: TCP, port: 5432}
+    - protocol: TCP
+      port: 5432
   - to:
     - ipBlock:
         cidr: 203.0.113.0/24
     ports:
-    - {protocol: TCP, port: 443}
+    - protocol: TCP
+      port: 443
 ---
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
@@ -167,14 +184,18 @@ metadata:
   namespace: production
 spec:
   podSelector:
-    matchLabels: {app: database}
-  policyTypes: [Ingress]
+    matchLabels:
+      app: database
+  policyTypes:
+  - Ingress
   ingress:
   - from:
     - podSelector:
-        matchLabels: {app: backend}
+        matchLabels:
+          app: backend
     ports:
-    - {protocol: TCP, port: 5432}
+    - protocol: TCP
+      port: 5432
 ```
 
 Note that the database also needs its own ingress policy. A policy on backend egress does not open the database's ingress.
@@ -189,15 +210,18 @@ metadata:
   namespace: backend
 spec:
   podSelector:
-    matchLabels: {app: api}
-  policyTypes: [Ingress]
+    matchLabels:
+      app: api
+  policyTypes:
+  - Ingress
   ingress:
   - from:
     - namespaceSelector:
         matchLabels:
           kubernetes.io/metadata.name: frontend
     ports:
-    - {protocol: TCP, port: 8080}
+    - protocol: TCP
+      port: 8080
 ```
 
 ## Blocking cloud metadata from pods
@@ -258,3 +282,8 @@ kubectl get netpol -A
 kubectl describe netpol <name> -n <ns>
 kubectl label ns <ns> <key>=<value>        # only if you cannot use kubernetes.io/metadata.name
 ```
+
+---
+
+Next: [CIS benchmark](cis-benchmark-kube-bench.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

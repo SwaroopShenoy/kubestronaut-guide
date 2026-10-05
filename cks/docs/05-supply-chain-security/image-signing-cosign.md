@@ -104,3 +104,8 @@ cosign sign --key cosign.key <registry>/<image>@<digest>
 cosign verify --key cosign.pub <registry>/<image>@<digest>
 cosign tree <registry>/<image>@<digest>
 ```
+
+---
+
+Prev: [Image scanning with Trivy](image-scanning-trivy.md) · Next: [Admission control](admission-control.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

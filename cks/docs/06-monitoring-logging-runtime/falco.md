@@ -137,3 +137,8 @@ kubectl logs -n falco -l app.kubernetes.io/name=falco --tail=100
 sudo journalctl -u falco -f
 ls /etc/falco/rules.d/
 ```
+
+---
+
+Prev: [Audit logging](audit-logging.md) · Next: [jq for audit data](jq-for-audit-data.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

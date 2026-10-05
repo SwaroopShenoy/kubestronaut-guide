@@ -30,3 +30,7 @@ Know where these live on kubernetes.io before the exam, and check the current al
 - Cluster administration: kubeadm, etcd backup, upgrade
 
 Search for the resource name plus the word "example". The example YAML is usually the fastest starting point.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

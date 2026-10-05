@@ -35,3 +35,8 @@ Multi-tenancy: a shared cluster with several teams needs namespaces plus RBAC, q
 - Sign images and verify signatures before running them.
 - Scan images for known vulnerabilities and rebuild regularly.
 - Pin images by digest where possible.
+
+---
+
+Prev: [The 4Cs and shared responsibility](four-cs-and-shared-responsibility.md) · Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

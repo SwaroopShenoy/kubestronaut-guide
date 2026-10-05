@@ -113,3 +113,8 @@ kubectl create token <sa> -n <ns> --duration=10m
 kubectl get sa -A -o custom-columns=NS:.metadata.namespace,NAME:.metadata.name,AUTOMOUNT:.automountServiceAccountToken
 kubectl auth can-i --list --as=system:serviceaccount:<ns>:<sa>
 ```
+
+---
+
+Prev: [RBAC](rbac.md) · Next: [Cluster upgrades](cluster-upgrades.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -37,3 +37,8 @@ A Software Bill of Materials lists the components in an artifact, with versions 
 - Keep secrets out of image layers.
 - Pin versions or digests; avoid `latest`.
 - Use a trusted, private registry with access control.
+
+---
+
+Prev: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md) · Next: [Admission and policy](admission-and-policy.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

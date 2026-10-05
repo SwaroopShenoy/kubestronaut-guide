@@ -94,3 +94,8 @@ kubectl expose deploy <name> --port=<p> --target-port=<tp> [--type=NodePort]
 kubectl get endpoints <svc>
 kubectl run t --rm -it --image=busybox:1.36 --restart=Never -- nslookup <svc>
 ```
+
+---
+
+Next: [NetworkPolicy](network-policy.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

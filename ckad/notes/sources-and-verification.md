@@ -27,3 +27,7 @@ Container image building, CRDs and operators, Kustomize, Helm, and API deprecati
 - Passing score, number of tasks, and allowed documentation. The CNCF page checked does not state the passing score or task count.
 - The Kubernetes version the exam runs.
 - Commands and YAML have not all been executed on a live cluster.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

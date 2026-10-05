@@ -46,3 +46,8 @@ The official KCNA curriculum places observability under Cloud Native Architectur
 - Metrics are aggregated numbers; logs are discrete events; traces follow one request.
 - metrics-server (resource usage) vs kube-state-metrics (object state).
 - Prometheus pulls; applications expose a metrics endpoint.
+
+---
+
+Prev: [Principles and patterns](principles-and-patterns.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

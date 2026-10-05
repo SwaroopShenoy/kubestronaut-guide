@@ -86,3 +86,8 @@ kubectl describe <kind> <name>
 kubectl logs <pod> --previous
 kubectl get endpoints <svc>
 ```
+
+---
+
+Next: [Control plane and nodes](control-plane-and-nodes.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

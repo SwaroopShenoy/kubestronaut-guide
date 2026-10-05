@@ -24,3 +24,7 @@ This page records where the figures in this section come from and what has and h
 - Duration, number of questions and passing score. The CNCF page checked does not state them.
 - Validity period.
 - Project maturity levels in the CNCF landscape change over time. Check the landscape site before relying on them.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

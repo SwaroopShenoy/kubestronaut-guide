@@ -40,3 +40,8 @@ Secret types include Opaque (generic), `kubernetes.io/tls`, and `kubernetes.io/d
 - Service (stable network address) vs Pod IP (changes when the pod is replaced).
 - ConfigMap (plain) vs Secret (sensitive, but not encrypted by default).
 - PV (the storage) vs PVC (the request for it).
+
+---
+
+Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Runtimes, networking and interfaces](../02-container-orchestration/runtimes-networking-interfaces.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

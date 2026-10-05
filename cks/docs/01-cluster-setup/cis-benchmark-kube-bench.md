@@ -136,3 +136,8 @@ sudo kube-bench run --targets node
 grep -n "authorization-mode\|anonymous-auth" /etc/kubernetes/manifests/kube-apiserver.yaml
 sudo grep -n "anonymous\|authorization\|readOnlyPort" /var/lib/kubelet/config.yaml
 ```
+
+---
+
+Prev: [Network policy](network-policy.md) · Next: [Ingress, TLS and node metadata](ingress-tls-and-node-metadata.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

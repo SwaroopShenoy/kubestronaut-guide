@@ -48,10 +48,14 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchLabels: {app: myapp, version: blue}
+    matchLabels:
+      app: myapp
+      version: blue
   template:
     metadata:
-      labels: {app: myapp, version: blue}
+      labels:
+        app: myapp
+        version: blue
     spec:
       containers:
       - name: app
@@ -105,3 +109,8 @@ kubectl rollout undo deploy/<n>
 kubectl set selector svc <svc> 'version=<v>'
 kubectl get endpoints <svc>
 ```
+
+---
+
+Prev: [Volumes and workload choice](../01-application-design-build/volumes-and-workload-choice.md) · Next: [Probes](../03-application-observability-maintenance/probes.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

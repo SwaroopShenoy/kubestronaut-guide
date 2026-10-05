@@ -20,7 +20,8 @@ spec:
     plural: crontabs
     singular: crontab
     kind: CronTab
-    shortNames: [ct]
+    shortNames:
+    - ct
   versions:
   - name: v1
     served: true
@@ -90,3 +91,8 @@ kubectl get crd
 kubectl api-resources --api-group=<group>
 kubectl explain <plural>.spec
 ```
+
+---
+
+Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Services and DNS](../03-services-networking/services-and-dns.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

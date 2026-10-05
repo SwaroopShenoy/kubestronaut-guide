@@ -109,3 +109,8 @@ kubectl create secret tls <name> --cert=tls.crt --key=tls.key -n <ns>
 sudo iptables -I FORWARD -d 169.254.169.254/32 -j DROP
 echo "$(cat X.sha256)  X" | sha256sum --check
 ```
+
+---
+
+Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

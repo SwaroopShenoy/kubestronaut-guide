@@ -32,3 +32,8 @@ Official curriculum topics covered here: troubleshooting (listed under Container
 4. Change one thing, then verify.
 
 Ephemeral debug containers let you attach a troubleshooting container to a running pod without changing its spec. Use them when the application image has no shell.
+
+---
+
+Prev: [Security basics](security-basics.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -26,23 +26,29 @@ metadata:
   name: app-egress
 spec:
   podSelector:
-    matchLabels: {app: myapp}
-  policyTypes: [Egress]
+    matchLabels:
+      app: myapp
+  policyTypes:
+  - Egress
   egress:
   - to:
     - namespaceSelector:
         matchLabels:
           kubernetes.io/metadata.name: kube-system
       podSelector:
-        matchLabels: {k8s-app: kube-dns}
+        matchLabels:
+          k8s-app: kube-dns
     ports:
-    - {protocol: UDP, port: 53}
-    - {protocol: TCP, port: 53}
+    - protocol: UDP
+      port: 53
+    - protocol: TCP
+      port: 53
   - to:
     - ipBlock:
         cidr: 203.0.113.0/24
     ports:
-    - {protocol: TCP, port: 443}
+    - protocol: TCP
+      port: 443
 ```
 
 ## Common debugging sequence
@@ -69,3 +75,8 @@ kubectl get endpoints <svc>
 kubectl expose deploy <n> --port=<p> --target-port=<tp>
 kubectl get netpol -A
 ```
+
+---
+
+Prev: [ServiceAccounts and RBAC](../04-application-environment-config-security/serviceaccounts-and-rbac.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

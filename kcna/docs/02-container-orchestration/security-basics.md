@@ -46,3 +46,8 @@ Controls pod traffic by label. No policy means all traffic allowed; once a polic
 ## Secrets
 
 Base64 is encoding, not protection. Enable encryption at rest and limit who can read Secrets with RBAC.
+
+---
+
+Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

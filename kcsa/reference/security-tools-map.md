@@ -21,3 +21,7 @@ Up: [KCSA hub](../README.md) · Reference
 | Private registry with scanning and RBAC | Harbor | Registry |
 
 Tools change frequently; treat this as a map of categories, not a list of current recommendations.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

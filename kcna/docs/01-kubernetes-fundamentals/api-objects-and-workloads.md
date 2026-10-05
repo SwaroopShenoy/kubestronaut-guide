@@ -50,3 +50,8 @@ Virtual partitions inside a cluster. Default namespaces: `default`, `kube-system
 - Deployment vs StatefulSet: stable identity and storage vs interchangeable replicas.
 - Job vs CronJob: one-off vs scheduled.
 - DaemonSet vs Deployment: one per node vs a chosen replica count.
+
+---
+
+Prev: [Kubernetes architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

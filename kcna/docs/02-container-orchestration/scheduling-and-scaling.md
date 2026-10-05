@@ -39,3 +39,8 @@ Taint effects: `NoSchedule` (new pods rejected), `PreferNoSchedule` (avoided if 
 | KEDA | Replicas, including to zero | External events such as queue length |
 
 Do not run HPA and VPA on the same resource metric at once.
+
+---
+
+Prev: [Runtimes, networking and interfaces](runtimes-networking-interfaces.md) · Next: [Security basics](security-basics.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

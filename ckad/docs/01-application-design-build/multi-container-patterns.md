@@ -31,7 +31,7 @@ spec:
       readOnly: true
   volumes:
   - name: logs
-    emptyDir: {}
+    emptyDir:
 ```
 
 nginx writes `access.log` to `/var/log/nginx`; the sidecar reads it through the shared `emptyDir`.
@@ -79,7 +79,7 @@ spec:
       mountPath: /var/log/app
   volumes:
   - name: logs
-    emptyDir: {}
+    emptyDir:
 ```
 
 Native sidecars are established in current Kubernetes releases. Check the feature state for the cluster version in use.
@@ -134,3 +134,8 @@ kubectl logs <pod> -c <container>
 kubectl describe pod <pod> | grep -A6 'Init Containers'
 kubectl exec <pod> -c <container> -- ls /shared
 ```
+
+---
+
+Next: [Jobs and CronJobs](jobs-and-cronjobs.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -28,3 +28,7 @@ The curriculum also lists Helm and Kustomize for installing cluster components, 
 - The Kubernetes version the exam runs. Topics target current stable releases; check the version before exam day.
 - Commands and YAML were written from documented behaviour and have not all been executed on a live cluster.
 - Curriculum v1.35 is the version reviewed.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../LICENSE)</sub>

@@ -138,3 +138,8 @@ kubectl get secrets -A -o json | kubectl replace -f -
 head -c 32 /dev/urandom | base64
 grep encryption-provider-config /etc/kubernetes/manifests/kube-apiserver.yaml
 ```
+
+---
+
+Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes](runtime-sandboxes.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

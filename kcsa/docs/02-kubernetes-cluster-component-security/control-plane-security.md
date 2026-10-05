@@ -37,3 +37,8 @@ The old `--insecure-port` flag was removed from the API server; older guidance t
 ## Audit logging
 
 The API server records requests according to an audit policy. Levels, from least to most detail: `None`, `Metadata`, `Request`, `RequestResponse`. Logs answer who, what, when and the result. Log secret reads and RBAC changes at a useful level; log full request bodies only where needed, since they may contain secrets.
+
+---
+
+Prev: [The 4Cs](../01-overview-cloud-native-security/four-cs-and-shared-responsibility.md) · Next: [etcd and node security](etcd-and-node-security.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

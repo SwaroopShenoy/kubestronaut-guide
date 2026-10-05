@@ -29,3 +29,8 @@ Anonymous authentication should be disabled on the API server and kubelet unless
 - **Network segmentation:** default-deny NetworkPolicy per namespace; allow only the flows the application needs.
 - **Node segmentation:** taints and dedicated node pools for sensitive or untrusted workloads.
 - **Control plane segmentation:** the API server, etcd and nodes on separate network paths where possible.
+
+---
+
+Prev: [Secrets](secrets.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

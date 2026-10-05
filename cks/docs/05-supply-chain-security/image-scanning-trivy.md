@@ -115,3 +115,8 @@ trivy image --ignorefile .trivyignore <image>
 trivy config <dir>
 trivy image --format cyclonedx -o sbom.json <image>
 ```
+
+---
+
+Prev: [Runtime sandboxes](../04-microservice-vulnerabilities/runtime-sandboxes.md) · Next: [Image signing with Cosign](image-signing-cosign.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -109,3 +109,8 @@ Common failures:
 - Matching Deployments and writing the Rego against `spec.containers` instead of `spec.template.spec.containers`.
 - Forgetting `excludedNamespaces`, which can block the cluster's own components.
 - Shipping `deny` before running `dryrun` against existing workloads.
+
+---
+
+Prev: [Rego basics](rego-basics.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

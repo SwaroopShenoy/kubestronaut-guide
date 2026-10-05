@@ -25,3 +25,8 @@ Official curriculum topics covered here: cloud native ecosystem and principles, 
 - Portability across clouds and on-premises environments.
 - Automation and self-healing.
 - Observability built in, not added later.
+
+---
+
+Prev: [Observability](observability.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

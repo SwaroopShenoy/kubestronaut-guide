@@ -22,7 +22,8 @@ spec:
       allowPrivilegeEscalation: false
       readOnlyRootFilesystem: true
       capabilities:
-        drop: ["ALL"]
+        drop:
+        - ALL
         add: ["NET_BIND_SERVICE"]   # only if binding a port below 1024
 ```
 
@@ -118,3 +119,8 @@ kubectl create quota <n> --hard=pods=<n>,requests.cpu=<c>
 kubectl describe quota <n>
 kubectl exec <pod> -- id
 ```
+
+---
+
+Prev: [ConfigMaps and Secrets](configmaps-and-secrets.md) · Next: [ServiceAccounts and RBAC](serviceaccounts-and-rbac.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

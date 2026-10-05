@@ -115,3 +115,8 @@ kubectl get validatingadmissionpolicy,validatingadmissionpolicybinding
 kubectl apply --dry-run=server -f <manifest>
 kubectl get pods -n kube-system | grep kube-apiserver
 ```
+
+---
+
+Prev: [Image signing with Cosign](image-signing-cosign.md) · Next: [Base images and Dockerfiles](base-images-and-dockerfiles.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

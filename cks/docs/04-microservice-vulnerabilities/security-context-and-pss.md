@@ -31,13 +31,14 @@ spec:
       allowPrivilegeEscalation: false
       readOnlyRootFilesystem: true
       capabilities:
-        drop: ["ALL"]
+        drop:
+        - ALL
     volumeMounts:
     - name: tmp
       mountPath: /tmp
   volumes:
   - name: tmp
-    emptyDir: {}
+    emptyDir:
 ```
 
 Field reference:
@@ -140,8 +141,8 @@ Typical PSA failures and the field to add:
 |---|---|
 | `runAsNonRoot != true` | `runAsNonRoot: true` plus `runAsUser` |
 | `allowPrivilegeEscalation != false` | container `allowPrivilegeEscalation: false` |
-| `unrestricted capabilities` | `capabilities: {drop: [ALL]}` |
-| `seccompProfile` | pod `seccompProfile: {type: RuntimeDefault}` |
+| `unrestricted capabilities` | `capabilities.drop: ["ALL"]` |
+| `seccompProfile` | pod `seccompProfile.type: RuntimeDefault` |
 | `restricted volume types` (hostPath) | replace with `emptyDir` or a PVC |
 
 Patch in place:
@@ -154,12 +155,15 @@ spec:
       securityContext:
         runAsNonRoot: true
         runAsUser: 10001
-        seccompProfile: {type: RuntimeDefault}
+        seccompProfile:
+          type: RuntimeDefault
       containers:
       - name: app
         securityContext:
           allowPrivilegeEscalation: false
-          capabilities: {drop: ["ALL"]}
+          capabilities:
+            drop:
+            - ALL
 '
 ```
 
@@ -177,3 +181,8 @@ kubectl label ns <ns> pod-security.kubernetes.io/enforce=restricted
 kubectl exec <pod> -- id
 kubectl get pod <pod> -o jsonpath='{.spec.securityContext}{"\n"}'
 ```
+
+---
+
+Prev: [AppArmor and seccomp](../03-system-hardening/apparmor-and-seccomp.md) · Next: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

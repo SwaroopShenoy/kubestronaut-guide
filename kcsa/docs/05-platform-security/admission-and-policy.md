@@ -33,3 +33,8 @@ Policy engines let you write rules such as "every pod must set `runAsNonRoot`" o
 ## Fail open vs fail closed
 
 If a webhook is unreachable, `failurePolicy: Fail` rejects requests (fail closed) and `Ignore` allows them (fail open). For security policy, fail closed is the safer default, with the tradeoff that a broken webhook can block deployments.
+
+---
+
+Prev: [Supply chain and images](supply-chain-and-images.md) · Next: [Runtime security](runtime-security.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

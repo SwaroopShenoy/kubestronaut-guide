@@ -41,3 +41,8 @@ Assume one control will fail. Stack several:
 ## Zero trust in Kubernetes
 
 Verify every request (authenticate every identity), grant least privilege, and do not assume the network is safe. In practice: strong identities for workloads, RBAC, NetworkPolicy default-deny, and mutual TLS where a mesh provides it.
+
+---
+
+Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

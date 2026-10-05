@@ -48,3 +48,8 @@ A single entry point for clients: routing, authentication, rate limiting and pro
 ## Autoscaling
 
 Covered in [scheduling and scaling](../02-container-orchestration/scheduling-and-scaling.md): HPA, VPA, Cluster Autoscaler, KEDA.
+
+---
+
+Prev: [Packaging with Helm and Kustomize](../03-cloud-native-application-delivery/packaging-helm-kustomize.md) · Next: [Observability](observability.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

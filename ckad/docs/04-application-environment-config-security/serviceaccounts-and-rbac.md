@@ -71,3 +71,8 @@ kubectl create serviceaccount <n>
 kubectl create rolebinding <n> --role=<r> --serviceaccount=<ns>:<sa>
 kubectl auth can-i <verb> <resource> --as=system:serviceaccount:<ns>:<sa>
 ```
+
+---
+
+Prev: [SecurityContext, quotas and limits](security-context-quotas-limits.md) · Next: [Services, NetworkPolicy and Ingress](../05-services-networking/services-networking.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

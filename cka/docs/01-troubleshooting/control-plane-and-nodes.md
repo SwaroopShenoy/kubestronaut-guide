@@ -168,3 +168,8 @@ sudo journalctl -u kubelet -n 100 --no-pager
 kubectl get --raw /readyz?verbose
 kubectl drain <node> --ignore-daemonsets --delete-emptydir-data && kubectl uncordon <node>
 ```
+
+---
+
+Prev: [Troubleshooting method](troubleshooting-method.md) · Next: [Services, DNS and networking](services-dns-and-networking.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

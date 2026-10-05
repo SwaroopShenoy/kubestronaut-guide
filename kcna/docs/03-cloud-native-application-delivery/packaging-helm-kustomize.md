@@ -33,3 +33,8 @@ Use Helm when you need a packaged, parameterized product. Use Kustomize when you
 | Version and share your own app with parameters | Helm |
 | Per-environment differences in your own manifests | Kustomize |
 | GitOps with either | Both work with Argo CD and Flux |
+
+---
+
+Prev: [CI/CD and GitOps](cicd-and-gitops.md) · Next: [Principles and patterns](../04-cloud-native-architecture/principles-and-patterns.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

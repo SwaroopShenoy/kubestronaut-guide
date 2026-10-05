@@ -36,3 +36,7 @@ The CNCF certification page checked on the same date lists Cluster Setup at 10% 
 - Passing score, number of tasks, exam duration, allowed documentation, and the Kubernetes version the exam runs.
 - Commands and YAML in this guide were written from documented behaviour. They have not all been executed on a live cluster.
 - The curriculum version used is v1.34. Newer versions were not reviewed.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

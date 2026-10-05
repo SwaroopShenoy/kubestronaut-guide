@@ -85,3 +85,7 @@ docs/04-application-environment-.../     ConfigMaps, Secrets, security context, 
 docs/05-services-networking/             services, NetworkPolicy, ingress
 notes/                                   sources and verification
 ```
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../LICENSE)</sub>

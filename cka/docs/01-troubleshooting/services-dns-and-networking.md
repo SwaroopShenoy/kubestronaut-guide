@@ -96,3 +96,8 @@ kubectl run tmp --rm -it --image=busybox:1.36 --restart=Never -- nslookup <svc>
 kubectl logs -n kube-system -l k8s-app=kube-dns
 kubectl get netpol -A
 ```
+
+---
+
+Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [RBAC](../02-cluster-architecture-installation-config/rbac.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

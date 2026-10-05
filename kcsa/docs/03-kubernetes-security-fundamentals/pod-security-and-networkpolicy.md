@@ -40,3 +40,8 @@ Dangerous settings that Baseline blocks: `hostNetwork`, `hostPID`, `hostIPC`, `h
 - Default-deny first, then allow specific paths. Remember DNS if egress is restricted.
 
 Selectors: `podSelector`, `namespaceSelector`, `ipBlock`.
+
+---
+
+Prev: [RBAC and ServiceAccounts](rbac-and-serviceaccounts.md) · Next: [Secrets](secrets.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

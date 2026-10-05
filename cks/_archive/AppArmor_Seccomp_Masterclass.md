@@ -3,7 +3,7 @@
 
 ---
 
-# Section 1: AppArmor Fundamentals
+# Part 1: AppArmor Fundamentals
 
 ## What is AppArmor?
 
@@ -58,7 +58,7 @@
 
 ---
 
-# Section 2: Using AppArmor in Kubernetes
+# Part 2: Using AppArmor in Kubernetes
 
 ## Step 1: Load AppArmor Profile on Node
 
@@ -186,7 +186,7 @@ k exec -it pod/restricted-pod -- touch /tmp/test
 
 ---
 
-# Section 3: Seccomp Fundamentals
+# Part 3: Seccomp Fundamentals
 
 ## What is Seccomp?
 
@@ -212,7 +212,7 @@ k exec -it pod/restricted-pod -- touch /tmp/test
 
 ---
 
-# Section 4: Using Seccomp in Kubernetes
+# Part 4: Using Seccomp in Kubernetes
 
 ## Seccomp Profiles
 
@@ -336,7 +336,7 @@ spec:
 
 ---
 
-# Section 5: AppArmor + Seccomp Together
+# Part 5: AppArmor + Seccomp Together
 
 ## Defense in Depth
 
@@ -390,7 +390,7 @@ spec:
 
 ---
 
-# Section 6: Debugging
+# Part 6: Debugging
 
 ## AppArmor Issues
 

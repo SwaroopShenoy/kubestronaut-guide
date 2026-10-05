@@ -109,3 +109,8 @@ Common failures:
 kubectl describe pod <pod> | grep -A3 -i probe
 kubectl get pod <pod> -o jsonpath='{.status.containerStatuses[0].restartCount}{"\n"}'
 ```
+
+---
+
+Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and deprecations](logs-debugging-and-deprecations.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

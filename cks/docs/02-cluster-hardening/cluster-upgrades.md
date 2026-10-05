@@ -81,3 +81,8 @@ Re-run kube-bench after upgrades. Some remediations change between versions, and
 - Upgrading kubelet before the control plane.
 - Forgetting to `uncordon` the node, leaving it unschedulable.
 - Editing manifests in `/etc/kubernetes/manifests` and then running `kubeadm upgrade`, which can overwrite them. Keep a backup copy of any custom flags.
+
+---
+
+Prev: [Service accounts and API access](service-accounts-and-api-access.md) · Next: [Host hardening](../03-system-hardening/host-hardening.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

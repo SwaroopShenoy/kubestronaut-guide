@@ -35,3 +35,7 @@ Each section has an `_archive/` folder with the unedited notes used during prepa
 ## Requirements to note
 
 The CKS certification requires that you have passed the CKA at some point before you register. The CKA does not need to be active. This is stated on the CNCF CKS certification page.
+
+---
+
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](LICENSE)</sub>

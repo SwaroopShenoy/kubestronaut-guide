@@ -3,7 +3,7 @@
 
 ---
 
-# Section 1: The Problem (Why Image Signing Matters)
+# Part 1: The Problem (Why Image Signing Matters)
 
 ## Attack Scenario: Unsigned Image
 
@@ -25,7 +25,7 @@ Full cluster compromise
 
 ---
 
-# Section 2: Image Signing Concepts
+# Part 2: Image Signing Concepts
 
 ## What is an Image Signature?
 
@@ -54,7 +54,7 @@ Verify: Signature matches Image digest?
 
 ---
 
-# Section 3: Cosign Basics
+# Part 3: Cosign Basics
 
 ## What is Cosign?
 
@@ -170,7 +170,7 @@ chmod +x cosign-linux-amd64
 
 ---
 
-# Section 4: Enforce Signature Verification in Kubernetes
+# Part 4: Enforce Signature Verification in Kubernetes
 
 ## Option 1: Admission Controller (Simple)
 
@@ -258,7 +258,7 @@ k apply -f deployment.yaml
 
 ---
 
-# Section 5: Real Exam Scenarios
+# Part 5: Real Exam Scenarios
 
 ## Scenario 1: Sign Image and Verify Signature
 
@@ -380,7 +380,7 @@ EOF
 
 ---
 
-# Section 6: Debugging Signature Issues
+# Part 6: Debugging Signature Issues
 
 ## Signature Verification Fails
 
@@ -427,7 +427,7 @@ k apply -f policy.yaml
 
 ---
 
-# Section 7: Best Practices
+# Part 7: Best Practices
 
 ## 1. Sign ALL Images
 
@@ -485,7 +485,7 @@ validationFailureAction: audit  # Only log, don't block
 
 ---
 
-# Section 8: Cheat Sheet
+# Part 8: Cheat Sheet
 
 ## Quick Sign
 

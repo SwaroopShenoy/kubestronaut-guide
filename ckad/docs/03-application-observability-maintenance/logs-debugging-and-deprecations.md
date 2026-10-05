@@ -95,3 +95,8 @@ kubectl describe pod <pod> | sed -n '/Events:/,$p'
 kubectl top pods --sort-by=memory
 kubectl api-resources | grep -i <kind>
 ```
+
+---
+
+Prev: [Probes](probes.md) · Next: [ConfigMaps and Secrets](../04-application-environment-config-security/configmaps-and-secrets.md)  
+<sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>
