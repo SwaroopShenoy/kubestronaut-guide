@@ -1,6 +1,6 @@
 # ServiceAccounts and RBAC (Application View)
 
-Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Prev: [SecurityContext, quotas and limits](security-context-quotas-limits.md) · Next: [Services, NetworkPolicy and Ingress](../05-services-networking/services-networking.md)
+Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Prev: [SecurityContext, quotas and limits](security-context-quotas-limits.md) · Next: [Authentication, authorization and admission control](auth-and-admission.md)
 
 An application that talks to the Kubernetes API needs an identity. This topic explains ServiceAccounts, the permissions they receive, and how to fix the 403 errors that appear when those permissions are missing.
 
@@ -74,5 +74,5 @@ kubectl auth can-i <verb> <resource> --as=system:serviceaccount:<ns>:<sa>
 
 ---
 
-Prev: [SecurityContext, quotas and limits](security-context-quotas-limits.md) · Next: [Services, NetworkPolicy and Ingress](../05-services-networking/services-networking.md)  
+Prev: [SecurityContext, quotas and limits](security-context-quotas-limits.md) · Next: [Authentication, authorization and admission control](auth-and-admission.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

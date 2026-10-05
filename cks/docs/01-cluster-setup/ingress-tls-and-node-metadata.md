@@ -1,6 +1,6 @@
 # Ingress TLS, Node Metadata and Binary Verification
 
-Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
+Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)
 
 Three things define a cluster's outer edge: the encryption on incoming traffic, the metadata endpoint that cloud instances expose, and the binaries the cluster runs. This topic covers how to secure all three.
 
@@ -52,6 +52,31 @@ Pitfalls:
 - The backend port is the Service port, not 443 unless the Service listens on 443. TLS terminates at the ingress; the backend usually speaks plain HTTP.
 - Ingress TLS does not protect pod-to-pod traffic. For that you need mTLS or a sidecar, which is outside the core scope.
 - Ingress controllers vary. If a lab uses a specific controller, its `ingressClassName` must match.
+
+### NGINX Ingress annotations for TLS
+
+The NGINX Ingress Controller documentation is on the exam's allowed-resources list. Settings are mostly annotations on the Ingress:
+
+```yaml
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+```
+
+| Annotation | Effect |
+|---|---|
+| `ssl-redirect` | Redirects HTTP to HTTPS when TLS is configured (on by default when a `tls` section exists) |
+| `force-ssl-redirect` | Redirects to HTTPS even when TLS is terminated before the controller |
+| `backend-protocol: "HTTPS"` | Talks to the backend Service over TLS |
+
+Verify the certificate the controller serves:
+
+```bash
+curl -vk --resolve api.example.com:443:<ingress-ip> https://api.example.com/ 2>&1 | grep -E 'subject|issuer|expire'
+```
+
+If the controller serves its default "Kubernetes Ingress Controller Fake Certificate", the `secretName` is wrong or the Secret is in a different namespace from the Ingress.
 
 ## 2. Protecting cloud instance metadata
 
@@ -112,5 +137,5 @@ echo "$(cat X.sha256)  X" | sha256sum --check
 
 ---
 
-Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)  
+Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

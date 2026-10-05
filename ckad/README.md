@@ -25,7 +25,9 @@ Many CKAD topics are shared with CKA. Those link to the CKA docs rather than rep
 | Passing score | 66% (not stated on the official CNCF page; verify) |
 | Cost | $445, includes one free retake (CNCF page) |
 | Prerequisite | None |
-| Kubernetes version | Not verified; check the version the exam runs |
+| Kubernetes version | v1.37 (Linux Foundation CKA and CKAD tips page) |
+| Pre-installed tools | kubectl, yq, curl, wget and man pages on the SSH hosts |
+| Allowed documentation | kubernetes.io/docs, kubernetes.io/blog, helm.sh/docs (Linux Foundation resources-allowed page) |
 
 ## Domains and weights
 
@@ -36,7 +38,7 @@ Weights from the official CNCF exam curriculum PDF.
 | 1 | Application Design and Build | 20% | [Multi-container patterns](docs/01-application-design-build/multi-container-patterns.md) · [Jobs and CronJobs](docs/01-application-design-build/jobs-and-cronjobs.md) · [Container images](docs/01-application-design-build/container-images.md) · [Volumes and workload choice](docs/01-application-design-build/volumes-and-workload-choice.md) |
 | 2 | Application Deployment | 20% | [Deployment strategies](docs/02-application-deployment/deployment-strategies.md) · [Helm and Kustomize](../cka/docs/04-workloads-scheduling/helm-and-kustomize.md) (shared with CKA) |
 | 3 | Application Observability and Maintenance | 15% | [Probes](docs/03-application-observability-maintenance/probes.md) · [Logs, debugging and API deprecations](docs/03-application-observability-maintenance/logs-debugging-and-deprecations.md) |
-| 4 | Application Environment, Configuration and Security | 25% | [ConfigMaps and Secrets](docs/04-application-environment-config-security/configmaps-and-secrets.md) · [SecurityContext, quotas and limits](docs/04-application-environment-config-security/security-context-quotas-limits.md) · [ServiceAccounts and RBAC](docs/04-application-environment-config-security/serviceaccounts-and-rbac.md) · [Extending Kubernetes (CRDs, operators)](../cka/docs/02-cluster-architecture-installation-config/crds-and-operators.md) |
+| 4 | Application Environment, Configuration and Security | 25% | [ConfigMaps and Secrets](docs/04-application-environment-config-security/configmaps-and-secrets.md) · [SecurityContext, quotas and limits](docs/04-application-environment-config-security/security-context-quotas-limits.md) · [ServiceAccounts and RBAC](docs/04-application-environment-config-security/serviceaccounts-and-rbac.md) · [Extending Kubernetes (CRDs, operators)](../cka/docs/02-cluster-architecture-installation-config/crds-and-operators.md) · [Authentication, authorization and admission control](docs/04-application-environment-config-security/auth-and-admission.md) |
 | 5 | Services and Networking | 20% | [Services, NetworkPolicy and Ingress](docs/05-services-networking/services-networking.md) |
 
 Shared with CKA (read those docs too):

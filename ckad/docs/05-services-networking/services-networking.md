@@ -1,6 +1,6 @@
 # Services, NetworkPolicy and Ingress
 
-Up: [CKAD hub](../../README.md) · Domain 5 — Services and Networking (20%) · Prev: [ServiceAccounts and RBAC](../04-application-environment-config-security/serviceaccounts-and-rbac.md)
+Up: [CKAD hub](../../README.md) · Domain 5 — Services and Networking (20%) · Prev: [Authentication, authorization and admission control](../04-application-environment-config-security/auth-and-admission.md)
 
 An application is only useful if other services can reach it. This topic brings together services, NetworkPolicy and Ingress from the developer's side, with the checks that find a broken path.
 
@@ -78,5 +78,5 @@ kubectl get netpol -A
 
 ---
 
-Prev: [ServiceAccounts and RBAC](../04-application-environment-config-security/serviceaccounts-and-rbac.md)  
+Prev: [Authentication, authorization and admission control](../04-application-environment-config-security/auth-and-admission.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

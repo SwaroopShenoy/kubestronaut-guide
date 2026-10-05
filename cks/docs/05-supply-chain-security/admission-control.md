@@ -97,6 +97,60 @@ These are installed add-ons. The exam is more likely to test reading and adjusti
 - [OPA Gatekeeper](../reference/opa-gatekeeper.md) for ConstraintTemplate and Constraint structure
 - [Rego basics](../reference/rego-basics.md) for reading Rego
 
+## Permitted registries with a ValidatingAdmissionPolicy
+
+The curriculum lists "permitted registries" as a way to secure the supply chain. A built-in policy can reject images from any registry that is not approved:
+
+```yaml
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicy
+metadata:
+  name: permitted-registries
+spec:
+  failurePolicy: Fail
+  matchConstraints:
+    resourceRules:
+    - apiGroups:
+      - ""
+      apiVersions:
+      - v1
+      operations:
+      - CREATE
+      - UPDATE
+      resources:
+      - pods
+  validations:
+  - expression: >-
+      object.spec.containers.all(c, c.image.startsWith('registry.example.com/'))
+    message: "containers must use images from registry.example.com"
+  - expression: >-
+      !has(object.spec.initContainers) ||
+      object.spec.initContainers.all(c, c.image.startsWith('registry.example.com/'))
+    message: "init containers must use images from registry.example.com"
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicyBinding
+metadata:
+  name: permitted-registries-prod
+spec:
+  policyName: permitted-registries
+  validationActions:
+  - Deny
+  matchResources:
+    namespaceSelector:
+      matchLabels:
+        kubernetes.io/metadata.name: production
+```
+
+Test it:
+
+```bash
+kubectl run test --image=docker.io/library/nginx -n production      # rejected
+kubectl run test --image=registry.example.com/team/nginx -n production
+```
+
+Use `startsWith` with the trailing slash so that `registry.example.com.evil.net/` does not match. Pods created by Deployments are checked when the ReplicaSet creates them, so look at ReplicaSet events when a Deployment stays at zero replicas.
+
 ## Verifying signed images at admission
 
 Gatekeeper cannot verify image signatures by itself. Signature verification at admission is done by a verifier such as Kyverno's `verifyImages` rule, sigstore's policy-controller, or the ImagePolicyWebhook backend. See [Image signing with Cosign](image-signing-cosign.md) for the signing side.

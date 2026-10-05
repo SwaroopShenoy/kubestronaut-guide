@@ -1,6 +1,6 @@
 # RBAC Hardening
 
-Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [Ingress, TLS and node metadata](../01-cluster-setup/ingress-tls-and-node-metadata.md) · Next: [Service accounts and API access](service-accounts-and-api-access.md)
+Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [etcd hardening](../01-cluster-setup/etcd-hardening.md) · Next: [Service accounts and API access](service-accounts-and-api-access.md)
 
 Permissions accumulate quietly. This topic shows how to find the over-broad bindings, recognise the verbs that give away the cluster, and tighten access without breaking the workloads that depend on it.
 
@@ -136,5 +136,5 @@ kubectl get rolebindings,clusterrolebindings -A -o wide
 
 ---
 
-Prev: [Ingress, TLS and node metadata](../01-cluster-setup/ingress-tls-and-node-metadata.md) · Next: [Service accounts and API access](service-accounts-and-api-access.md)  
+Prev: [etcd hardening](../01-cluster-setup/etcd-hardening.md) · Next: [Service accounts and API access](service-accounts-and-api-access.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

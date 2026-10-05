@@ -1,6 +1,6 @@
 # Services and DNS
 
-Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Next: [NetworkPolicy](network-policy.md)
+Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Prev: [Extension interfaces](../02-cluster-architecture-installation-config/extension-interfaces.md) · Next: [NetworkPolicy](network-policy.md)
 
 Pods come and go, and their addresses change with them. Services give them a stable name and address, and cluster DNS makes those names usable. This topic explains how the two work together.
 
@@ -63,6 +63,74 @@ kubectl run dns-test --rm -it --image=busybox:1.36 --restart=Never -- nslookup w
 
 CoreDNS config: ConfigMap `coredns` in `kube-system`.
 
+## CoreDNS configuration
+
+CoreDNS runs as a Deployment in `kube-system`, and its configuration is the `Corefile` in the `coredns` ConfigMap:
+
+```bash
+kubectl -n kube-system get configmap coredns -o yaml
+```
+
+The default Corefile on a kubeadm cluster looks like this:
+
+```
+.:53 {
+    errors
+    health {
+       lameduck 5s
+    }
+    ready
+    kubernetes cluster.local in-addr.arpa ip6.arpa {
+       pods insecure
+       fallthrough in-addr.arpa ip6.arpa
+       ttl 30
+    }
+    prometheus :9153
+    forward . /etc/resolv.conf
+    cache 30
+    loop
+    reload
+    loadbalance
+}
+```
+
+| Plugin | Role |
+|---|---|
+| `kubernetes` | Answers cluster names (`*.svc.cluster.local`) |
+| `forward` | Sends other names to the upstream resolvers |
+| `cache` | Caches answers for the given seconds |
+| `loop` | Stops CoreDNS if it detects a forwarding loop |
+| `reload` | Reloads the Corefile when the ConfigMap changes |
+
+To send one domain to a specific resolver, add a server block:
+
+```
+example.internal:53 {
+    errors
+    cache 30
+    forward . 10.0.0.2
+}
+```
+
+The `reload` plugin picks up changes within a minute or two. To apply them immediately:
+
+```bash
+kubectl -n kube-system rollout restart deployment coredns
+```
+
+If CoreDNS crashes with a loop error, the node's `/etc/resolv.conf` probably points back at the cluster DNS; set an upstream that is not CoreDNS.
+
+Per-pod DNS behaviour is set with `dnsPolicy` (default `ClusterFirst`) and `dnsConfig`:
+
+```yaml
+spec:
+  dnsPolicy: ClusterFirst
+  dnsConfig:
+    options:
+    - name: ndots
+      value: "2"
+```
+
 ## Headless services and StatefulSets
 
 A StatefulSet with a headless Service gives each pod a stable name: `<pod>.<svc>.<namespace>.svc.cluster.local`.
@@ -97,5 +165,5 @@ kubectl run t --rm -it --image=busybox:1.36 --restart=Never -- nslookup <svc>
 
 ---
 
-Next: [NetworkPolicy](network-policy.md)  
+Prev: [Extension interfaces](../02-cluster-architecture-installation-config/extension-interfaces.md) · Next: [NetworkPolicy](network-policy.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

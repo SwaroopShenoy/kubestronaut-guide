@@ -1,6 +1,6 @@
 # CRDs and Operators
 
-Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Services and DNS](../03-services-networking/services-and-dns.md)
+Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Highly available control plane](high-availability-control-plane.md)
 
 Kubernetes can learn new kinds of objects. This topic shows how a custom resource definition adds a new type to the API, and how an operator gives that type a living controller.
 
@@ -94,5 +94,5 @@ kubectl explain <plural>.spec
 
 ---
 
-Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Services and DNS](../03-services-networking/services-and-dns.md)  
+Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Highly available control plane](high-availability-control-plane.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

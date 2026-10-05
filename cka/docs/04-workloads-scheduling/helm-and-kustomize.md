@@ -1,6 +1,6 @@
 # Helm and Kustomize
 
-Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Scheduling](scheduling.md) · Next: [Storage](../05-storage/storage.md)
+Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Scheduling](scheduling.md) · Next: [Configuration, autoscaling and self-healing](configuration-and-autoscaling.md)
 
 Applications are rarely one file. Helm packages them as charts, and Kustomize layers changes over a shared base. This topic covers both tools and when each one fits.
 
@@ -111,5 +111,5 @@ kubectl kustomize <dir>
 
 ---
 
-Prev: [Scheduling](scheduling.md) · Next: [Storage](../05-storage/storage.md)  
+Prev: [Scheduling](scheduling.md) · Next: [Configuration, autoscaling and self-healing](configuration-and-autoscaling.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -25,7 +25,10 @@ Last reviewed: 2026-10-05 against the official CNCF curriculum. See [sources and
 | Prerequisite | CKA passed at any time before registering (CKA need not be active) |
 | Validity | 2 years |
 | Passing score | Not stated on the official pages checked; verify |
-| Task count | Not stated on the official pages checked; verify |
+| Task count | 15–20 performance-based tasks (Linux Foundation CKS instructions page) |
+| Kubernetes version | v1.35 (Linux Foundation CKS instructions page) |
+| Pre-installed tools | kubectl, yq, curl, wget and man pages on the SSH hosts |
+| Allowed documentation | kubernetes.io/docs and blog, falco.org/docs, kubernetes-sigs.github.io/bom, etcd.io/docs, the NGINX Ingress Controller configuration guide, docs.cilium.io, istio.io/latest/docs (Linux Foundation resources-allowed page) |
 
 ## Domains and weights
 
@@ -33,12 +36,12 @@ Weights are from the official CNCF CKS exam curriculum PDF (v1.34). The CNCF cer
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
-| 1 | Cluster Setup | 15% | [Network policy](docs/01-cluster-setup/network-policy.md) · [CIS benchmark and kube-bench](docs/01-cluster-setup/cis-benchmark-kube-bench.md) · [Ingress TLS, node metadata, binary verification](docs/01-cluster-setup/ingress-tls-and-node-metadata.md) |
+| 1 | Cluster Setup | 15% | [Network policy](docs/01-cluster-setup/network-policy.md) · [CIS benchmark and kube-bench](docs/01-cluster-setup/cis-benchmark-kube-bench.md) · [Ingress TLS, node metadata, binary verification](docs/01-cluster-setup/ingress-tls-and-node-metadata.md) · [etcd hardening](docs/01-cluster-setup/etcd-hardening.md) |
 | 2 | Cluster Hardening | 15% | [RBAC](docs/02-cluster-hardening/rbac.md) · [Service accounts and API access](docs/02-cluster-hardening/service-accounts-and-api-access.md) · [Cluster upgrades](docs/02-cluster-hardening/cluster-upgrades.md) |
 | 3 | System Hardening | 10% | [Host hardening](docs/03-system-hardening/host-hardening.md) · [AppArmor and seccomp](docs/03-system-hardening/apparmor-and-seccomp.md) |
 | 4 | Minimize Microservice Vulnerabilities | 20% | [Security context and PSS](docs/04-microservice-vulnerabilities/security-context-and-pss.md) · [Secrets and encryption at rest](docs/04-microservice-vulnerabilities/secrets-and-encryption-at-rest.md) · [Runtime sandboxes and isolation](docs/04-microservice-vulnerabilities/runtime-sandboxes.md) · [Pod-to-pod encryption (Cilium, Istio)](docs/04-microservice-vulnerabilities/pod-to-pod-encryption.md) |
-| 5 | Supply Chain Security | 20% | [Image scanning with Trivy](docs/05-supply-chain-security/image-scanning-trivy.md) · [Image signing with Cosign](docs/05-supply-chain-security/image-signing-cosign.md) · [Admission control](docs/05-supply-chain-security/admission-control.md) · [Base images and Dockerfiles](docs/05-supply-chain-security/base-images-and-dockerfiles.md) · [Static analysis (Kubesec, KubeLinter)](docs/05-supply-chain-security/static-analysis.md) |
-| 6 | Monitoring, Logging and Runtime Security | 20% | [Audit logging](docs/06-monitoring-logging-runtime/audit-logging.md) · [Falco](docs/06-monitoring-logging-runtime/falco.md) · [jq for audit data](docs/06-monitoring-logging-runtime/jq-for-audit-data.md) |
+| 5 | Supply Chain Security | 20% | [Image scanning with Trivy](docs/05-supply-chain-security/image-scanning-trivy.md) · [Image signing with Cosign](docs/05-supply-chain-security/image-signing-cosign.md) · [Admission control](docs/05-supply-chain-security/admission-control.md) · [Base images and Dockerfiles](docs/05-supply-chain-security/base-images-and-dockerfiles.md) · [Static analysis (Kubesec, KubeLinter)](docs/05-supply-chain-security/static-analysis.md) · [SBOM and the supply chain](docs/05-supply-chain-security/sbom-and-supply-chain.md) |
+| 6 | Monitoring, Logging and Runtime Security | 20% | [Audit logging](docs/06-monitoring-logging-runtime/audit-logging.md) · [Falco](docs/06-monitoring-logging-runtime/falco.md) · [jq for audit data](docs/06-monitoring-logging-runtime/jq-for-audit-data.md) · [Container immutability at runtime](docs/06-monitoring-logging-runtime/runtime-immutability.md) |
 
 Supporting references (read as needed, not separate exam domains):
 
@@ -47,12 +50,13 @@ Supporting references (read as needed, not separate exam domains):
 
 ## Scope summary
 
-The official curriculum sets the scope for Rego, seccomp and AppArmor:
+What the official sources say about rules and profiles:
 
-- **Use** seccomp and AppArmor profiles on pods, and confirm they are loaded and working: expected.
-- **Author** them from scratch, or write Rego from scratch: not expected under exam time. Read and adapt them.
+- **seccomp and AppArmor:** the curriculum says to "appropriately use" them. It does not say profiles must be written from scratch.
+- **Rego and OPA:** neither the curriculum nor the allowed-resources list mentions them.
+- **Falco:** the curriculum says to "detect" threats, and the allowed-resources list includes the Falco documentation, so Falco is used. How far tasks go in editing rules is not stated.
 
-Pod-to-pod encryption with Cilium or Istio is named in the official curriculum and is covered. PodSecurityPolicy was removed in Kubernetes 1.25 and is not studied. Kyverno and Gatekeeper are named as tools only in the community guides; their internals are reference material.
+Pod-to-pod encryption with Cilium or Istio, SBOMs, and static analysis are named in the curriculum and are covered. PodSecurityPolicy was removed in Kubernetes 1.25 and is not studied. Kyverno and Gatekeeper are not named in the curriculum; they are kept as reference material.
 
 ## Exam habits
 
@@ -75,7 +79,7 @@ Pod-to-pod encryption with Cilium or Istio is named in the official curriculum a
 - Trivy severity gating with `--exit-code 1`
 - Cosign: sign and verify by digest
 - AppArmor and seccomp: apply, load, verify
-- Falco: check running, read an alert, edit a rule in `rules.d/`
+- Falco: check it is running, read an alert, and know where rules live
 - Upgrade order: control plane, then nodes
 
 ## Common mistakes (summary)

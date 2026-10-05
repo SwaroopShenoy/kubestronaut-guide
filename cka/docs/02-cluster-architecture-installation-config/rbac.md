@@ -1,6 +1,6 @@
 # RBAC
 
-Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)
+Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [Monitoring and logs](../01-troubleshooting/monitoring-and-logs.md) · Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)
 
 Role-based access control decides who can do what, and the answer is always a set of bindings. This topic shows how roles and bindings work together, and how to prove an identity can or cannot act.
 
@@ -76,5 +76,5 @@ kubectl auth can-i <verb> <resource> --as=<subject> -n <ns>
 
 ---
 
-Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)  
+Prev: [Monitoring and logs](../01-troubleshooting/monitoring-and-logs.md) · Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

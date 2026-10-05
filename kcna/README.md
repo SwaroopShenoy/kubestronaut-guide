@@ -31,7 +31,7 @@ Weights from the official CNCF exam curriculum PDF.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
-| 1 | Kubernetes Fundamentals | 44% | [Architecture](docs/01-kubernetes-fundamentals/kubernetes-architecture.md) · [API objects and workloads](docs/01-kubernetes-fundamentals/api-objects-and-workloads.md) · [Services, storage and configuration](docs/01-kubernetes-fundamentals/services-storage-config.md) |
+| 1 | Kubernetes Fundamentals | 44% | [Architecture](docs/01-kubernetes-fundamentals/kubernetes-architecture.md) · [API objects and workloads](docs/01-kubernetes-fundamentals/api-objects-and-workloads.md) · [Services, storage and configuration](docs/01-kubernetes-fundamentals/services-storage-config.md) · [Containerization and administration](docs/01-kubernetes-fundamentals/containerization-and-administration.md) |
 | 2 | Container Orchestration | 28% | [Runtimes, networking and interfaces](docs/02-container-orchestration/runtimes-networking-interfaces.md) · [Scheduling and scaling](docs/02-container-orchestration/scheduling-and-scaling.md) · [Security basics](docs/02-container-orchestration/security-basics.md) · [Troubleshooting and debugging](docs/02-container-orchestration/troubleshooting-and-debugging.md) |
 | 3 | Cloud Native Application Delivery | 16% | [CI/CD and GitOps](docs/03-cloud-native-application-delivery/cicd-and-gitops.md) · [Packaging with Helm and Kustomize](docs/03-cloud-native-application-delivery/packaging-helm-kustomize.md) |
 | 4 | Cloud Native Architecture | 12% | [Principles and patterns](docs/04-cloud-native-architecture/principles-and-patterns.md) · [Observability](docs/04-cloud-native-architecture/observability.md) · [Ecosystem and community](docs/04-cloud-native-architecture/cloud-native-community.md) |

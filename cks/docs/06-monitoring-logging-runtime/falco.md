@@ -1,14 +1,14 @@
 # Falco (Runtime Threat Detection)
 
-Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Audit logging](audit-logging.md) · Next: [jq for audit data](jq-for-audit-data.md)
+Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Audit logging](audit-logging.md) · Next: [Container immutability at runtime](runtime-immutability.md)
 
 Some attacks happen inside a running container, where no scanner looks. This topic covers Falco, which watches system calls and raises alerts, and how to read what it reports.
 
 ## Exam scope
 
-**In scope:** confirming Falco is running and producing alerts, and reading an alert. Understanding rule structure is useful for reading.
+**In scope:** confirming Falco is running and producing alerts, and reading an alert. The Falco documentation (falco.org/docs) is on the exam's allowed-resources list, so Falco is used on the exam.
 
-**Not expected:** writing or editing Falco rules from scratch. The rule examples here are for reading.
+**Unclear:** how far tasks go in editing rules. The curriculum says "detect" and does not mention rule authoring. Reading and modifying an existing rule (changing a condition, an output or a priority) is plausible and is covered below. Writing a large rule set from scratch is not described anywhere in the curriculum.
 
 Install Falco from the official chart or package at falco.org and follow the install documentation for the version you run.
 
@@ -140,5 +140,5 @@ ls /etc/falco/rules.d/
 
 ---
 
-Prev: [Audit logging](audit-logging.md) · Next: [jq for audit data](jq-for-audit-data.md)  
+Prev: [Audit logging](audit-logging.md) · Next: [Container immutability at runtime](runtime-immutability.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

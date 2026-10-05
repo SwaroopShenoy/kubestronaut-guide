@@ -29,6 +29,18 @@ Exam tip: the order matters when a question asks "from the foundation up". The d
 
 On managed Kubernetes services the split moves; the control plane is partly theirs. You still own what runs in your namespaces.
 
+## Cloud provider and infrastructure security
+
+The curriculum lists this as its own topic. The cloud layer underpins everything above it:
+
+- **Identity and access:** least-privilege roles for people and machines; no long-lived administrator keys; multi-factor authentication for human access.
+- **Network:** private subnets for nodes, restricted security groups, private or allow-listed API server endpoints, and no public access to etcd or the kubelet.
+- **Instance metadata:** restrict access from pods to the metadata endpoint, and prefer the hardened metadata version where the provider offers one.
+- **Data:** encrypted disks and snapshots, with keys managed by the provider's key service.
+- **Logging:** provider audit logs enabled and stored where an attacker on a node cannot erase them.
+- **Images and nodes:** hardened, minimal node images that are patched or replaced regularly.
+- **Managed services:** know which parts the provider operates (often the control plane) and which remain yours (workloads, RBAC, network policy).
+
 ## Defense in depth
 
 Assume one control will fail. Stack several:

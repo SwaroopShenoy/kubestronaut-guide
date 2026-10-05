@@ -1,6 +1,6 @@
 # Services, Storage and Configuration
 
-Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Runtimes, networking and interfaces](../02-container-orchestration/runtimes-networking-interfaces.md)
+Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Containerization and administration basics](containerization-and-administration.md)
 
 Applications need to be reached, need somewhere to keep data, and need configuration. This topic covers Services, volumes and storage objects, and ConfigMaps and Secrets.
 
@@ -43,5 +43,5 @@ Secret types include Opaque (generic), `kubernetes.io/tls`, and `kubernetes.io/d
 
 ---
 
-Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Runtimes, networking and interfaces](../02-container-orchestration/runtimes-networking-interfaces.md)  
+Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Containerization and administration basics](containerization-and-administration.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

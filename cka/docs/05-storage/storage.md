@@ -1,6 +1,6 @@
 # Storage
 
-Up: [CKA hub](../../README.md) · Domain 5 — Storage (10%) · Prev: [Helm and Kustomize](../04-workloads-scheduling/helm-and-kustomize.md)
+Up: [CKA hub](../../README.md) · Domain 5 — Storage (10%) · Prev: [Configuration, autoscaling and self-healing](../04-workloads-scheduling/configuration-and-autoscaling.md)
 
 Containers forget everything when they stop, so data needs somewhere to live. This topic covers how Kubernetes describes storage with volumes, persistent volumes, claims and storage classes.
 
@@ -132,5 +132,5 @@ kubectl patch pvc <name> -p '{"spec":{"resources":{"requests":{"storage":"<size>
 
 ---
 
-Prev: [Helm and Kustomize](../04-workloads-scheduling/helm-and-kustomize.md)  
+Prev: [Configuration, autoscaling and self-healing](../04-workloads-scheduling/configuration-and-autoscaling.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

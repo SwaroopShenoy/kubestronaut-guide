@@ -1,6 +1,6 @@
 # Services, DNS and Networking Troubleshooting
 
-Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [RBAC](../02-cluster-architecture-installation-config/rbac.md)
+Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [Monitoring and logs](monitoring-and-logs.md)
 
 A Service that routes nowhere looks healthy from every dashboard. This topic shows how to find the broken link between a name, a Service, its endpoints and the network path behind them.
 
@@ -99,5 +99,5 @@ kubectl get netpol -A
 
 ---
 
-Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [RBAC](../02-cluster-architecture-installation-config/rbac.md)  
+Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [Monitoring and logs](monitoring-and-logs.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

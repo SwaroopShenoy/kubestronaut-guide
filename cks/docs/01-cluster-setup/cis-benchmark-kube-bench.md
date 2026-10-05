@@ -113,6 +113,41 @@ Verify the read-only port is closed:
 sudo ss -tlnp | grep 10255 || echo "10255 closed"
 ```
 
+## Authorization modes
+
+```bash
+grep authorization-mode /etc/kubernetes/manifests/kube-apiserver.yaml
+```
+
+| Mode | Purpose |
+|---|---|
+| `Node` | Lets each kubelet read only the objects for pods on its own node |
+| `RBAC` | Role-based access control for users and workloads |
+| `Webhook` | Delegates the decision to an external service |
+| `AlwaysAllow` | Allows everything; never acceptable on a real cluster |
+| `AlwaysDeny` | Denies everything; used only for testing |
+
+A typical secure setting is `--authorization-mode=Node,RBAC`.
+
+## Kubelet settings that benchmarks flag
+
+| Setting (config file field) | Secure value |
+|---|---|
+| `authentication.anonymous.enabled` | `false` |
+| `authorization.mode` | `Webhook` |
+| `readOnlyPort` | `0` |
+| `protectKernelDefaults` | `true` |
+| `rotateCertificates` | `true` |
+
+Older flag forms (`--anonymous-auth`, `--authorization-mode`, `--read-only-port`) appear in older material; on kubeadm clusters the config file is the normal place to set them. A kubelet configured with `--allow-privileged` is using a flag that has been removed in current releases.
+
+Check what the running kubelet uses:
+
+```bash
+ps -ef | grep kubelet | grep -o -- '--config=[^ ]*'
+sudo grep -E 'anonymous|mode|readOnlyPort|protectKernelDefaults|rotateCertificates' /var/lib/kubelet/config.yaml
+```
+
 ## Workflow for an exam task
 
 1. `kube-bench run --targets <target>` and capture FAILs.

@@ -1,6 +1,6 @@
 # jq for Audit and JSON Data
 
-Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Falco](falco.md) · Next: [Rego basics](../reference/rego-basics.md)
+Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Container immutability at runtime](runtime-immutability.md) · Next: [Rego basics](../reference/rego-basics.md)
 
 Audit logs are structured JSON, and jq is the fastest way to ask them questions. This topic covers the filters and transforms that answer the common ones.
 
@@ -88,5 +88,5 @@ jq -r '[fields] | @csv' file
 
 ---
 
-Prev: [Falco](falco.md) · Next: [Rego basics](../reference/rego-basics.md)  
+Prev: [Container immutability at runtime](runtime-immutability.md) · Next: [Rego basics](../reference/rego-basics.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

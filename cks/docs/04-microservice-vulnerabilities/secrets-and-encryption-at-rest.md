@@ -120,6 +120,25 @@ Encrypted values begin with the provider prefix (for example `k8s:enc:aescbc:v1:
 
 Production clusters use a KMS plugin so the key lives outside the node. The CKS scope is the local provider above; know that KMS exists and why.
 
+### Other resources
+
+An EncryptionConfiguration can list more than Secrets. ConfigMaps are stored unencrypted in etcd by default. If they hold sensitive values, add them to the `resources` list or move those values to Secrets:
+
+```yaml
+resources:
+- resources:
+  - secrets
+  - configmaps
+  providers:
+  - aescbc:
+      keys:
+      - name: key1
+        secret: <base64 of 32 random bytes>
+  - identity: {}
+```
+
+Encrypting more resource types raises the cost of every read and write of those types, so list only what needs it.
+
 ## 4. Who can read Secrets
 
 RBAC verbs `get`, `list`, and `watch` on `secrets` all expose values. A `list` returns full objects with data. Use audit logging to track these reads. Note that many default audit policies log secret writes at high detail but only metadata for reads; add a rule for `get` and `list` on secrets if your task requires it.

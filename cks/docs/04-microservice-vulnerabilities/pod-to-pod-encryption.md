@@ -55,6 +55,51 @@ istioctl x describe pod <pod> -n shop        # shows mTLS status for the pod
 
 Pods in a namespace without injection cannot talk to strict mTLS workloads. Plan migration carefully.
 
+## Policy beyond Kubernetes NetworkPolicy
+
+Both tools offer policy objects that go further than the built-in NetworkPolicy, and both sets of documentation are on the exam's allowed-resources list.
+
+### Cilium network policy
+
+A CiliumNetworkPolicy can express explicit deny rules and DNS-name rules, which Kubernetes NetworkPolicy cannot:
+
+```yaml
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: deny-metadata
+  namespace: shop
+spec:
+  endpointSelector: {}
+  egressDeny:
+  - toCIDR:
+    - 169.254.169.254/32
+```
+
+### Istio authorization policy
+
+With mTLS in place, workloads have verifiable identities, so access can be limited by identity:
+
+```yaml
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: backend-from-frontend
+  namespace: shop
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        principals:
+        - cluster.local/ns/shop/sa/frontend
+```
+
+Once an ALLOW policy selects a workload, requests that match no rule are denied.
+
 ## Choosing
 
 | Need | Use |

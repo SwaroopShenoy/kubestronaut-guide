@@ -23,8 +23,9 @@ Certified Kubernetes Administrator — hub document. Start here; each domain lin
 | Passing score | 66% (not stated on the official CNCF page; verify) |
 | Cost | $445, includes one free retake (CNCF page) |
 | Prerequisite | None |
-| Kubernetes version | Not stated on the official pages. Topics target current stable releases; check the version the exam runs |
-| Allowed documentation | Not verified. Check the current exam resources page before exam day |
+| Kubernetes version | v1.35 (Linux Foundation CKA and CKAD tips page) |
+| Pre-installed tools | kubectl, yq, curl, wget and man pages on the SSH hosts |
+| Allowed documentation | kubernetes.io/docs, kubernetes.io/blog, helm.sh/docs, gateway-api.sigs.k8s.io (Linux Foundation resources-allowed page) |
 
 ## Domains and weights
 
@@ -32,10 +33,10 @@ Weights from the official CNCF exam curriculum PDF.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
-| 1 | Troubleshooting | 30% | [Troubleshooting method](docs/01-troubleshooting/troubleshooting-method.md) · [Control plane and nodes](docs/01-troubleshooting/control-plane-and-nodes.md) · [Services, DNS and networking](docs/01-troubleshooting/services-dns-and-networking.md) |
-| 2 | Cluster Architecture, Installation and Configuration | 25% | [RBAC](docs/02-cluster-architecture-installation-config/rbac.md) · [kubeadm install and upgrade](docs/02-cluster-architecture-installation-config/kubeadm-install-and-upgrade.md) · [Certificates and kubeconfig](docs/02-cluster-architecture-installation-config/certificates-and-kubeconfig.md) · [etcd backup and restore](docs/02-cluster-architecture-installation-config/etcd-backup-restore.md) · [CRDs and operators](docs/02-cluster-architecture-installation-config/crds-and-operators.md) · [Highly available control plane](docs/02-cluster-architecture-installation-config/high-availability-control-plane.md) |
+| 1 | Troubleshooting | 30% | [Troubleshooting method](docs/01-troubleshooting/troubleshooting-method.md) · [Control plane and nodes](docs/01-troubleshooting/control-plane-and-nodes.md) · [Services, DNS and networking](docs/01-troubleshooting/services-dns-and-networking.md) · [Monitoring and logs](docs/01-troubleshooting/monitoring-and-logs.md) |
+| 2 | Cluster Architecture, Installation and Configuration | 25% | [RBAC](docs/02-cluster-architecture-installation-config/rbac.md) · [kubeadm install and upgrade](docs/02-cluster-architecture-installation-config/kubeadm-install-and-upgrade.md) · [Certificates and kubeconfig](docs/02-cluster-architecture-installation-config/certificates-and-kubeconfig.md) · [etcd backup and restore](docs/02-cluster-architecture-installation-config/etcd-backup-restore.md) · [CRDs and operators](docs/02-cluster-architecture-installation-config/crds-and-operators.md) · [Highly available control plane](docs/02-cluster-architecture-installation-config/high-availability-control-plane.md) · [Extension interfaces (CNI, CSI, CRI)](docs/02-cluster-architecture-installation-config/extension-interfaces.md) |
 | 3 | Services and Networking | 20% | [Services and DNS](docs/03-services-networking/services-and-dns.md) · [NetworkPolicy](docs/03-services-networking/network-policy.md) · [Ingress and Gateway API](docs/03-services-networking/ingress-and-gateway-api.md) |
-| 4 | Workloads and Scheduling | 15% | [Deployments and scaling](docs/04-workloads-scheduling/deployments-and-scaling.md) · [Workload types](docs/04-workloads-scheduling/workload-types.md) · [Scheduling](docs/04-workloads-scheduling/scheduling.md) · [Helm and Kustomize](docs/04-workloads-scheduling/helm-and-kustomize.md) |
+| 4 | Workloads and Scheduling | 15% | [Deployments and scaling](docs/04-workloads-scheduling/deployments-and-scaling.md) · [Workload types](docs/04-workloads-scheduling/workload-types.md) · [Scheduling](docs/04-workloads-scheduling/scheduling.md) · [Helm and Kustomize](docs/04-workloads-scheduling/helm-and-kustomize.md) · [Configuration, autoscaling and self-healing](docs/04-workloads-scheduling/configuration-and-autoscaling.md) |
 | 5 | Storage | 10% | [Storage](docs/05-storage/storage.md) |
 
 Reference material (not a domain):
