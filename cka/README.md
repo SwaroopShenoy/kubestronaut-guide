@@ -1,10 +1,10 @@
-# Part III: CKA — Certified Kubernetes Administrator
+# Section III: CKA — Certified Kubernetes Administrator
 
-CKA is the hands-on administration exam. You run tasks on live clusters: fixing broken nodes and control-plane components, configuring access, networking workloads and storage, and installing and upgrading clusters. Troubleshooting carries the largest weight, so the chapters on diagnosis come first.
+CKA is the hands-on administration exam. You run tasks on live clusters: fixing broken nodes and control-plane components, configuring access, networking workloads and storage, and installing and upgrading clusters. Troubleshooting carries the largest weight, so the topics on diagnosis come first.
 
 > **Read first: status and limits**
 >
-> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This guide is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
@@ -23,7 +23,7 @@ Certified Kubernetes Administrator — hub document. Start here; each domain lin
 | Passing score | 66% (not stated on the official CNCF page; verify) |
 | Cost | $445, includes one free retake (CNCF page) |
 | Prerequisite | None |
-| Kubernetes version | Not stated on the official pages. Chapters target current stable releases; check the version the exam runs |
+| Kubernetes version | Not stated on the official pages. Topics target current stable releases; check the version the exam runs |
 | Allowed documentation | Not verified. Check the current exam resources page before exam day |
 
 ## Domains and weights

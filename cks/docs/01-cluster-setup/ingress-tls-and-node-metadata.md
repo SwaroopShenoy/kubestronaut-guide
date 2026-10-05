@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
 
-Three things define a cluster's outer edge: the encryption on incoming traffic, the metadata endpoint that cloud instances expose, and the binaries the cluster runs. This chapter covers how to secure all three.
+Three things define a cluster's outer edge: the encryption on incoming traffic, the metadata endpoint that cloud instances expose, and the binaries the cluster runs. This topic covers how to secure all three.
 
 ## 1. TLS on Ingress
 
@@ -100,7 +100,7 @@ echo "$(cat kubelet.sha256)  kubelet" | sha256sum --check
 
 If the check fails, do not run the binary. Repeat for `kube-apiserver`, `kube-controller-manager`, `kube-scheduler`, `kubectl`, and `kubeadm` as needed.
 
-The checksum file name and path are part of the release layout; if the URL 404s, look up the current layout in the Kubernetes install docs rather than guessing.
+The checksum file name and path are section of the release layout; if the URL 404s, look up the current layout in the Kubernetes install docs rather than guessing.
 
 ## Quick reference
 

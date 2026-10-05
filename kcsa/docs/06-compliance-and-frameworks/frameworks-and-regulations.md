@@ -2,7 +2,7 @@
 
 Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [CIS benchmark and audit](cis-benchmark-and-audit.md)
 
-Regulations and frameworks describe what an organisation must show, not just what it does. This chapter maps the main ones to the controls covered earlier in the book.
+Regulations and frameworks describe what an organisation must show, not just what it does. This topic maps the main ones to the controls covered earlier in the guide.
 
 The exam tests recognition: what each framework is for and which Kubernetes controls map to it. It does not expect legal detail.
 
@@ -25,4 +25,4 @@ The exam tests recognition: what each framework is for and which Kubernetes cont
 | NetworkPolicy segmentation | PCI DSS, SOC 2 |
 | Image scanning and signing | SOC 2, NIST SP 800-190 |
 
-A framework is a set of requirements; a Kubernetes setting is evidence that you meet part of one. Passing a CIS check does not make a cluster compliant with a regulation on its own.
+A framework is a set of requirements; a Kubernetes setting is evidence that you meet section of one. Passing a CIS check does not make a cluster compliant with a regulation on its own.

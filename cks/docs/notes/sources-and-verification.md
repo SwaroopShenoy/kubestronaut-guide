@@ -2,7 +2,7 @@
 
 Up: [CKS README](../../README.md) · Notes
 
-This page records where the figures in this part come from and what has and has not been checked.
+This page records where the figures in this section come from and what has and has not been checked.
 
 ## Official sources
 
@@ -23,7 +23,7 @@ This page records where the figures in this part come from and what has and has 
 
 ## Conflicting figures
 
-The CNCF certification page checked on the same date lists Cluster Setup at 10% and System Hardening at 15%. This book follows the curriculum PDF. Confirm the current figures with CNCF before planning around either.
+The CNCF certification page checked on the same date lists Cluster Setup at 10% and System Hardening at 15%. This guide follows the curriculum PDF. Confirm the current figures with CNCF before planning around either.
 
 ## What the curriculum does not state
 
@@ -34,5 +34,5 @@ The CNCF certification page checked on the same date lists Cluster Setup at 10% 
 ## Not verified
 
 - Passing score, number of tasks, exam duration, allowed documentation, and the Kubernetes version the exam runs.
-- Commands and YAML in this book were written from documented behaviour. They have not all been executed on a live cluster.
+- Commands and YAML in this guide were written from documented behaviour. They have not all been executed on a live cluster.
 - The curriculum version used is v1.34. Newer versions were not reviewed.

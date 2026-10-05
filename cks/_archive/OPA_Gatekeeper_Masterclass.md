@@ -3,7 +3,7 @@
 
 ---
 
-# Part 1: OPA/Gatekeeper Fundamentals
+# Section 1: OPA/Gatekeeper Fundamentals
 
 ## What is OPA?
 
@@ -51,7 +51,7 @@ Gatekeeper checks policies
 
 ---
 
-# Part 2: Gatekeeper Architecture
+# Section 2: Gatekeeper Architecture
 
 ## Components
 
@@ -117,7 +117,7 @@ spec:
 
 ---
 
-# Part 3: Installing Gatekeeper
+# Section 3: Installing Gatekeeper
 
 ## Step 1: Install Gatekeeper
 
@@ -194,7 +194,7 @@ k delete pod test
 
 ---
 
-# Part 4: Writing Rego Policies
+# Section 4: Writing Rego Policies
 
 ## Rego Language Basics
 
@@ -297,7 +297,7 @@ violation[{"msg": msg}] {
 
 ---
 
-# Part 5: Real Exam Scenarios
+# Section 5: Real Exam Scenarios
 
 ## Scenario 1: Enforce Resource Limits
 
@@ -512,7 +512,7 @@ spec:
 
 ---
 
-# Part 6: Debugging Gatekeeper
+# Section 6: Debugging Gatekeeper
 
 ### Policy Not Enforcing?
 
@@ -556,7 +556,7 @@ k patch K8sRequiredResourceLimits require-limits \
 
 ---
 
-# Part 7: Cheat Sheet
+# Section 7: Cheat Sheet
 
 ## Quick Install
 

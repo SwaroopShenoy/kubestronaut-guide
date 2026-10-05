@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Prev: [Troubleshooting method](troubleshooting-method.md) · Next: [Services, DNS and networking](services-dns-and-networking.md)
 
-When the cluster's brain stops, everything stops with it. This chapter follows the control plane and the nodes from first symptom to working state, using the tools that still work when the API server does not.
+When the cluster's brain stops, everything stops with it. This topic follows the control plane and the nodes from first symptom to working state, using the tools that still work when the API server does not.
 
 ## Model
 

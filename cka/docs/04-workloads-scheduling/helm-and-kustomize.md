@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Scheduling](scheduling.md) · Next: [Storage](../05-storage/storage.md)
 
-Applications are rarely one file. Helm packages them as charts, and Kustomize layers changes over a shared base. This chapter covers both tools and when each one fits.
+Applications are rarely one file. Helm packages them as charts, and Kustomize layers changes over a shared base. This topic covers both tools and when each one fits.
 
 Helm and Kustomize were added to the CKA curriculum in the 2025 update. Confirm exact scope against the current curriculum; the tasks are usually install, upgrade, roll back, or apply an overlay.
 

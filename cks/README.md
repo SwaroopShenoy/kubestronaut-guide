@@ -1,10 +1,10 @@
-# Part V: CKS — Certified Kubernetes Security Specialist
+# Section V: CKS — Certified Kubernetes Security Specialist
 
 CKS is the advanced security exam. It assumes the CKA and goes deeper into hardening clusters, securing workloads, protecting the supply chain and detecting threats at runtime. Like CKA, it is performance-based on a live cluster.
 
 > **Read first: status and limits**
 >
-> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This guide is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
@@ -60,7 +60,7 @@ Pod-to-pod encryption with Cilium or Istio is named in the official curriculum a
 - Use `kubectl config use-context <ctx>` when a task names one, and check which node you are on before editing a manifest.
 - Flag hard tasks and return; partial credit is per task.
 - Verify every change with a command that proves the behavior, not just that the YAML applied.
-- Keep a short written record of what you changed when a task has several parts.
+- Keep a short written record of what you changed when a task has several sections.
 
 ## Key ideas at a glance
 

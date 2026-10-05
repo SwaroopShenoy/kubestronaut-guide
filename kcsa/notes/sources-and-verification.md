@@ -2,7 +2,7 @@
 
 Up: [KCSA README](../README.md) · Notes
 
-This page records where the figures in this part come from and what has and has not been checked.
+This page records where the figures in this section come from and what has and has not been checked.
 
 ## Official sources
 
@@ -21,10 +21,10 @@ This page records where the figures in this part come from and what has and has 
 | Platform Security | 16% |
 | Compliance and Security Frameworks | 10% |
 
-Every topic listed under each domain in the curriculum has a chapter or section in this book.
+Every topic listed under each domain in the curriculum has a topic or section in this guide.
 
 ## Not verified
 
 - Duration, number of questions and passing score. The CNCF page checked does not state them.
-- Writing policies or rules is not part of the curriculum.
+- Writing policies or rules is not section of the curriculum.
 - Commands and tool behaviour have not all been executed on a live cluster.

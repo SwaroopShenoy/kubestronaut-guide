@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Deployments and scaling](deployments-and-scaling.md) · Next: [Scheduling](scheduling.md)
 
-Kubernetes offers several workload types because applications differ. This chapter compares Deployments, StatefulSets, DaemonSets, Jobs and CronJobs, and explains when each one is the right choice.
+Kubernetes offers several workload types because applications differ. This topic compares Deployments, StatefulSets, DaemonSets, Jobs and CronJobs, and explains when each one is the right choice.
 
 ## Choosing a type
 

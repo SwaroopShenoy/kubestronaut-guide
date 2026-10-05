@@ -2,9 +2,9 @@
 
 Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Falco](falco.md) · Next: [Rego basics](../reference/rego-basics.md)
 
-Audit logs are structured JSON, and jq is the fastest way to ask them questions. This chapter covers the filters and transforms that answer the common ones.
+Audit logs are structured JSON, and jq is the fastest way to ask them questions. This topic covers the filters and transforms that answer the common ones.
 
-jq is a tool, not a domain. It is in this book because audit logs are JSON and the exam expects quick answers from them.
+jq is a tool, not a domain. It is in this guide because audit logs are JSON and the exam expects quick answers from them.
 
 ## Input shape matters
 

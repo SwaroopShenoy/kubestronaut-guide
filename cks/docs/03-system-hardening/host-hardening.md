@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 3 — System Hardening (10%) · Prev: [Cluster upgrades](../02-cluster-hardening/cluster-upgrades.md) · Next: [AppArmor and seccomp](apparmor-and-seccomp.md)
 
-A node runs more software than it needs, and each extra service is an opening. This chapter covers reducing that attack surface: services, ports, SSH access, kernel modules and patching.
+A node runs more software than it needs, and each extra service is an opening. This topic covers reducing that attack surface: services, ports, SSH access, kernel modules and patching.
 
 ## Exam scope
 

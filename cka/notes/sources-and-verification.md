@@ -2,7 +2,7 @@
 
 Up: [CKA README](../README.md) · Notes
 
-This page records where the figures in this part come from and what has and has not been checked.
+This page records where the figures in this section come from and what has and has not been checked.
 
 ## Official sources
 
@@ -20,11 +20,11 @@ This page records where the figures in this part come from and what has and has 
 | Workloads and Scheduling | 15% |
 | Storage | 10% |
 
-The curriculum also lists Helm and Kustomize for installing cluster components, extension interfaces (CNI, CSI, CRI), CRDs and operators, and highly available control planes. Each has a chapter in this book.
+The curriculum also lists Helm and Kustomize for installing cluster components, extension interfaces (CNI, CSI, CRI), CRDs and operators, and highly available control planes. Each has a topic in this guide.
 
 ## Not verified
 
 - Passing score, number of tasks, and allowed documentation sites. The CNCF page checked does not state them.
-- The Kubernetes version the exam runs. Chapters target current stable releases; check the version before exam day.
+- The Kubernetes version the exam runs. Topics target current stable releases; check the version before exam day.
 - Commands and YAML were written from documented behaviour and have not all been executed on a live cluster.
 - Curriculum v1.35 is the version reviewed.

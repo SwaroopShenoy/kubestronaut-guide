@@ -2,7 +2,7 @@
 
 Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Next: [API objects and workloads](api-objects-and-workloads.md)
 
-Kubernetes is a set of cooperating components. This chapter introduces the control plane, the node components, and the loop that keeps the cluster at the state you declared.
+Kubernetes is a set of cooperating components. This topic introduces the control plane, the node components, and the loop that keeps the cluster at the state you declared.
 
 ## Control plane
 

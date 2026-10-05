@@ -2,7 +2,7 @@
 
 Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Prev: [Container images](container-images.md) · Next: [Deployment strategies](../02-application-deployment/deployment-strategies.md)
 
-Choosing the right workload type and the right kind of storage shapes how an application behaves under load and failure. This chapter covers both choices and the volume types that support them.
+Choosing the right workload type and the right kind of storage shapes how an application behaves under load and failure. This topic covers both choices and the volume types that support them.
 
 ## Pick the workload type from the requirement
 

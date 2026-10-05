@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md) · Next: [etcd backup and restore](etcd-backup-restore.md)
 
-Every request to a Kubernetes cluster carries an identity, and most identities are certificates. This chapter explains where the cluster keeps its certificates, how they expire, and how a kubeconfig file turns them into access.
+Every request to a Kubernetes cluster carries an identity, and most identities are certificates. This topic explains where the cluster keeps its certificates, how they expire, and how a kubeconfig file turns them into access.
 
 ## Where kubeadm keeps certificates
 
@@ -62,7 +62,7 @@ kubectl certificate deny <name>
 
 ## kubeconfig
 
-A kubeconfig has three parts: clusters (server and CA), users (credentials), and contexts (a cluster plus a user plus a namespace).
+A kubeconfig has three sections: clusters (server and CA), users (credentials), and contexts (a cluster plus a user plus a namespace).
 
 ```bash
 kubectl config view --minify                       # current context only

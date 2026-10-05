@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Next: [NetworkPolicy](network-policy.md)
 
-Pods come and go, and their addresses change with them. Services give them a stable name and address, and cluster DNS makes those names usable. This chapter explains how the two work together.
+Pods come and go, and their addresses change with them. Services give them a stable name and address, and cluster DNS makes those names usable. This topic explains how the two work together.
 
 ## Service types
 

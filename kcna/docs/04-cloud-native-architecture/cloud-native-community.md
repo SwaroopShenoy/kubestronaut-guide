@@ -2,13 +2,13 @@
 
 Up: [KCNA README](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Observability](observability.md)
 
-Kubernetes is open source, and so is the ecosystem around it. This chapter covers the foundation that hosts those projects, how they mature, and how the community works.
+Kubernetes is open source, and so is the ecosystem around it. This topic covers the foundation that hosts those projects, how they mature, and how the community works.
 
 Official curriculum topics covered here: cloud native ecosystem and principles, and cloud native community and collaboration.
 
 ## The ecosystem
 
-- The Cloud Native Computing Foundation (CNCF) hosts Kubernetes and many related projects. It is part of The Linux Foundation.
+- The Cloud Native Computing Foundation (CNCF) hosts Kubernetes and many related projects. It is section of The Linux Foundation.
 - Projects move through maturity levels (sandbox, incubating, graduated). Maturity reflects adoption and governance, not a guarantee of quality or fit.
 - Open standards, such as the container runtime, network, and storage interfaces, let components be swapped without rewriting the platform.
 

@@ -2,7 +2,7 @@
 
 Up: [CKAD hub](../../README.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Probes](probes.md) · Next: [ConfigMaps and Secrets](../04-application-environment-config-security/configmaps-and-secrets.md)
 
-An application that fails silently is the hardest kind to fix. This chapter covers the signals Kubernetes gives you, a triage order to follow, and the API versions that have been removed.
+An application that fails silently is the hardest kind to fix. This topic covers the signals Kubernetes gives you, a triage order to follow, and the API versions that have been removed.
 
 ## Logs
 

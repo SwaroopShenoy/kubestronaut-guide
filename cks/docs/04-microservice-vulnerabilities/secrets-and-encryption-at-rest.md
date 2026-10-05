@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes](runtime-sandboxes.md)
 
-Secrets are encoded by default, not encrypted. This chapter explains what that means in practice, how to consume secrets more safely, and how to encrypt them in etcd.
+Secrets are encoded by default, not encrypted. This topic explains what that means in practice, how to consume secrets more safely, and how to encrypt them in etcd.
 
 ## 1. Base64 is not encryption
 
@@ -67,7 +67,7 @@ Generate a key:
 head -c 32 /dev/urandom | base64
 ```
 
-Wire it into the API server. Two parts are required: the flag and a volume mount, because the API server runs as a static pod.
+Wire it into the API server. Two sections are required: the flag and a volume mount, because the API server runs as a static pod.
 
 ```yaml
 # /etc/kubernetes/manifests/kube-apiserver.yaml

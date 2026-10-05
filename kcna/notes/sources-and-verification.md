@@ -2,7 +2,7 @@
 
 Up: [KCNA README](../README.md) · Notes
 
-This page records where the figures in this part come from and what has and has not been checked.
+This page records where the figures in this section come from and what has and has not been checked.
 
 ## Official sources
 

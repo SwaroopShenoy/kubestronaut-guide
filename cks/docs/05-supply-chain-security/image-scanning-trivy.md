@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Runtime sandboxes](../04-microservice-vulnerabilities/runtime-sandboxes.md) · Next: [Image signing with Cosign](image-signing-cosign.md)
 
-Scanning finds known vulnerabilities before an image reaches production. This chapter shows how to scan with Trivy, read the output, and make findings fail a build.
+Scanning finds known vulnerabilities before an image reaches production. This topic shows how to scan with Trivy, read the output, and make findings fail a build.
 
 ## Exam scope
 
@@ -34,7 +34,7 @@ Reading the table:
 - Fixed Version empty: no upstream fix yet. Mitigate (remove the package, change the base image, or accept with a documented exception).
 - Fixed Version present: upgrade to at least that version by rebuilding the image.
 
-The output of real scans will not match any example in this book; the CVE IDs and counts change daily. Read the columns, not memorized results.
+The output of real scans will not match any example in this guide; the CVE IDs and counts change daily. Read the columns, not memorized results.
 
 ## Gate a build on findings
 

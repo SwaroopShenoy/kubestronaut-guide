@@ -2,7 +2,7 @@
 
 Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Services, storage and configuration](../01-kubernetes-fundamentals/services-storage-config.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)
 
-Kubernetes does not run containers itself, and it does not build the network. It relies on pluggable interfaces for each job. This chapter explains the runtime, network and storage interfaces.
+Kubernetes does not run containers itself, and it does not build the network. It relies on pluggable interfaces for each job. This topic explains the runtime, network and storage interfaces.
 
 ## Container runtimes
 

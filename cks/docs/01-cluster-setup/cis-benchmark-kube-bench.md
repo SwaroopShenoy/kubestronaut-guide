@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [Network policy](network-policy.md) · Next: [Ingress, TLS and node metadata](ingress-tls-and-node-metadata.md)
 
-Security benchmarks turn good intentions into checkable settings. This chapter explains the CIS Kubernetes Benchmark, how kube-bench runs its checks, and how to read and fix the results.
+Security benchmarks turn good intentions into checkable settings. This topic explains the CIS Kubernetes Benchmark, how kube-bench runs its checks, and how to read and fix the results.
 
 ## Exam scope
 

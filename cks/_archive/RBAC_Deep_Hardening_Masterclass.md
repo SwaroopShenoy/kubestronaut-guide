@@ -3,7 +3,7 @@
 
 ---
 
-# Part 1: RBAC Fundamentals Review
+# Section 1: RBAC Fundamentals Review
 
 ## Quick Recap
 
@@ -16,7 +16,7 @@
 
 ---
 
-# Part 2: The Problem (Why Deep Hardening Matters)
+# Section 2: The Problem (Why Deep Hardening Matters)
 
 ## Default Kubernetes: Too Permissive
 
@@ -46,7 +46,7 @@ Full cluster compromise
 
 ---
 
-# Part 3: Least Privilege Design
+# Section 3: Least Privilege Design
 
 ## Principle: Every SA Gets Only What It Needs
 
@@ -66,7 +66,7 @@ Application Pod
 
 ---
 
-# Part 4: Real Exam Scenarios
+# Section 4: Real Exam Scenarios
 
 ## Scenario 1: Audit Current RBAC
 
@@ -219,7 +219,7 @@ violation[{"msg": msg}] {
 
 ---
 
-# Part 5: RBAC Best Practices
+# Section 5: RBAC Best Practices
 
 ## 1. Never Use Wildcards
 
@@ -296,7 +296,7 @@ k create clusterrolebinding cluster-admin \
 
 ---
 
-# Part 6: Cheat Sheet
+# Section 6: Cheat Sheet
 
 ## Quick Audit Commands
 

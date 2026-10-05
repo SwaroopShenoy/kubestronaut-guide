@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Next: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md)
 
-Role-based access control decides who can do what, and the answer is always a set of bindings. This chapter shows how roles and bindings work together, and how to prove an identity can or cannot act.
+Role-based access control decides who can do what, and the answer is always a set of bindings. This topic shows how roles and bindings work together, and how to prove an identity can or cannot act.
 
 For the security view of RBAC (auditing wildcards and dangerous verbs), see [CKS RBAC](../../../cks/docs/02-cluster-hardening/rbac.md).
 

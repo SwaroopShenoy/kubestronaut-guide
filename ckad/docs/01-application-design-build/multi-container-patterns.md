@@ -2,7 +2,7 @@
 
 Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Next: [Jobs and CronJobs](jobs-and-cronjobs.md)
 
-A pod can hold more than one container, and that is a design choice. This chapter covers the four classic patterns (sidecar, init, adapter and ambassador) and the native sidecar form.
+A pod can hold more than one container, and that is a design choice. This topic covers the four classic patterns (sidecar, init, adapter and ambassador) and the native sidecar form.
 
 Four patterns cover most multi-container designs. Each container in a pod shares the network namespace (same IP, `localhost`) and any volumes you mount into both.
 

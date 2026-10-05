@@ -2,7 +2,7 @@
 
 Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Prev: [SecurityContext, quotas and limits](security-context-quotas-limits.md) · Next: [Services, NetworkPolicy and Ingress](../05-services-networking/services-networking.md)
 
-An application that talks to the Kubernetes API needs an identity. This chapter explains ServiceAccounts, the permissions they receive, and how to fix the 403 errors that appear when those permissions are missing.
+An application that talks to the Kubernetes API needs an identity. This topic explains ServiceAccounts, the permissions they receive, and how to fix the 403 errors that appear when those permissions are missing.
 
 The full RBAC model is in [CKA RBAC](../../../cka/docs/02-cluster-architecture-installation-config/rbac.md). For CKAD, the usual task is "the app gets a 403 from the API; fix its ServiceAccount."
 

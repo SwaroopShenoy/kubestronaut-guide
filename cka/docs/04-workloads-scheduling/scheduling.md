@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Workload types](workload-types.md) · Next: [Helm and Kustomize](helm-and-kustomize.md)
 
-Each pod must land on a node that has room for it and is allowed to host it. This chapter explains how the scheduler decides, and how labels, taints, affinity and resource requests shape those decisions.
+Each pod must land on a node that has room for it and is allowed to host it. This topic explains how the scheduler decides, and how labels, taints, affinity and resource requests shape those decisions.
 
 ## How scheduling works
 

@@ -1,10 +1,10 @@
-# Part I: KCNA — Kubernetes and Cloud Native Associate
+# Section I: KCNA — Kubernetes and Cloud Native Associate
 
-KCNA is the entry point. It tests whether you understand what Kubernetes is, how its parts fit together, and the wider cloud native ecosystem around it. There are no terminal tasks; the exam is multiple choice, so the work here is building a clear mental model of each concept.
+KCNA is the entry point. It tests whether you understand what Kubernetes is, how its sections fit together, and the wider cloud native ecosystem around it. There are no terminal tasks; the exam is multiple choice, so the work here is building a clear mental model of each concept.
 
 > **Read first: status and limits**
 >
-> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This guide is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.

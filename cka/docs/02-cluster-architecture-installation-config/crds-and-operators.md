@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [etcd backup and restore](etcd-backup-restore.md) · Next: [Services and DNS](../03-services-networking/services-and-dns.md)
 
-Kubernetes can learn new kinds of objects. This chapter shows how a custom resource definition adds a new type to the API, and how an operator gives that type a living controller.
+Kubernetes can learn new kinds of objects. This topic shows how a custom resource definition adds a new type to the API, and how an operator gives that type a living controller.
 
 A CustomResourceDefinition (CRD) adds a new resource type to the API. An operator is a controller that watches those resources and acts on them.
 

@@ -104,7 +104,7 @@ k get networkpolicies
 
 ## 1.2 CIS Kubernetes Benchmark
 
-<cite index="21-1">CIS benchmark review is part of cluster setup security.</cite>
+<cite index="21-1">CIS benchmark review is section of cluster setup security.</cite>
 
 **What it is**: Hardening guidelines from Center for Internet Security.
 

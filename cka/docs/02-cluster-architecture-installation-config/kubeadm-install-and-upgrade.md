@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [RBAC](rbac.md) · Next: [Certificates and kubeconfig](certificates-and-kubeconfig.md)
 
-kubeadm is the standard tool for building and changing a Kubernetes cluster by hand. This chapter walks through installing a control plane, joining workers, and upgrading in the order that keeps the cluster safe.
+kubeadm is the standard tool for building and changing a Kubernetes cluster by hand. This topic walks through installing a control plane, joining workers, and upgrading in the order that keeps the cluster safe.
 
 ## Install a control plane
 

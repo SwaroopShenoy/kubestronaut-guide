@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Prev: [NetworkPolicy](network-policy.md) · Next: [Deployments and scaling](../04-workloads-scheduling/deployments-and-scaling.md)
 
-Traffic from outside a cluster needs a route in. This chapter covers the two ways Kubernetes routes HTTP traffic to services: the established Ingress object and the newer Gateway API.
+Traffic from outside a cluster needs a route in. This topic covers the two ways Kubernetes routes HTTP traffic to services: the established Ingress object and the newer Gateway API.
 
 ## Ingress
 

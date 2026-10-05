@@ -1,10 +1,10 @@
-# Part II: KCSA — Kubernetes and Cloud Native Security Associate
+# Section II: KCSA — Kubernetes and Cloud Native Security Associate
 
 KCSA moves from how Kubernetes works to how it can be attacked and defended. It asks you to reason about trust boundaries, identities, policies and threats across the cloud, the cluster and the workload. It is multiple choice, and the questions reward understanding over memorisation.
 
 > **Read first: status and limits**
 >
-> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This guide is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.

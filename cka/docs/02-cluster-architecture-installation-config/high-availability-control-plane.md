@@ -2,7 +2,7 @@
 
 Up: [CKA README](../../README.md) · Domain 2 — Cluster Architecture, Installation and Configuration (25%) · Prev: [CRDs and operators](crds-and-operators.md)
 
-A single control-plane node is a single point of failure. This chapter explains how several control-plane nodes, a shared etcd quorum and a load balancer keep the API available when one of them fails.
+A single control-plane node is a single point of failure. This topic explains how several control-plane nodes, a shared etcd quorum and a load balancer keep the API available when one of them fails.
 
 Official curriculum topic covered here: "Implement and configure a highly-available control plane" and "Prepare underlying infrastructure for installing a Kubernetes cluster". For single-node install and upgrades see [kubeadm install and upgrade](kubeadm-install-and-upgrade.md).
 

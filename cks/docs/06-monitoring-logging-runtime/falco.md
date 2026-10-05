@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Audit logging](audit-logging.md) · Next: [jq for audit data](jq-for-audit-data.md)
 
-Some attacks happen inside a running container, where no scanner looks. This chapter covers Falco, which watches system calls and raises alerts, and how to read what it reports.
+Some attacks happen inside a running container, where no scanner looks. This topic covers Falco, which watches system calls and raises alerts, and how to read what it reports.
 
 ## Exam scope
 

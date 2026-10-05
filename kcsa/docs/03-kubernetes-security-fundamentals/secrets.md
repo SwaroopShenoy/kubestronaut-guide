@@ -2,7 +2,7 @@
 
 Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)
 
-Secrets are the most sought-after objects in a cluster. This chapter explains what protects them and what does not.
+Secrets are the most sought-after objects in a cluster. This topic explains what protects them and what does not.
 
 ## What a Kubernetes Secret is
 

@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Prev: [Control plane and nodes](control-plane-and-nodes.md) · Next: [RBAC](../02-cluster-architecture-installation-config/rbac.md)
 
-A Service that routes nowhere looks healthy from every dashboard. This chapter shows how to find the broken link between a name, a Service, its endpoints and the network path behind them.
+A Service that routes nowhere looks healthy from every dashboard. This topic shows how to find the broken link between a name, a Service, its endpoints and the network path behind them.
 
 ## Service has no endpoints
 

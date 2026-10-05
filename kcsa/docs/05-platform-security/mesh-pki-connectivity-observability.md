@@ -2,7 +2,7 @@
 
 Up: [KCSA README](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Runtime security](runtime-security.md) · Next: [CIS benchmark and audit](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)
 
-Trust in a cluster is built from certificates, and traffic between services can be encrypted and authorised. This chapter covers service meshes, the certificate hierarchy behind the cluster, and observability as a security tool.
+Trust in a cluster is built from certificates, and traffic between services can be encrypted and authorised. This topic covers service meshes, the certificate hierarchy behind the cluster, and observability as a security tool.
 
 Official curriculum topics covered here: service mesh, PKI, connectivity and observability. Supply chain, image repository and admission control are in their own docs in this folder.
 
@@ -10,7 +10,7 @@ Official curriculum topics covered here: service mesh, PKI, connectivity and obs
 
 - A mesh (Istio, Linkerd, and others) adds sidecar or node proxies that handle service-to-service traffic.
 - Security value: mutual TLS between workloads, identity-based authorization policies, and traffic telemetry.
-- Cost: more moving parts, extra latency and resource use. A mesh is not a substitute for NetworkPolicy or RBAC.
+- Cost: more moving sections, extra latency and resource use. A mesh is not a substitute for NetworkPolicy or RBAC.
 
 ## PKI
 

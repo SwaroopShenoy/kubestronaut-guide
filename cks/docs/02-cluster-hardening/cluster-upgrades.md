@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [Service accounts and API access](service-accounts-and-api-access.md) · Next: [Host hardening](../03-system-hardening/host-hardening.md)
 
-Old versions carry known vulnerabilities. This chapter covers upgrading a cluster in the order that keeps it safe, and what to check afterward.
+Old versions carry known vulnerabilities. This topic covers upgrading a cluster in the order that keeps it safe, and what to check afterward.
 
 ## Why it matters
 

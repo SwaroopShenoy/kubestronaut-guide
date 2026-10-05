@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 3 — System Hardening (10%) · Prev: [Host hardening](host-hardening.md) · Next: [Security context and PSS](../04-microservice-vulnerabilities/security-context-and-pss.md)
 
-The kernel can confine a process by what it may touch and which system calls it may make. This chapter covers AppArmor and seccomp: how to apply them to pods, check that they are active, and read the result when they block something.
+The kernel can confine a process by what it may touch and which system calls it may make. This topic covers AppArmor and seccomp: how to apply them to pods, check that they are active, and read the result when they block something.
 
 ## Scope: what to learn and what not to
 

@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [AppArmor and seccomp](../03-system-hardening/apparmor-and-seccomp.md) · Next: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md)
 
-A pod's security context and its namespace's Pod Security level decide how much damage a compromised container can do. This chapter covers both, with the requirements of each level.
+A pod's security context and its namespace's Pod Security level decide how much damage a compromised container can do. This topic covers both, with the requirements of each level.
 
 Pod Security Admission (PSA) replaced PodSecurityPolicy, which was removed in Kubernetes 1.25. Do not use PSP in new work.
 
@@ -78,7 +78,7 @@ PSA enforces one of three profiles per namespace, set by labels.
 | `baseline` | Blocks known privilege escalations: privileged containers, host namespaces, hostPath volumes, most dangerous capabilities, unconfined seccomp/AppArmor, unsafe sysctls |
 | `restricted` | Baseline plus: `runAsNonRoot: true`; `allowPrivilegeEscalation: false`; `capabilities.drop: ["ALL"]` (only `NET_BIND_SERVICE` may be added back); seccomp `RuntimeDefault` or `Localhost`; restricted volume types only |
 
-`readOnlyRootFilesystem` is **not** part of restricted. Do not claim it is.
+`readOnlyRootFilesystem` is **not** section of restricted. Do not claim it is.
 
 Modes:
 

@@ -2,7 +2,7 @@
 
 Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Prev: [Jobs and CronJobs](jobs-and-cronjobs.md) · Next: [Volumes and workload choice](volumes-and-workload-choice.md)
 
-An application starts as an image. This chapter covers the Dockerfile instructions that shape an image, multi-stage builds that keep images small, and habits that keep them safe.
+An application starts as an image. This topic covers the Dockerfile instructions that shape an image, multi-stage builds that keep images small, and habits that keep them safe.
 
 The CKAD curriculum lists defining and building container images. Confirm current scope against the official curriculum.
 

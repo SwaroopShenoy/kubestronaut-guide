@@ -2,7 +2,7 @@
 
 Up: [KCNA hub](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Principles and patterns](principles-and-patterns.md)
 
-A running system has to be seen to be understood. This chapter introduces metrics, logs and traces, and the tools that collect each one.
+A running system has to be seen to be understood. This topic introduces metrics, logs and traces, and the tools that collect each one.
 
 The official KCNA curriculum places observability under Cloud Native Architecture. It is covered here as a concept.
 

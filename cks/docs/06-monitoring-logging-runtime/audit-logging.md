@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md) · Next: [Falco](falco.md)
 
-The API server keeps a record of who asked for what. This chapter covers how to write an audit policy, enable it, read the log, and use it to follow an attack.
+The API server keeps a record of who asked for what. This topic covers how to write an audit policy, enable it, read the log, and use it to follow an attack.
 
 ## Exam scope
 

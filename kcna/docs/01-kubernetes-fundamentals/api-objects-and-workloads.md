@@ -2,7 +2,7 @@
 
 Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [Kubernetes architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)
 
-Everything in Kubernetes is an object described in YAML. This chapter explains the shape of an object, the workload objects that run applications, and how labels connect them.
+Everything in Kubernetes is an object described in YAML. This topic explains the shape of an object, the workload objects that run applications, and how labels connect them.
 
 ## Every object has the same shape
 

@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 5 — Storage (10%) · Prev: [Helm and Kustomize](../04-workloads-scheduling/helm-and-kustomize.md)
 
-Containers forget everything when they stop, so data needs somewhere to live. This chapter covers how Kubernetes describes storage with volumes, persistent volumes, claims and storage classes.
+Containers forget everything when they stop, so data needs somewhere to live. This topic covers how Kubernetes describes storage with volumes, persistent volumes, claims and storage classes.
 
 ## Objects
 

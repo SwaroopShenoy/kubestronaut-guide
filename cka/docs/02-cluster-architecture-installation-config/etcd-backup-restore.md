@@ -2,7 +2,7 @@
 
 Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [Certificates and kubeconfig](certificates-and-kubeconfig.md) · Next: [CRDs and operators](crds-and-operators.md)
 
-Everything the cluster knows is stored in one database, etcd. This chapter covers how to save that database, check the copy, and restore it when things go badly wrong.
+Everything the cluster knows is stored in one database, etcd. This topic covers how to save that database, check the copy, and restore it when things go badly wrong.
 
 etcd holds all cluster state. Losing it means losing the cluster, so backups are a core skill.
 

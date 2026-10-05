@@ -2,7 +2,7 @@
 
 Up: [KCNA hub](../../README.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [CI/CD and GitOps](cicd-and-gitops.md) · Next: [Principles and patterns](../04-cloud-native-architecture/principles-and-patterns.md)
 
-Applications need to be packaged and customised. Helm and Kustomize take two different approaches, and this chapter explains both.
+Applications need to be packaged and customised. Helm and Kustomize take two different approaches, and this topic explains both.
 
 ## Helm
 

@@ -2,7 +2,7 @@
 
 Up: [KCSA hub](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [Control plane security](control-plane-security.md) · Next: [RBAC and ServiceAccounts](../03-kubernetes-security-fundamentals/rbac-and-serviceaccounts.md)
 
-etcd holds the cluster's secrets, and the nodes run its workloads. This chapter explains how to protect both.
+etcd holds the cluster's secrets, and the nodes run its workloads. This topic explains how to protect both.
 
 ## etcd
 

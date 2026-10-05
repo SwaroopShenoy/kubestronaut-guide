@@ -2,7 +2,7 @@
 
 Up: [CKS README](../../README.md) · Domain 2 — Minimize Microservice Vulnerabilities (20%) · Prev: [Runtime sandboxes](runtime-sandboxes.md) · Next: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md)
 
-Network policy decides which pods may talk; it does not hide what they say. This chapter covers encrypting pod-to-pod traffic with Cilium and with Istio's mutual TLS.
+Network policy decides which pods may talk; it does not hide what they say. This topic covers encrypting pod-to-pod traffic with Cilium and with Istio's mutual TLS.
 
 Official curriculum topic: "Implement Pod-to-Pod encryption (Cilium, Istio)".
 

@@ -2,7 +2,7 @@
 
 Up: [KCSA hub](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [The 4Cs](../01-overview-cloud-native-security/four-cs-and-shared-responsibility.md) · Next: [etcd and node security](etcd-and-node-security.md)
 
-The control plane decides what happens in a cluster, so it is the most valuable thing to protect. This chapter follows a request through the API server and explains how to secure each step.
+The control plane decides what happens in a cluster, so it is the most valuable thing to protect. This topic follows a request through the API server and explains how to secure each step.
 
 ## API request path
 

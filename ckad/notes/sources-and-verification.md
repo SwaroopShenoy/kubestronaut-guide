@@ -2,7 +2,7 @@
 
 Up: [CKAD README](../README.md) · Notes
 
-This page records where the figures in this part come from and what has and has not been checked.
+This page records where the figures in this section come from and what has and has not been checked.
 
 ## Official sources
 
@@ -20,7 +20,7 @@ This page records where the figures in this part come from and what has and has 
 | Application Environment, Configuration and Security | 25% |
 | Services and Networking | 20% |
 
-Container image building, CRDs and operators, Kustomize, Helm, and API deprecations are listed in the curriculum, and each has a chapter.
+Container image building, CRDs and operators, Kustomize, Helm, and API deprecations are listed in the curriculum, and each has a topic.
 
 ## Not verified
 

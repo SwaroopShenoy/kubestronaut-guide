@@ -3,7 +3,7 @@
 
 ---
 
-# Part 1: SecurityContext (SC)
+# Section 1: SecurityContext (SC)
 
 ## What is SecurityContext?
 
@@ -438,7 +438,7 @@ securityContext:
 
 ---
 
-# Part 2: Pod Security Standards (PSS)
+# Section 2: Pod Security Standards (PSS)
 
 ## What is PSS?
 

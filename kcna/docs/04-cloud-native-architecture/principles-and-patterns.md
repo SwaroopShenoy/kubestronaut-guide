@@ -2,7 +2,7 @@
 
 Up: [KCNA hub](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Packaging with Helm and Kustomize](../03-cloud-native-application-delivery/packaging-helm-kustomize.md) · Next: [Observability](observability.md)
 
-Cloud native design is a set of habits: small services, declared configuration, and systems built to be replaced. This chapter covers the principles and the patterns that follow from them.
+Cloud native design is a set of habits: small services, declared configuration, and systems built to be replaced. This topic covers the principles and the patterns that follow from them.
 
 ## What cloud native means
 

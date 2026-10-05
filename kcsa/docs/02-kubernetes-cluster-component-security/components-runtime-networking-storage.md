@@ -2,7 +2,7 @@
 
 Up: [KCSA README](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [etcd and node security](etcd-and-node-security.md) · Next: [RBAC and ServiceAccounts](../03-kubernetes-security-fundamentals/rbac-and-serviceaccounts.md)
 
-Every component of a cluster is a potential target, and every component can be hardened. This chapter covers the controller manager, scheduler, runtime, kube-proxy, networking, client credentials and storage.
+Every component of a cluster is a potential target, and every component can be hardened. This topic covers the controller manager, scheduler, runtime, kube-proxy, networking, client credentials and storage.
 
 Official curriculum topics covered here: controller manager, scheduler, container runtime, kube-proxy, pod, container networking, client security and storage. The API server, kubelet, etcd and node topics are in [control plane security](control-plane-security.md) and [etcd and node security](etcd-and-node-security.md).
 

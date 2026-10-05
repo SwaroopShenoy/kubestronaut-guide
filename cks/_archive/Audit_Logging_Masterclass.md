@@ -3,7 +3,7 @@
 
 ---
 
-# Part 1: Audit Logging Fundamentals
+# Section 1: Audit Logging Fundamentals
 
 ## What is Audit Logging?
 
@@ -109,7 +109,7 @@ rules:
 
 ---
 
-# Part 2: Enabling Audit Logging
+# Section 2: Enabling Audit Logging
 
 ## Step 1: Create Audit Policy
 
@@ -237,7 +237,7 @@ tail -f /var/log/kubernetes/audit/audit.log
 
 ---
 
-# Part 3: Parsing Audit Logs with jq
+# Section 3: Parsing Audit Logs with jq
 
 Audit logs are **JSON, one event per line**. Use `jq` to parse.
 
@@ -341,7 +341,7 @@ cat /var/log/kubernetes/audit/audit.log | \
 
 ---
 
-# Part 4: Real Exam Scenarios
+# Section 4: Real Exam Scenarios
 
 ## Scenario 1: Enable Audit Logging
 
@@ -463,7 +463,7 @@ cat /var/log/kubernetes/audit/audit.log | \
 
 ---
 
-# Part 5: Audit Logging Best Practices
+# Section 5: Audit Logging Best Practices
 
 ## What to Log (Priority Order)
 
@@ -504,7 +504,7 @@ Don't keep logs only on one node. Forward to SIEM:
 
 ---
 
-# Part 6: Cheat Sheet
+# Section 6: Cheat Sheet
 
 ## Quick Audit Policy (Copy-Paste)
 

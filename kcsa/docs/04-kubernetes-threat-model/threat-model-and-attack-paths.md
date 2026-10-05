@@ -2,7 +2,7 @@
 
 Up: [KCSA hub](../../README.md) · Domain 4 — Kubernetes Threat Model (16%) · Prev: [Secrets](../03-kubernetes-security-fundamentals/secrets.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)
 
-To defend a system, first picture how it would be attacked. This chapter introduces STRIDE, the trust boundaries of a cluster, and the attack paths that connect them.
+To defend a system, first picture how it would be attacked. This topic introduces STRIDE, the trust boundaries of a cluster, and the attack paths that connect them.
 
 ## STRIDE
 

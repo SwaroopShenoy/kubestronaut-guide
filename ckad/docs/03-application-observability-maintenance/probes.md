@@ -2,7 +2,7 @@
 
 Up: [CKAD hub](../../README.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and deprecations](logs-debugging-and-deprecations.md)
 
-Kubernetes cannot know whether an application is healthy unless you tell it how to check. This chapter covers liveness, readiness and startup probes, and how to tune them so they help rather than hurt.
+Kubernetes cannot know whether an application is healthy unless you tell it how to check. This topic covers liveness, readiness and startup probes, and how to tune them so they help rather than hurt.
 
 ## The three probes
 
