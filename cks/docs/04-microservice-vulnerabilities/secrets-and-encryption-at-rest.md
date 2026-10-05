@@ -67,6 +67,26 @@ Generate a key:
 head -c 32 /dev/urandom | base64
 ```
 
+An equivalent that gives the same kind of output:
+
+```bash
+openssl rand -base64 32
+```
+
+How the first command works:
+
+- `/dev/urandom` is a special file that produces random bytes from the kernel's random number generator.
+- `head -c 32` takes the first 32 bytes from it. The `aescbc` provider uses AES-256, which needs a key of exactly 32 bytes.
+- `| base64` encodes those raw bytes as text, because raw bytes can contain characters that break a YAML file. The configuration file expects the key in this base64 form.
+
+The result is a 44-character string ending in `=`, which you paste as the `secret` value. Decoding it should give 32 bytes:
+
+```bash
+echo '<your-key>' | base64 -d | wc -c        # 32
+```
+
+Do not type or invent the key by hand, and do not reuse an example key from documentation. Keep the key only in the encryption file, which should be readable by root alone.
+
 Wire it into the API server. Two sections are required: the flag and a volume mount, because the API server runs as a static pod.
 
 ```yaml
