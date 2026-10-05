@@ -10,7 +10,7 @@ A signature proves who built an image and that it has not changed since. This to
 
 ## Concepts
 
-- Signing binds a signature to an image **digest** (`sha256:...`), not to a tag. A tag can be moved; a digest cannot.
+- A signature is stored against an image **digest** (`sha256:...`). If you give cosign a tag, it looks up the digest the tag points to at that moment and signs that digest. A tag can later be moved to different content; a digest cannot.
 - Key-based: a private key signs, a public key verifies. Protect the private key.
 - Keyless: CI proves its identity with an OIDC token; the signature is recorded in a transparency log. No long-lived key to leak.
 
@@ -27,6 +27,24 @@ DIGEST=$(crane digest registry.example.com/app:1.0)   # or: docker inspect --for
 cosign sign --key cosign.key registry.example.com/app@${DIGEST}
 ```
 
+Signing by tag also works:
+
+```bash
+cosign sign --key cosign.key registry.example.com/app:1.0
+```
+
+Cosign v3.1.3 prints this warning and carries on:
+
+```
+Image reference registry.example.com/app:1.0 uses a tag, not a digest, to identify the image to sign.
+This can lead you to sign a different image than the intended one. Please use a
+digest (example.com/ubuntu@sha256:abc123...) rather than tag
+(example.com/ubuntu:latest) for the input to cosign. The ability to refer to
+images by tag will be removed in a future release.
+```
+
+So the tag form is accepted today, but it is discouraged and may stop working in a later release. The risk is a race: if the tag moves between your build and the sign command, you sign the wrong image. Using the digest removes that doubt, and it is what the warning recommends.
+
 Verify:
 
 ```bash
@@ -36,7 +54,7 @@ echo "exit=$?"
 
 On success cosign prints the verified claims as JSON and exits 0. On failure it prints an error and exits non-zero. Scripts should test the exit code, not the presence of specific text.
 
-Verifying by tag still works but resolves the tag at verification time, so a moved tag can pass the wrong image. Use digests in anything that enforces policy.
+Verifying by tag also works, and prints no warning. The tag is resolved when the command runs, so the result describes whatever the tag points to at that moment, which may not be the image that runs later. If the tag has moved to an unsigned image, verification fails. Use digests in anything that enforces policy.
 
 ## Keyless signing in CI
 
@@ -85,14 +103,16 @@ The older `cosign attach sbom` command is deprecated in favor of attestations.
 
 | Symptom | Cause |
 |---|---|
-| "no matching signatures" | Image not signed, or signed by a different key, or verified by tag after rebuild |
-| Passes with wrong key | Verified by tag, which was moved; verify by digest |
+| "no matching signatures" | Image not signed, or signed by a different key, or the tag now points to a newly built, unsigned image |
+| `UNAUTHORIZED` or `denied` when signing | Not logged in to the registry; cosign reads the same credentials as `docker login` (or use `cosign login`) |
+| `MANIFEST_UNKNOWN` or "accessing entity" when signing | The image has not been pushed, or the tag is mistyped; cosign signs images in a registry, not local-only images |
+| Warning "uses a tag, not a digest" | A tag was passed; the digest it pointed to was signed. Pass the digest to be certain |
 | Keyless passes for any repo | Identity not pinned in `--certificate-identity` |
 | Private key leaked | Rotate: generate a new pair, re-sign current images, revoke trust in policies |
 
 ## Common mistakes
 
-- Signing the tag instead of the digest.
+- Signing by tag. It works, but the signature lands on whatever the tag points to at that moment. Sign the digest.
 - Storing `cosign.key` in the repository. Store it in the CI secret store, and keep the password separate.
 - Verifying in CI but not at admission. A pod can still be created by hand.
 
