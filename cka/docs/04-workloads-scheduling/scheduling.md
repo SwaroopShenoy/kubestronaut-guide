@@ -99,12 +99,6 @@ kubectl get nodes --show-labels
 - Applying a toleration and expecting the pod to land on the tainted node.
 - Forgetting to label the node before using a nodeSelector.
 
-## Practice
-
-1. Taint a worker, deploy a pod without a toleration (Pending), add the toleration (scheduled).
-2. Label a node and use nodeSelector to pin a pod.
-3. Create a Deployment with pod anti-affinity across hostnames; scale it past the node count and observe Pending.
-
 ## Quick reference
 
 ```bash

@@ -34,10 +34,3 @@ Worth logging: Secret access (including reads), RBAC changes, exec and attach in
 Backends: a log file, or a webhook that forwards events to a SIEM. The old dynamic audit sink (AuditSink) was removed; use the webhook backend.
 
 Caution: request bodies can contain secrets. Use `RequestResponse` for a narrow set of resources only.
-
-## Practice questions
-
-- Which tool runs CIS checks against a node? (kube-bench)
-- Which audit level records request and response bodies? (RequestResponse)
-- Which audit rule is evaluated first when several match? (The first one listed, since matching stops at the first hit)
-- Why limit `RequestResponse` logging? (It can capture secret values and fills storage quickly)

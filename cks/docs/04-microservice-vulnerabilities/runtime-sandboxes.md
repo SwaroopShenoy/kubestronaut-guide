@@ -79,11 +79,6 @@ scheduling:
 - Assuming RuntimeClass alone isolates the cluster. It isolates the pods that opt in; you still need PSA, NetworkPolicy, and RBAC.
 - Using `runtimeClassName` on a node that lacks the handler, and not adding scheduling constraints.
 
-## Practice
-
-1. Create a RuntimeClass for the handler configured in your lab, schedule a pod with it, and confirm the `runtimeClassName`.
-2. Describe the failure you get when the handler name is wrong.
-
 ## Quick reference
 
 ```bash

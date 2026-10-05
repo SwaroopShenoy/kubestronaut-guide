@@ -81,9 +81,3 @@ Re-run kube-bench after upgrades. Some remediations change between versions, and
 - Upgrading kubelet before the control plane.
 - Forgetting to `uncordon` the node, leaving it unschedulable.
 - Editing manifests in `/etc/kubernetes/manifests` and then running `kubeadm upgrade`, which can overwrite them. Keep a backup copy of any custom flags.
-
-## Practice
-
-1. Read `kubeadm upgrade plan` output on a lab cluster and identify the target version and any warnings.
-2. Drain and uncordon a worker node; confirm pods rescheduled.
-3. Write down which steps must happen on which machine (control plane, worker, workstation).

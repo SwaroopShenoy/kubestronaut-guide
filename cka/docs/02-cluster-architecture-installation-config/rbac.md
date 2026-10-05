@@ -64,12 +64,6 @@ Create a client certificate signed by the cluster CA, then add it to a kubeconfi
 - Forgetting `--serviceaccount=<ns>:<name>` and using `--user` for a ServiceAccount.
 - Testing with a user that already has cluster-admin, so every check passes.
 
-## Practice
-
-1. Create a Role that can read pods and logs in `dev`; bind it to a ServiceAccount; prove it with `auth can-i`.
-2. Create a ClusterRole and bind it cluster-wide to a user; prove it works in two namespaces.
-3. Find which ClusterRole grants the `edit` permission in your cluster with `kubectl describe clusterrole edit`.
-
 ## Quick reference
 
 ```bash

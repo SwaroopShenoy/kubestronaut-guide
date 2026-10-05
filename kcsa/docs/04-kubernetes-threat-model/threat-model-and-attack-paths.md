@@ -57,10 +57,3 @@ Containment actions in Kubernetes:
 - Block egress to known command-and-control addresses.
 
 Forensics sources: API audit log, container logs, runtime alerts, network flow records, and the node itself if it can be preserved.
-
-## Practice questions
-
-- Which STRIDE category does an unlogged change belong to? (Repudiation)
-- A pod with `create pods` mounts the node filesystem. Which threat is this? (Elevation of privilege)
-- What is the first containment step for a suspicious pod? (Isolate it, for example with a deny-all NetworkPolicy, while preserving evidence)
-- Which boundary is most trusted? (The control plane)

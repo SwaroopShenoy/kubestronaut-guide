@@ -33,9 +33,3 @@ A rule has a condition (what to match), an output message, and a priority. Teams
 | Trivy (scanner) | Does this image contain known vulnerabilities? (before running) |
 | Falco (runtime) | Is this running workload doing something suspicious? (while running) |
 | Audit log | What requests did the API server receive? |
-
-## Practice questions
-
-- Which tool detects a shell spawned inside a running container? (Falco)
-- Which tool finds CVEs in an image before deployment? (A scanner such as Trivy)
-- Does an image scan detect a process that starts at runtime? (No)

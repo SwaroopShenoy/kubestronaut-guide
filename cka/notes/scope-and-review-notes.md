@@ -43,9 +43,3 @@ Not confirmed:
 - Helm and Kustomize had no scope statement; treated as in scope per the 2025 update, confirm against the curriculum.
 - Troubleshooting was thin on the kubelet and static pod failure modes; expanded in [control plane and nodes](../docs/01-troubleshooting/control-plane-and-nodes.md).
 - No storage troubleshooting detail; added in [storage](../docs/05-storage/storage.md).
-
-## Next steps
-
-1. Pull the current CKA curriculum from the cncf/curriculum repository and check every bullet against a topic doc.
-2. Build a lab cluster (kubeadm on three VMs, or kind for workload tasks) and run each practice block.
-3. Do timed mocks after troubleshooting and cluster architecture are both comfortable.

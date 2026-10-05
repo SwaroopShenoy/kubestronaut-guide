@@ -102,9 +102,3 @@ From the syllabus areas that the original course did not cover, or covered only 
 - Kubernetes version of the exam environment. Commands here are written for current releases (1.30+); check the version the exam uses.
 - Tool versions: Trivy, Falco, Cosign, kube-bench all change flags. Confirm with `--help` on the installed version.
 - The exam's list of permitted documentation sites. Check the current list from CNCF before exam day; it determines which references you can open.
-
-## 6. Recommended next steps
-
-1. Pull the current official CKS curriculum PDF and map each bullet to a doc in this folder. Add a row for anything unmapped.
-2. Run each "Practice" block on a lab cluster. Read-only study is not enough for CKS.
-3. Do the timed drills in the hub after completing Domains 1–3, not before.

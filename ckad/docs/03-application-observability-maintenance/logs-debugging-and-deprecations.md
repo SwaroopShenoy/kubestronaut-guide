@@ -85,11 +85,6 @@ kubectl explain <kind>
 - Looking at `logs` for a pod with several containers without `-c`.
 - Changing a Deployment's `apiVersion` but not adding the required `spec.selector`.
 
-## Practice
-
-1. Make a container exit with code 3; read the exit code from `jsonpath` and the reason from `describe`.
-2. Take a Deployment manifest with `extensions/v1beta1` and convert it to `apps/v1`; apply it.
-
 ## Quick reference
 
 ```bash

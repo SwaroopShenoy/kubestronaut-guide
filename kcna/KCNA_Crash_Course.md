@@ -30,13 +30,6 @@ Reference:
 
 - [CNCF project map](reference/cncf-project-map.md)
 
-## Study order
-
-1. **Fundamentals (44%):** architecture, workload objects, services and storage. Most questions come from here.
-2. **Container orchestration (28%):** runtimes, CNI/CSI/CRI, scheduling, basic security.
-3. **Architecture and delivery (28% combined):** principles, observability, CI/CD, GitOps, packaging.
-4. **Practice exams:** after each domain, then a full timed set.
-
 ## Pre-exam checklist
 
 - [ ] Name the control-plane and node components and what each does

@@ -168,12 +168,6 @@ spec:
 - Setting the pod-level `runAsNonRoot` while the image's user is root and no `runAsUser` is given.
 - Thinking PSA checks an already-running pod. It checks at creation and update of pods (and updates to pod templates through controllers).
 
-## Practice
-
-1. Take a pod with no security settings; make it pass `restricted` by editing only the securityContext and adding an emptyDir.
-2. Label a namespace `enforce=restricted` with `--dry-run=server` and identify an existing pod that would fail.
-3. Find the ReplicaSet event that explains a rejected Deployment.
-
 ## Quick reference
 
 ```bash

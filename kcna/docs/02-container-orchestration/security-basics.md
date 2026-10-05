@@ -44,10 +44,3 @@ Controls pod traffic by label. No policy means all traffic allowed; once a polic
 ## Secrets
 
 Base64 is encoding, not protection. Enable encryption at rest and limit who can read Secrets with RBAC.
-
-## Practice questions
-
-- What replaced PodSecurityPolicy? (Pod Security Admission, via namespace labels)
-- Does RBAC support deny rules? (No, only allow)
-- Which object grants permissions to a ServiceAccount inside one namespace? (RoleBinding)
-- Is a default Kubernetes Secret encrypted? (No)

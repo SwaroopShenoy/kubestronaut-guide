@@ -42,9 +42,3 @@ Benefits: audit trail through Git history, easy rollback (revert a commit), and 
 - GitOps is a deployment model; CI is about building and testing. They work together.
 - Git is storage for desired state; the reconciling agent does the work. Git alone does not deploy anything.
 - GitOps changes are pull-based. A push-based pipeline that runs `kubectl apply` is CD, not GitOps.
-
-## Practice questions
-
-- What is the source of truth in GitOps? (Git repository)
-- Which part reconciles the cluster toward Git? (An agent in the cluster, such as Argo CD or Flux)
-- Which practice is about merging small changes frequently and testing them? (Continuous integration)

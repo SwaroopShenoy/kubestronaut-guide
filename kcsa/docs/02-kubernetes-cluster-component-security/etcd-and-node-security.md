@@ -38,10 +38,3 @@ Node OS hardening:
 ## kube-proxy
 
 Runs on every node and programs Service routing rules. Keep it updated and restrict its credentials to what it needs.
-
-## Practice questions
-
-- Why is base64 in Secrets not a security control? (It is encoding, reversible by anyone who reads the object)
-- Which setting disables unauthenticated kubelet access? (`anonymous.enabled: false`)
-- What must be true of an identity provider listed last in an EncryptionConfiguration? (It is the plaintext fallback; it does not encrypt new writes)
-- Which port should a firewall restrict on each node? (Kubelet API, 10250)

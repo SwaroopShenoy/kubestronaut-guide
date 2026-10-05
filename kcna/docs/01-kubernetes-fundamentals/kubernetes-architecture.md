@@ -41,9 +41,3 @@ You declare desired state in the API. Controllers compare it with actual state a
 - The scheduler decides placement; it does not run containers.
 - etcd is the only component that stores state. Other components are stateless and can be restarted.
 - Docker Engine is not a runtime Kubernetes uses directly. Its dockershim was removed in Kubernetes 1.24; runtimes now speak CRI.
-
-## Practice questions
-
-- Which component decides where a Pod runs? (scheduler)
-- Which component stores cluster state? (etcd)
-- Which component on each node starts containers? (kubelet, through the runtime)

@@ -249,13 +249,6 @@ Diagnosis table:
 - Separating `podSelector` and `namespaceSelector` into two list items when you meant AND.
 - Writing `ports` at the wrong level (it belongs inside the same list item as `from`/`to`).
 
-## Practice
-
-1. Create default-deny ingress and egress in a namespace; confirm a busybox pod cannot reach a web pod.
-2. Add the DNS rule only; confirm name resolution works but HTTP does not.
-3. Add the minimal allows for the three-tier example; test every allowed and denied path.
-4. Rewrite a policy from OR semantics to AND semantics and observe the difference.
-
 ## Quick reference
 
 ```bash

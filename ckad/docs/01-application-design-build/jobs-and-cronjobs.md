@@ -97,12 +97,6 @@ kubectl create job backup-manual --from=cronjob/backup
 - Typo in `schedule`: the CronJob is accepted and never runs.
 - Forgetting `parallelism` when the task asks for concurrent runs.
 
-## Practice
-
-1. Create a Job with 5 completions and parallelism 2; wait for it.
-2. Create a CronJob that runs every 5 minutes; trigger one run manually.
-3. Find the failure in a Job whose command exits 1; confirm `backoffLimit` stops retries.
-
 ## Quick reference
 
 ```bash

@@ -66,11 +66,6 @@ Use the image in a pod with `imagePullPolicy: IfNotPresent` so the cluster uses 
 - Writing `ENTRYPOINT` in shell form and then wondering why signals do not reach the app.
 - Leaving `USER` unset and then setting `runAsNonRoot` in the pod (the pod fails to start).
 
-## Practice
-
-1. Take a Dockerfile that runs as root and build it with a non-root `USER`.
-2. Reduce the image size with a multi-stage build; compare `docker images` output.
-
 ## Quick reference
 
 ```bash

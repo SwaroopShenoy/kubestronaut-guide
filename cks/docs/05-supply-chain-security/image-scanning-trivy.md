@@ -32,7 +32,7 @@ Reading the table:
 - Fixed Version empty: no upstream fix yet. Mitigate (remove the package, change the base image, or accept with a documented exception).
 - Fixed Version present: upgrade to at least that version by rebuilding the image.
 
-The output of real scans will not match any example in this course; the CVE IDs and counts change daily. Practice reading the columns, not memorized results.
+The output of real scans will not match any example in this course; the CVE IDs and counts change daily. Read the columns, not memorized results.
 
 ## Gate a build on findings
 
@@ -104,12 +104,6 @@ SBOM output is useful for audit trails and for re-scanning later without pulling
 - Assuming a clean scan means no risk. Scanners only know CVEs in their database; they miss misconfigurations and custom code.
 - Gating on all severities and blocking every build on unfixable findings. Use `--ignore-unfixed` and a reviewed `.trivyignore`.
 - Scanning a tag that was rebuilt since. Scan the digest you push.
-
-## Practice
-
-1. Scan a public image; count CRITICAL findings with and without `--ignore-unfixed`.
-2. Make a scan fail the shell with `--exit-code 1`, then add an ignore entry for one CVE and rerun.
-3. Run `trivy config` on a manifest with `privileged: true` and read the finding.
 
 ## Quick reference
 

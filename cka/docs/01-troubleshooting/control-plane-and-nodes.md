@@ -157,13 +157,6 @@ sudo systemctl restart kubelet
 
 Renewing `all` also rewrites kubeconfig files. Copy the new admin kubeconfig to `~/.kube/config` if your workstation uses it.
 
-## Practice
-
-1. Break `kube-scheduler.yaml` by changing one flag; confirm the scheduler disappears; restore it.
-2. Set `--anonymous-auth` to an invalid value in the API server manifest; diagnose from `crictl logs`; fix it.
-3. Stop kubelet on a worker, make the node NotReady, bring it back, uncordon it.
-4. Add swap back in a lab node and confirm kubelet refuses to start.
-
 ## Quick reference
 
 ```bash

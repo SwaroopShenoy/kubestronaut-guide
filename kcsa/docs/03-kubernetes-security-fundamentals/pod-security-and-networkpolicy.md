@@ -38,10 +38,3 @@ Dangerous settings that Baseline blocks: `hostNetwork`, `hostPID`, `hostIPC`, `h
 - Default-deny first, then allow specific paths. Remember DNS if egress is restricted.
 
 Selectors: `podSelector`, `namespaceSelector`, `ipBlock`.
-
-## Practice questions
-
-- Which Pod Security level is the most restrictive? (Restricted)
-- What happens to a pod with no NetworkPolicy selecting it? (All traffic is allowed)
-- Name one setting that Baseline blocks and why it matters. (Privileged containers: they can access host resources)
-- Which replaced PodSecurityPolicy? (Pod Security Admission)

@@ -38,9 +38,3 @@ Secret types include Opaque (generic), `kubernetes.io/tls`, and `kubernetes.io/d
 - Service (stable network address) vs Pod IP (changes when the pod is replaced).
 - ConfigMap (plain) vs Secret (sensitive, but not encrypted by default).
 - PV (the storage) vs PVC (the request for it).
-
-## Practice questions
-
-- Which Service type exposes an app on every node's IP? (NodePort)
-- Is a Kubernetes Secret encrypted by default? (No; it is base64-encoded)
-- What object requests storage from a StorageClass on behalf of a pod? (PersistentVolumeClaim)

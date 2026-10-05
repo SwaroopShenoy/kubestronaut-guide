@@ -31,9 +31,3 @@ Use Helm when you need a packaged, parameterized product. Use Kustomize when you
 | Version and share your own app with parameters | Helm |
 | Per-environment differences in your own manifests | Kustomize |
 | GitOps with either | Both work with Argo CD and Flux |
-
-## Practice questions
-
-- What is a Helm release? (An installed instance of a chart)
-- Does Kustomize use templates? (No; it uses base and overlays with patches)
-- Did Helm 3 keep Tiller? (No; it was removed)

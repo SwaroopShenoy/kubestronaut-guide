@@ -7,8 +7,7 @@ Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Reference · Prev: [jq
 Rego is the policy language used by OPA and Gatekeeper. The course assumption is:
 
 - **Reading** a Rego rule and understanding what it rejects: expected.
-- **Editing** parameters or a small condition in a given ConstraintTemplate: plausible.
-- **Writing a new policy from scratch under exam time pressure**: not expected. Confirm with the official curriculum; if the exam provides a template, the skill is adapting it.
+- **Writing or editing** a policy, including a ConstraintTemplate: not expected. The examples here are reading material. Confirm with the official curriculum.
 
 ## Core model
 

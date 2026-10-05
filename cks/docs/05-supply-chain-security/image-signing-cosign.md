@@ -94,11 +94,6 @@ The older `cosign attach sbom` command is deprecated in favor of attestations.
 - Storing `cosign.key` in the repository. Store it in the CI secret store, and keep the password separate.
 - Verifying in CI but not at admission. A pod can still be created by hand.
 
-## Practice
-
-1. Generate a key pair, sign a digest, verify it, then change one byte of a test file in a new image and show verification fails for the new digest.
-2. Verify the same signed image by tag after pushing a different image to the same tag; observe why digest verification is safer.
-
 ## Quick reference
 
 ```bash

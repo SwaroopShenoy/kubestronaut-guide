@@ -97,12 +97,6 @@ kubectl get pods -n kube-system
 - Forgetting `kubeadm upgrade node` on workers; kubelet then runs with an outdated config.
 - Leaving a worker cordoned after upgrade.
 
-## Practice
-
-1. Run `kubeadm upgrade plan` on a lab control plane and read the target versions and warnings.
-2. Drain and uncordon a worker; confirm pods rescheduled.
-3. Write the exact order of commands for a two-node upgrade on paper before typing it.
-
 ## Quick reference
 
 ```bash

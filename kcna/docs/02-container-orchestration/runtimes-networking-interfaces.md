@@ -39,10 +39,3 @@ A CNI plugin that supports NetworkPolicy (Calico, Cilium) enforces policy rules.
 
 - An image is a layered, read-only template. A tag names a version; a digest identifies exact content.
 - Prefer pinned tags or digests. `latest` changes without warning.
-
-## Practice questions
-
-- Which interface lets Kubernetes use containerd or CRI-O? (CRI)
-- Which interface provides pod IP addresses? (CNI)
-- Which interface connects Kubernetes to external storage? (CSI)
-- Which runtime did Kubernetes stop using directly in 1.24? (Docker Engine, via dockershim)

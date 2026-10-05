@@ -84,12 +84,6 @@ kubectl run t -n prod --rm -it --image=busybox:1.36 --restart=Never -- wget -qO-
 - Writing `podSelector` and `namespaceSelector` in separate list items when you meant both to match (that is OR, not AND).
 - Forgetting `ports`: omitting them allows every port.
 
-## Practice
-
-1. Create a default-deny policy in a namespace; confirm a test pod cannot reach a web pod.
-2. Add the single allow rule; confirm only that path works.
-3. Add an egress policy without DNS; observe the name resolution failure; add the DNS rule.
-
 ## Quick reference
 
 ```bash

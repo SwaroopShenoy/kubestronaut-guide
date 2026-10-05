@@ -156,13 +156,6 @@ sudo journalctl -k | grep -i apparmor      # denials are logged here
 
 Some distributions use SELinux instead of AppArmor. The pod field is `securityContext.seLinuxOptions` with `level`, `role`, `type`, `user`. Learn that it exists; don't assume it is the lab's MAC system without checking `getenforce`.
 
-## Practice
-
-1. Apply `RuntimeDefault` to a pod; confirm `Seccomp: 2` in `/proc/self/status`.
-2. Create a Localhost seccomp profile, mount it, and confirm the pod starts.
-3. Load the AppArmor profile above on a node, apply it to a pod, prove `/etc` is denied and `/tmp` is writable.
-4. Break the profile name on purpose and read the event that results.
-
 ## Quick reference
 
 ```bash

@@ -85,12 +85,6 @@ spec:
 - Expecting a NodePort to work on a node that has no kube-proxy running.
 - Testing with `curl` from the node instead of from inside the cluster.
 
-## Practice
-
-1. Create a Deployment with three replicas and a ClusterIP Service. Confirm three endpoints.
-2. Expose the same Deployment as NodePort. Connect from a pod using the node IP and the port.
-3. Create a headless Service for a StatefulSet and resolve a pod name from another pod.
-
 ## Quick reference
 
 ```bash

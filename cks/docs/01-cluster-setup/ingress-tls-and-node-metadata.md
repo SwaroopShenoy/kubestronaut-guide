@@ -102,12 +102,6 @@ If the check fails, do not run the binary. Repeat for `kube-apiserver`, `kube-co
 
 The checksum file name and path are part of the release layout; if the URL 404s, look up the current layout in the Kubernetes install docs rather than guessing.
 
-## Practice
-
-1. Create a TLS secret and an Ingress that references it; confirm `describe` shows the TLS host.
-2. Add the metadata-blocking egress exception to a namespace's allow-list and test from a pod.
-3. Verify the kubelet binary checksum on a node.
-
 ## Quick reference
 
 ```bash

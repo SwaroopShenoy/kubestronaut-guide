@@ -81,11 +81,6 @@ For CKA, apply an existing CRD, create instances, and list or describe them. Wri
 - Typing the plural name wrong. `kubectl get` uses the plural or the short name.
 - Forgetting that deleting a CRD deletes all its instances.
 
-## Practice
-
-1. Create the CronTab CRD and one instance; list them with the short name.
-2. Use `kubectl explain` to find the required field for a CRD you did not write.
-
 ## Quick reference
 
 ```bash

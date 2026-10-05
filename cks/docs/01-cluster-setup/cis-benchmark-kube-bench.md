@@ -111,7 +111,7 @@ Verify the read-only port is closed:
 sudo ss -tlnp | grep 10255 || echo "10255 closed"
 ```
 
-## Workflow for a timed exam task
+## Workflow for an exam task
 
 1. `kube-bench run --targets <target>` and capture FAILs.
 2. Pick the two or three that are quick (anonymous auth, authorization mode, readOnlyPort, file permissions).
@@ -125,13 +125,6 @@ sudo ss -tlnp | grep 10255 || echo "10255 closed"
 - Setting the value in the wrong file: API server flags go in the manifest, kubelet settings go in `config.yaml`.
 - Writing a YAML syntax error in a static pod manifest. The pod disappears and you lose the API server. Re-check with `kubectl get pods -n kube-system` and `crictl ps` if the API stops responding.
 - Assuming a check is still valid. Remediations that mention removed flags are outdated.
-
-## Practice
-
-1. Run kube-bench on a control-plane node and list every FAIL.
-2. Fix anonymous auth and authorization mode; confirm both now pass.
-3. Set `readOnlyPort: 0`, restart kubelet, and confirm port 10255 is closed.
-4. Tighten file permissions on the etcd data directory and the kubeconfigs.
 
 ## Quick reference
 

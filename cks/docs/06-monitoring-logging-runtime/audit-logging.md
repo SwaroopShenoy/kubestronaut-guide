@@ -180,12 +180,6 @@ Read the `user.username` field. If it is a ServiceAccount, trace it to the workl
 - Setting `RequestResponse` on everything. The log fills and the disk fills with it.
 - Writing the policy with `sudo cat > file`. The redirect runs without sudo.
 
-## Practice
-
-1. Enable the policy; run `kubectl create secret generic demo --from-literal=a=b`; find the event with `jq`.
-2. Run `kubectl exec` into a pod; find the `pods` / `exec` event and the user.
-3. Create a failing request as an unprivileged user; filter for 403s.
-
 ## Quick reference
 
 ```bash

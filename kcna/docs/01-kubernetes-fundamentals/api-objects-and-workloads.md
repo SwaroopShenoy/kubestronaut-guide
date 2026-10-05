@@ -48,9 +48,3 @@ Virtual partitions inside a cluster. Default namespaces: `default`, `kube-system
 - Deployment vs StatefulSet: stable identity and storage vs interchangeable replicas.
 - Job vs CronJob: one-off vs scheduled.
 - DaemonSet vs Deployment: one per node vs a chosen replica count.
-
-## Practice questions
-
-- Which resource runs one copy of a logging agent on every node? (DaemonSet)
-- Which resource gives each replica a stable hostname and its own volume? (StatefulSet)
-- Which resource retries a batch task until it succeeds a set number of times? (Job)

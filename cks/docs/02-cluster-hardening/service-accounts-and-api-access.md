@@ -106,12 +106,6 @@ Pair these controls with the audit policy in [Audit logging](../06-monitoring-lo
 - requests with `user.username` starting with `system:serviceaccount:` touching secrets or RBAC
 - `401` and `403` response codes (`responseStatus.code`)
 
-## Practice
-
-1. Create a pod with auto-mount disabled and prove the token directory is absent.
-2. Mint a short-lived token for a ServiceAccount and use it to list pods, then to list secrets, to see which permissions it has.
-3. Find ServiceAccount token Secrets in a cluster and remove one that nothing uses.
-
 ## Quick reference
 
 ```bash

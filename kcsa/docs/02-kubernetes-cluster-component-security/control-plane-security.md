@@ -35,10 +35,3 @@ The old `--insecure-port` flag was removed from the API server; if a source says
 ## Audit logging
 
 The API server records requests according to an audit policy. Levels, from least to most detail: `None`, `Metadata`, `Request`, `RequestResponse`. Logs answer who, what, when and the result. Log secret reads and RBAC changes at a useful level; log full request bodies only where needed, since they may contain secrets.
-
-## Practice questions
-
-- What runs after authentication and authorization? (Admission control)
-- Which mode should replace `AlwaysAllow`? (`RBAC`, usually combined with `Node`)
-- Can a ServiceAccount token be used to authenticate to the API? (Yes, as a bearer token)
-- Which admission plugin restricts what a kubelet can change? (NodeRestriction)

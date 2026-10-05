@@ -76,12 +76,6 @@ jq -r '.. | .image? // empty' pod.json          # every image string anywhere in
 - Comparing numbers as strings. `"403"` and `403` are different; use the number from `responseStatus.code`.
 - Filtering exec on `objectRef.resource == "pods/exec"`. Use `subresource`.
 
-## Practice
-
-1. Count audit events per user.
-2. List every `403` with user and resource.
-3. List all pods in the cluster whose `securityContext.runAsNonRoot` is not `true`.
-
 ## Quick reference
 
 ```bash

@@ -33,9 +33,3 @@ Not confirmed: 90 minutes, 60 questions, 75% passing score, three-year validity 
 
 - The source guide covered MITRE ATT&CK for containers only by name; the threat model doc now gives the categories.
 - Compliance content is recognition-level; the frameworks doc does not go into legal detail.
-
-## Next steps
-
-1. Check each bullet of the current KCSA curriculum against a topic doc.
-2. Practice reading each control as evidence for a threat or framework, since the exam asks scenario questions.
-3. Take practice exams after each domain.

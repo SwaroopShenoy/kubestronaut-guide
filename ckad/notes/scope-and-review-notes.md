@@ -40,9 +40,3 @@ Not confirmed:
 
 - Probe and deployment content was thorough; the observability domain's metrics and monitoring coverage was brief. Expand from the official curriculum if the task list shows more.
 - Dockerfile content is included as a CKAD topic; confirm its weight in the curriculum.
-
-## Next steps
-
-1. Check each bullet of the current CKAD curriculum against a topic doc.
-2. Run each practice block on a lab cluster.
-3. Do two timed mocks after finishing the five domains.

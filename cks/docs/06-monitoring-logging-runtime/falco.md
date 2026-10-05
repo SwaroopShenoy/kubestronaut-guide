@@ -4,7 +4,9 @@ Up: [CKS hub](../../CKS_2026_Complete_Crash_Course.md) · Domain 6 — Monitorin
 
 ## Exam scope
 
-**In scope:** confirming Falco is running and producing alerts, reading an alert, understanding rule structure, and writing or editing a rule to match a given behavior.
+**In scope:** confirming Falco is running and producing alerts, and reading an alert. Understanding rule structure is useful for reading.
+
+**Not expected:** writing or editing Falco rules from scratch. The rule examples here are for reading.
 
 The earlier course suggested installing Falco with `apt-key` and a daemonset URL. Both are outdated. Use the official chart or package from falco.org and follow its install docs for the installed version.
 
@@ -125,12 +127,6 @@ Do not hardcode webhook URLs in shared files; use a secret-managed value.
 - Forgetting to restart or reload after editing a rules file.
 - Putting custom rules in the default rules file. Edits there are overwritten on upgrade. Use `rules.d/`.
 - Alerting on every shell in every namespace. Scope with a macro or container label.
-
-## Practice
-
-1. Confirm Falco is running on every node.
-2. Spawn a shell in a test pod; find the alert.
-3. Write a rule that alerts when `/etc/passwd` is opened for writing inside a container, trigger it, and read the output.
 
 ## Quick reference
 

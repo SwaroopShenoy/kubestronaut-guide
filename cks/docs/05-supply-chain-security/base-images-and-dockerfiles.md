@@ -62,11 +62,6 @@ hadolint Dockerfile
 
 hadolint flags missing `USER`, unpinned tags, and `apt-get` without `--no-install-recommends`. Run it in CI next to Trivy.
 
-## Practice
-
-1. Take a Dockerfile that runs as root and ships a compiler; rewrite it as multi-stage with a non-root user.
-2. Compare the Trivy finding counts before and after.
-
 ## Quick reference
 
 ```bash

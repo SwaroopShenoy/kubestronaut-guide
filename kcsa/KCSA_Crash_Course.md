@@ -32,16 +32,6 @@ Reference:
 
 - [Security tools map](reference/security-tools-map.md)
 
-## Study order
-
-Domains 2 and 3 are 44% of the exam together; study them first.
-
-1. **Domain 2 and 3 (44%):** control plane, etcd, nodes, RBAC, pod security, NetworkPolicy, secrets.
-2. **Domain 1 and 4 (30%):** the 4Cs and threat modeling.
-3. **Domain 5 (16%):** supply chain, admission, runtime security.
-4. **Domain 6 (10%):** CIS benchmark, audit logs, frameworks.
-5. **Practice exams** after each block, then a full timed set.
-
 ## Pre-exam checklist
 
 - [ ] Explain the 4Cs in order and give one control per layer

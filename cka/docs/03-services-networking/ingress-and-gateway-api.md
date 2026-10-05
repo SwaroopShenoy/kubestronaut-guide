@@ -105,11 +105,6 @@ If the task names an Ingress, use Ingress. If it names a Gateway or HTTPRoute, u
 - Forgetting `parentRefs` on an HTTPRoute.
 - Wrong backend port in Ingress or HTTPRoute.
 
-## Practice
-
-1. Create an Ingress for a Service and read its status.
-2. List GatewayClasses in the cluster and create a Gateway plus HTTPRoute that uses one.
-
 ## Quick reference
 
 ```bash

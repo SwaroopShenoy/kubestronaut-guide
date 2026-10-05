@@ -60,11 +60,6 @@ kubectl describe netpol <name> -n <ns>
 - NetworkPolicy egress rule without DNS: names do not resolve.
 - Assuming a ClusterIP is reachable from outside the cluster.
 
-## Practice
-
-1. Break a Service selector, confirm empty endpoints, fix it.
-2. Add an egress NetworkPolicy without DNS; confirm name resolution fails; add the DNS rule.
-
 ## Quick reference
 
 ```bash

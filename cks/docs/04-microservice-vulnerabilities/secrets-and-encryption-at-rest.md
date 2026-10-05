@@ -131,12 +131,6 @@ RBAC verbs `get`, `list`, and `watch` on `secrets` all expose values. A `list` r
 - Forgetting to re-run the `replace` step, so older Secrets remain plaintext in etcd.
 - Deleting the old key before re-encrypting. Old data becomes unreadable.
 
-## Practice
-
-1. Create a Secret; read the raw etcd value and confirm it is plaintext.
-2. Enable an EncryptionConfiguration; create a new Secret; confirm the etcd value is encrypted.
-3. Re-encrypt existing Secrets with `replace` and confirm old values change.
-
 ## Quick reference
 
 ```bash

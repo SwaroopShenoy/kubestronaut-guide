@@ -61,7 +61,7 @@ kubectl describe node <node> | grep -A6 Conditions
 
 If `kubectl top` fails, metrics-server is missing or broken. Check `kubectl get pods -n kube-system | grep metrics`.
 
-## Workflow for a timed task
+## Workflow for a task
 
 1. Read the task fully and note the context and namespace.
 2. Run one `get` and one `describe` on the failing object.
@@ -75,12 +75,6 @@ If `kubectl top` fails, metrics-server is missing or broken. Check `kubectl get 
 - Fixing a symptom in a Deployment when the pod template in the Deployment is the cause (fix the template, not the pod).
 - Editing a pod that a controller will recreate. Edit the Deployment, StatefulSet or DaemonSet instead.
 - Declaring success without testing from inside the cluster.
-
-## Practice
-
-1. Scale a Deployment to a replica count the nodes cannot fit; diagnose the Pending pods from Events.
-2. Set an image tag that does not exist; diagnose ImagePullBackOff.
-3. Break a readiness probe path; confirm the Service loses endpoints.
 
 ## Quick reference
 

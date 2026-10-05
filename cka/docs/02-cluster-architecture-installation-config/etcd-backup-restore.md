@@ -77,12 +77,6 @@ Check that the `hostPath` volume for the data directory in `etcd.yaml` points at
 - Mismatched `--name` or `--initial-cluster` values.
 - Restoring but not moving the API server manifest back.
 
-## Practice
-
-1. Take a snapshot; check its status.
-2. Create a Deployment, take a snapshot, delete the Deployment, restore, and confirm it returns.
-3. Put a cron entry in writing for a daily snapshot; do not install cron unless the task asks.
-
 ## Quick reference
 
 ```bash

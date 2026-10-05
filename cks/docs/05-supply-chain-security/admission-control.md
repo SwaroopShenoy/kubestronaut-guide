@@ -106,12 +106,6 @@ Gatekeeper cannot verify image signatures by itself. Signature verification at a
 - Deploying a policy before testing it. Use `--dry-run=server` or warn/audit modes first.
 - Writing a Gatekeeper constraint with `enforcementAction: audit`. The valid values are `deny`, `dryrun`, and `warn`.
 
-## Practice
-
-1. Apply the ValidatingAdmissionPolicy above with `Deny`; confirm a root pod is rejected and a compliant pod is accepted.
-2. Change the binding to `Warn` and observe the difference in the client output.
-3. Explain why `defaultAllow: true` is a finding.
-
 ## Quick reference
 
 ```bash

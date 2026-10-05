@@ -97,11 +97,6 @@ If the task gives a chart, use Helm. If it gives a base directory and an overlay
 - Forgetting that `kubectl apply -k` takes a directory that contains `kustomization.yaml`, not the file itself.
 - Using a deprecated kustomize field (`commonLabels`, `bases`).
 
-## Practice
-
-1. Install a chart with one custom value, upgrade it, roll back to revision 1, uninstall.
-2. Build a base with a Deployment and a Service; create a prod overlay that sets replicas and an image tag; render it with `kubectl kustomize`.
-
 ## Quick reference
 
 ```bash

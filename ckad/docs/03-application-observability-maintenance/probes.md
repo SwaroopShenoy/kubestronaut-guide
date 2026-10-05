@@ -101,12 +101,6 @@ Common failures:
 - Setting `successThreshold` above 1 on liveness (the API rejects it).
 - Setting the probe port to the Service port instead of the container port.
 
-## Practice
-
-1. Add a readiness probe that fails; confirm the Service endpoints drop the pod.
-2. Add a startup probe to a slow app; confirm liveness waits.
-3. Make a liveness probe fail on purpose; watch the restart count increase.
-
 ## Quick reference
 
 ```bash

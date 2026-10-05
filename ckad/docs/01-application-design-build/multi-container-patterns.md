@@ -125,12 +125,6 @@ spec:
 - Putting an init container under `containers:`.
 - Looking for logs of an init container with `kubectl logs <pod>` (you need `-c <name>`).
 
-## Practice
-
-1. Add a sidecar that reads a shared log file; confirm the sidecar can see the file.
-2. Add an init container that fails until a Service exists; create the Service; watch the pod start.
-3. Convert the sidecar to a native sidecar and compare the pod status.
-
 ## Quick reference
 
 ```bash

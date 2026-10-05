@@ -33,21 +33,6 @@ Reference material (not a domain):
 - [kubectl speed and vim](reference/kubectl-speed-and-vim.md)
 - [API discovery and documentation navigation](reference/api-discovery-and-docs.md)
 
-## Study order
-
-Start with the highest-weight domain, since troubleshooting touches everything else.
-
-1. **Speed foundations:** [kubectl speed](reference/kubectl-speed-and-vim.md), [Deployments](docs/04-workloads-scheduling/deployments-and-scaling.md), [Services and DNS](docs/03-services-networking/services-and-dns.md).
-2. **Troubleshooting (30%):** all three troubleshooting docs. Break things on purpose and fix them against a timer.
-3. **Cluster architecture (25%):** [RBAC](docs/02-cluster-architecture-installation-config/rbac.md), [kubeadm](docs/02-cluster-architecture-installation-config/kubeadm-install-and-upgrade.md), [certificates](docs/02-cluster-architecture-installation-config/certificates-and-kubeconfig.md), [etcd](docs/02-cluster-architecture-installation-config/etcd-backup-restore.md).
-4. **Networking, workloads and storage:** remaining topic docs.
-5. **Mock exams:** timed sessions after the domains above.
-
-Time plan:
-
-- **3–4 weeks:** one or two domains per week, daily 1–2 hours of lab work, final week timed mocks.
-- **1 week (refresher only):** troubleshooting and RBAC drills, then mocks.
-
 ## Exam habits
 
 - Set the context and namespace from each task before typing (`kubectl config use-context`).

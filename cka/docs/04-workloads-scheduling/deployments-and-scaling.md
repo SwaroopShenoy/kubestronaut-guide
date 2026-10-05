@@ -91,12 +91,6 @@ kubectl set serviceaccount deploy web builder
 - Changing the selector on an existing Deployment (the API rejects it).
 - Missing `--record`-style history: use `kubectl annotate deploy web kubernetes.io/change-cause="..."` if the task asks for a change reason.
 
-## Practice
-
-1. Deploy `nginx:1.27`, update to `1.28`, roll back to the first revision.
-2. Set requests and limits without an editor.
-3. Scale to 0 and back; observe the ReplicaSet.
-
 ## Quick reference
 
 ```bash

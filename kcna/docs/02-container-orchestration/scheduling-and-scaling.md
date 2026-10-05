@@ -37,10 +37,3 @@ Taint effects: `NoSchedule` (new pods rejected), `PreferNoSchedule` (avoided if 
 | KEDA | Replicas, including to zero | External events such as queue length |
 
 Do not run HPA and VPA on the same resource metric at once.
-
-## Practice questions
-
-- Which resource decides where a pod is placed? (The scheduler, using requests and constraints)
-- A pod stays Pending with "insufficient cpu". What is the likely cause? (Requests too high for any node)
-- Which autoscaler adds nodes? (Cluster Autoscaler)
-- Which autoscaler changes the number of replicas based on CPU? (HPA)

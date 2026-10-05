@@ -116,12 +116,6 @@ kubectl get storageclass
 - Asking for RWX on a backend that only supports RWO.
 - Forgetting `allowVolumeExpansion` before trying to resize.
 
-## Practice
-
-1. Create the PV and PVC above; confirm they bind; mount the PVC in a pod and write a file.
-2. Delete the pod and PVC; confirm the PV goes Released (Retain).
-3. List StorageClasses in your cluster and identify the default.
-
 ## Quick reference
 
 ```bash

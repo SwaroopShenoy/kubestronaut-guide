@@ -42,37 +42,6 @@ Your question about Rego, seccomp and AppArmor is answered in full in the notes.
 
 Other items in the earlier course that are not core: PodSecurityPolicy (removed in 1.25), Istio mTLS (not confirmed by any source checked), Kyverno and Gatekeeper internals (treat as reference).
 
-## Study order
-
-Work through the domains in weight order, and do the practice blocks on a live lab each time.
-
-1. **Foundations:** [RBAC](docs/02-cluster-hardening/rbac.md), [Security context and PSS](docs/04-microservice-vulnerabilities/security-context-and-pss.md), [Network policy](docs/01-cluster-setup/network-policy.md). These show up in almost every task.
-2. **Supply chain:** [Trivy](docs/05-supply-chain-security/image-scanning-trivy.md), [Cosign](docs/05-supply-chain-security/image-signing-cosign.md), [Admission control](docs/05-supply-chain-security/admission-control.md).
-3. **Cluster and host:** [CIS benchmark](docs/01-cluster-setup/cis-benchmark-kube-bench.md), [Secrets and encryption](docs/04-microservice-vulnerabilities/secrets-and-encryption-at-rest.md), [Host hardening](docs/03-system-hardening/host-hardening.md), [Service accounts](docs/02-cluster-hardening/service-accounts-and-api-access.md), [Cluster upgrades](docs/02-cluster-hardening/cluster-upgrades.md).
-4. **Runtime:** [Audit logging](docs/06-monitoring-logging-runtime/audit-logging.md), [jq](docs/06-monitoring-logging-runtime/jq-for-audit-data.md), [Falco](docs/06-monitoring-logging-runtime/falco.md), [AppArmor and seccomp](docs/03-system-hardening/apparmor-and-seccomp.md), [Runtime sandboxes](docs/04-microservice-vulnerabilities/runtime-sandboxes.md), [Ingress and metadata](docs/01-cluster-setup/ingress-tls-and-node-metadata.md), [Base images](docs/05-supply-chain-security/base-images-and-dockerfiles.md).
-
-Time plan:
-
-- **1 week:** one domain per day, then a timed mock on day 7.
-- **2 weeks:** week 1 learn and practice each domain; week 2 timed drills.
-- **4 weeks:** weeks 1–2 domains with labs; week 3 drills and gap analysis; week 4 final drills and review of the notes.
-
-## Timed task patterns
-
-Most tasks are one of these. Practice each until the first working command takes under two minutes.
-
-| Pattern | Start here |
-|---|---|
-| Make a pod compliant with restricted PSS | [Security context and PSS](docs/04-microservice-vulnerabilities/security-context-and-pss.md) |
-| Default-deny plus specific allows, with DNS | [Network policy](docs/01-cluster-setup/network-policy.md) |
-| Remove an over-broad binding and prove it | [RBAC](docs/02-cluster-hardening/rbac.md) |
-| Fix CIS FAILs in control-plane or kubelet config | [CIS benchmark](docs/01-cluster-setup/cis-benchmark-kube-bench.md) |
-| Enable audit logging and answer a who/what question | [Audit logging](docs/06-monitoring-logging-runtime/audit-logging.md) |
-| Scan an image and gate on severity | [Trivy](docs/05-supply-chain-security/image-scanning-trivy.md) |
-| Enable encryption at rest | [Secrets and encryption](docs/04-microservice-vulnerabilities/secrets-and-encryption-at-rest.md) |
-| Apply a seccomp or AppArmor profile | [AppArmor and seccomp](docs/03-system-hardening/apparmor-and-seccomp.md) |
-| Confirm Falco alerts on a trigger | [Falco](docs/06-monitoring-logging-runtime/falco.md) |
-
 ## Exam habits
 
 - Read each task fully; note the cluster context and namespace before typing.
@@ -83,7 +52,6 @@ Most tasks are one of these. Practice each until the first working command takes
 
 ## Pre-exam checklist
 
-Knowledge:
 
 - [ ] NetworkPolicy: ingress, egress, selector AND vs OR, DNS egress, default-deny
 - [ ] PSA labels, the three modes, restricted requirements, reading a rejection
@@ -98,13 +66,6 @@ Knowledge:
 - [ ] AppArmor and seccomp: apply, load, verify
 - [ ] Falco: check running, read an alert, edit a rule in `rules.d/`
 - [ ] Upgrade order: control plane, then nodes
-
-Practice:
-
-- [ ] Restricted-compliant pod in under 5 minutes
-- [ ] Default-deny with DNS in under 5 minutes
-- [ ] Audit query answered in under 3 minutes
-- [ ] One CIS FAIL fixed and verified in under 5 minutes
 
 ## Common mistakes (summary)
 
@@ -182,6 +143,3 @@ docs/
 _archive/                                  the original 12 files, unmodified
 ```
 
----
-
-You have the material. Now run the practice blocks on a lab cluster.

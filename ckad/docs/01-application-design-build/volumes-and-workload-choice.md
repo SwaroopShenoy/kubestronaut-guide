@@ -84,11 +84,6 @@ spec:
 - Using `hostPath` when the task asks for ephemeral shared storage (use `emptyDir`).
 - Forgetting that an emptyDir is wiped when the pod is deleted.
 
-## Practice
-
-1. Share an emptyDir between two containers; confirm the second container sees files the first writes.
-2. Run an app with a read-only root filesystem; give it a writable `/tmp`.
-
 ## Quick reference
 
 ```bash

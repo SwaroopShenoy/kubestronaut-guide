@@ -62,11 +62,6 @@ volumes:
 - Using the wrong namespace in the subject. The subject namespace is the ServiceAccount's namespace.
 - Binding a Role that lacks the verb the app needs (`list` and `watch` are separate verbs).
 
-## Practice
-
-1. Start an app pod with the default ServiceAccount; observe the 403 from an API call; fix it with a Role and RoleBinding.
-2. Disable token automount on a pod that does not need the API.
-
 ## Quick reference
 
 ```bash

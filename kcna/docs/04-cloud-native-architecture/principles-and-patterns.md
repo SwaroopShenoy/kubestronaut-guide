@@ -46,9 +46,3 @@ A single entry point for clients: routing, authentication, rate limiting and pro
 ## Autoscaling
 
 Covered in [scheduling and scaling](../02-container-orchestration/scheduling-and-scaling.md): HPA, VPA, Cluster Autoscaler, KEDA.
-
-## Practice questions
-
-- Which principle says configuration lives in the environment? (Twelve-factor: config)
-- What does a service mesh move out of the application? (Service-to-service networking concerns such as mTLS and retries)
-- Which project provides Kubernetes-based serverless? (Knative)

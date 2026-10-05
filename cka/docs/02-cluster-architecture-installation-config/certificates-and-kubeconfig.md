@@ -103,12 +103,6 @@ The user has no permissions until a RoleBinding exists. See [RBAC](rbac.md).
 | `forbidden` | Authentication works; RBAC is missing |
 | `context ... does not exist` | Typo in context name or wrong kubeconfig file |
 
-## Practice
-
-1. Find the expiry date of the API server certificate and the etcd server certificate.
-2. Create a client certificate for a new user, a kubeconfig for that user, and prove the user is forbidden until you add a RoleBinding.
-3. Set a namespace default on a context and confirm `kubectl get pods` uses it.
-
 ## Quick reference
 
 ```bash

@@ -124,12 +124,6 @@ Do not delete and recreate `cluster-admin` bindings to `system:masters`; you can
 - Forgetting the subject namespace on a ServiceAccount in a RoleBinding (`namespace: production` is required).
 - Assuming `get` implies `list` or `watch`. Each verb is separate.
 
-## Practice
-
-1. Find every ClusterRoleBinding that is not a `system:` identity.
-2. Find a ServiceAccount with `secrets` read; replace the binding with a narrower one.
-3. Use `can-i --list` to prove the before/after difference.
-
 ## Quick reference
 
 ```bash

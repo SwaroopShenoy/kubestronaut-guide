@@ -44,9 +44,3 @@ The 2025 source guide had a separate Observability domain at 8%. The CNCF KCNA p
 - Metrics are aggregated numbers; logs are discrete events; traces follow one request.
 - metrics-server (resource usage) vs kube-state-metrics (object state).
 - Prometheus pulls; applications expose a metrics endpoint.
-
-## Practice questions
-
-- Which tool scrapes metrics from targets on an interval? (Prometheus)
-- Which Kubernetes component provides `kubectl top` data? (metrics-server)
-- Which standard unifies traces, metrics and logs? (OpenTelemetry)

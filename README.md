@@ -32,7 +32,7 @@ One common order is KCNA, then CKA, CKAD, KCSA, and CKS last. This is a suggesti
 
 Each cert folder follows the same structure:
 
-- `<CERT>_Crash_Course.md` — hub: exam facts, domain table, study order, checklist
+- `<CERT>_Crash_Course.md` — hub: exam facts, domain table, reading order, checklist
 - `docs/` — one folder per exam domain, with topic docs that each link up to the hub and to the previous and next topic
 - `reference/` — tool and command references
 - `notes/` — what was confirmed, what the source guides got wrong, and what remains open

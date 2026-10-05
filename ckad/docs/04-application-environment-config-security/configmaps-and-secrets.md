@@ -82,12 +82,6 @@ Pick keys from different sources explicitly rather than relying on merge behavio
 - Expecting `envFrom` to pick up a ConfigMap change without a restart.
 - Putting secrets in a ConfigMap. Use a Secret.
 
-## Practice
-
-1. Mount a ConfigMap as a directory and a Secret as a read-only directory; confirm the files exist with `kubectl exec`.
-2. Change a ConfigMap value; observe that env vars stay old until the pod restarts, while the mounted file updates.
-3. Create a pod that references a missing key and read the `CreateContainerConfigError` event.
-
 ## Quick reference
 
 ```bash

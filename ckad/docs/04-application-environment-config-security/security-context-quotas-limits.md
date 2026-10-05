@@ -109,12 +109,6 @@ Requests are used for scheduling. Exceeding a memory limit kills the container (
 - Creating a quota and then wondering why pods without requests fail.
 - Setting `drop: ["ALL"]` and forgetting that the app needs `NET_BIND_SERVICE` to bind port 80.
 
-## Practice
-
-1. Make an app run as UID 1000 with a read-only root filesystem and a writable `/tmp`.
-2. Create a quota of 2 pods; create 3 pods; observe the third rejected.
-3. Add a LimitRange with defaults; create a pod with no resources and check the defaults applied (`kubectl get pod -o yaml`).
-
 ## Quick reference
 
 ```bash

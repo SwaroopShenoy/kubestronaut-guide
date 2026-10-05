@@ -31,10 +31,3 @@ Policy engines let you write rules such as "every pod must set `runAsNonRoot`" o
 ## Fail open vs fail closed
 
 If a webhook is unreachable, `failurePolicy: Fail` rejects requests (fail closed) and `Ignore` allows them (fail open). For security policy, fail closed is the safer default, with the tradeoff that a broken webhook can block deployments.
-
-## Practice questions
-
-- Which runs first, mutating or validating admission? (Mutating)
-- Which built-in controller enforces Pod Security levels? (Pod Security Admission)
-- A security webhook has `failurePolicy: Ignore`. What happens if it is down? (Requests are allowed; the control fails open)
-- Which tool uses YAML policies instead of Rego? (Kyverno)

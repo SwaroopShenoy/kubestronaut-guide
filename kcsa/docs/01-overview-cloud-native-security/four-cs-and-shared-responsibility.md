@@ -39,9 +39,3 @@ Assume one control will fail. Stack several:
 ## Zero trust in Kubernetes
 
 Verify every request (authenticate every identity), grant least privilege, and do not assume the network is safe. In practice: strong identities for workloads, RBAC, NetworkPolicy default-deny, and mutual TLS where a mesh provides it.
-
-## Practice questions
-
-- Which C is the outermost layer? (Cloud, or the infrastructure beneath the cluster)
-- A container runs as root with a privileged flag. Which C is the failure in? (Container, which affects the cluster's isolation)
-- On a self-managed cluster, who patches the node operating system? (The operator, not the cloud provider)

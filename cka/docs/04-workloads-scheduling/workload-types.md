@@ -76,12 +76,6 @@ Schedule format: `minute hour day-of-month month day-of-week`. `0 2 * * *` runs 
 - Expecting a StatefulSet to create pods in parallel (it does not, by default).
 - Forgetting that deleting a Job removes its pods unless `--cascade=orphan`.
 
-## Practice
-
-1. Create a Job with 5 completions and parallelism 2; wait for completion.
-2. Create a CronJob, trigger it manually with `create job --from`.
-3. Create a DaemonSet and confirm one pod per node.
-
 ## Quick reference
 
 ```bash

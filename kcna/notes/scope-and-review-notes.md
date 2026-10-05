@@ -38,8 +38,3 @@ Not confirmed (stated only in the source guide or third-party sites):
 
 - The source guide did not cover CSI in depth; expanded in [runtimes, networking and interfaces](../docs/02-container-orchestration/runtimes-networking-interfaces.md).
 - Observability is a judgment call. If the current curriculum lists it separately, move it back to its own domain.
-
-## Next steps
-
-1. Pull the current KCNA curriculum from the cncf/curriculum repository and check each bullet against a topic doc.
-2. Take practice exams after each domain and track weak areas.

@@ -95,12 +95,6 @@ This is approximate, since traffic is spread per request, not per pod. Note this
 - Forgetting `maxUnavailable: 0` when the task demands zero downtime; the default allows one pod to be down.
 - Editing a pod to change its version; the Deployment recreates it with the old image.
 
-## Practice
-
-1. Set a rolling update with `maxUnavailable: 0`; change the image; watch `rollout status`.
-2. Build blue/green: two Deployments, one Service; switch; roll back.
-3. Build a 9:1 canary; scale to 3:1; promote.
-
 ## Quick reference
 
 ```bash

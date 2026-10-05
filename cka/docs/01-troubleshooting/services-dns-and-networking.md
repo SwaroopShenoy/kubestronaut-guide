@@ -86,12 +86,6 @@ kubectl describe netpol <name> -n <ns>
 
 A common trap: a new policy with `policyTypes: [Egress]` and no DNS rule. Symptom: `nslookup` times out while direct IP access works. See [NetworkPolicy](../03-services-networking/network-policy.md).
 
-## Practice
-
-1. Change a Service selector to a non-matching value; confirm empty endpoints; fix it.
-2. Delete the CoreDNS pods; confirm name resolution fails; confirm recovery after the Deployment recreates them.
-3. Add a default-deny egress policy without DNS; confirm `nslookup` fails and IP access works.
-
 ## Quick reference
 
 ```bash

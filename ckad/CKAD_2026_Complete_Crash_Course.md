@@ -38,14 +38,6 @@ Shared with CKA (read those docs too):
 - [CRDs and operators](../cka/docs/02-cluster-architecture-installation-config/crds-and-operators.md)
 - [kubectl speed and vim](../cka/reference/kubectl-speed-and-vim.md)
 
-## Study order
-
-1. **Speed and basics:** [kubectl speed](../cka/reference/kubectl-speed-and-vim.md), [Deployments](../cka/docs/04-workloads-scheduling/deployments-and-scaling.md).
-2. **Multi-container and probes (35% combined):** [multi-container patterns](docs/01-application-design-build/multi-container-patterns.md), [probes](docs/03-application-observability-maintenance/probes.md).
-3. **Configuration and security (25%):** [ConfigMaps and Secrets](docs/04-application-environment-config-security/configmaps-and-secrets.md), [SecurityContext](docs/04-application-environment-config-security/security-context-quotas-limits.md).
-4. **Jobs, deployments, services, debugging:** remaining docs.
-5. **Mock exams** under timed conditions.
-
 ## Pre-exam checklist
 
 - [ ] Add a sidecar sharing an emptyDir to an existing Pod
