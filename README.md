@@ -21,6 +21,10 @@ Kubestronaut is the title held by people who have earned all five CNCF Kubernete
 - [Part IV: CKAD, Certified Kubernetes Application Developer](ckad/README.md)
 - [Part V: CKS, Certified Kubernetes Security Specialist](cks/README.md)
 
+## Raw source material
+
+Each part has an `_archive/` folder with the unedited notes used during preparation. They are messy, repetitive and partly outdated, and they are not the book's content. The cleaned chapters are the reference; the archives are there for anyone who wants to see the raw material, with the warning that it can be a rabbit hole.
+
 ## Reading paths
 
 - **From the beginning:** KCNA, then KCSA, then CKA, then CKAD, then CKS. Each part builds on the ones before it.
