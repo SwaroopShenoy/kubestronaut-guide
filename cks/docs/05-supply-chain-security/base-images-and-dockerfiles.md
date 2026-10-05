@@ -1,6 +1,6 @@
 # Base Images and Dockerfiles
 
-Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)
+Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Admission control](admission-control.md) · Next: [Static analysis (Kubesec, KubeLinter)](static-analysis.md)
 
 The fewer packages an image contains, the fewer vulnerabilities it can carry. This topic covers how to choose a small base image, build in stages, and run as a non-root user.
 
@@ -71,5 +71,5 @@ hadolint Dockerfile
 
 ---
 
-Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)  
+Prev: [Admission control](admission-control.md) · Next: [Static analysis (Kubesec, KubeLinter)](static-analysis.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

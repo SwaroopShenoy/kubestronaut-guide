@@ -41,7 +41,7 @@ Weights are from the official CNCF CKS exam curriculum PDF (v1.34). The CNCF cer
 | 3 | System Hardening | 10% | [Host hardening](docs/03-system-hardening/host-hardening.md) · [AppArmor and seccomp](docs/03-system-hardening/apparmor-and-seccomp.md) |
 | 4 | Minimize Microservice Vulnerabilities | 20% | [Security context and PSS](docs/04-microservice-vulnerabilities/security-context-and-pss.md) · [Secrets and encryption at rest](docs/04-microservice-vulnerabilities/secrets-and-encryption-at-rest.md) · [Runtime sandboxes and isolation](docs/04-microservice-vulnerabilities/runtime-sandboxes.md) · [Pod-to-pod encryption (Cilium, Istio)](docs/04-microservice-vulnerabilities/pod-to-pod-encryption.md) |
 | 5 | Supply Chain Security | 20% | [Image scanning with Trivy](docs/05-supply-chain-security/image-scanning-trivy.md) · [Image signing with Cosign](docs/05-supply-chain-security/image-signing-cosign.md) · [Admission control](docs/05-supply-chain-security/admission-control.md) · [Base images and Dockerfiles](docs/05-supply-chain-security/base-images-and-dockerfiles.md) · [Static analysis (Kubesec, KubeLinter)](docs/05-supply-chain-security/static-analysis.md) · [SBOM and the supply chain](docs/05-supply-chain-security/sbom-and-supply-chain.md) |
-| 6 | Monitoring, Logging and Runtime Security | 20% | [Audit logging](docs/06-monitoring-logging-runtime/audit-logging.md) · [Falco](docs/06-monitoring-logging-runtime/falco.md) · [jq for audit data](docs/06-monitoring-logging-runtime/jq-for-audit-data.md) · [Container immutability at runtime](docs/06-monitoring-logging-runtime/runtime-immutability.md) |
+| 6 | Monitoring, Logging and Runtime Security | 20% | [Audit logging](docs/06-monitoring-logging-runtime/audit-logging.md) · [Falco](docs/06-monitoring-logging-runtime/falco.md) · [Container immutability at runtime](docs/06-monitoring-logging-runtime/runtime-immutability.md) · [jq for audit data](docs/06-monitoring-logging-runtime/jq-for-audit-data.md) |
 
 Supporting references (read as needed, not separate exam domains):
 
@@ -150,7 +150,7 @@ docs/
   02-cluster-hardening/                    RBAC, service accounts, upgrades
   03-system-hardening/                     host hardening, AppArmor and seccomp
   04-microservice-vulnerabilities/         security context and PSS, secrets, sandboxes
-  05-supply-chain-security/                Trivy, Cosign, admission control, base images
+  05-supply-chain-security/                Trivy, Cosign, admission control, base images, static analysis, SBOM, static analysis, SBOM
   06-monitoring-logging-runtime/           audit logging, Falco, jq
   reference/                               Rego basics, OPA Gatekeeper
   notes/                                   sources and verification

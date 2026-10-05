@@ -1,6 +1,6 @@
 # Static Analysis of Workloads and Images
 
-Up: [CKS README](../../README.md) · Domain 4 — Supply Chain Security (20%) · Prev: [Admission control](admission-control.md) · Next: [SBOM and the software supply chain](sbom-and-supply-chain.md)
+Up: [CKS README](../../README.md) · Domain 4 — Supply Chain Security (20%) · Prev: [Base images and Dockerfiles](base-images-and-dockerfiles.md) · Next: [SBOM and the supply chain](sbom-and-supply-chain.md)
 
 Some problems are visible in a manifest before anything runs. This topic covers static analysis of workloads and images with Kubesec and KubeLinter.
 
@@ -49,5 +49,5 @@ Image scanners such as Trivy read the image's packages (see [Trivy](../05-supply
 
 ---
 
-Prev: [Admission control](admission-control.md) · Next: [SBOM and the software supply chain](sbom-and-supply-chain.md)  
+Prev: [Base images and Dockerfiles](base-images-and-dockerfiles.md) · Next: [SBOM and the supply chain](sbom-and-supply-chain.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -1,6 +1,6 @@
 # SBOM and the Software Supply Chain
 
-Up: [CKS README](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Static analysis](static-analysis.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)
+Up: [CKS README](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Static analysis (Kubesec, KubeLinter)](static-analysis.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)
 
 An image reaches a cluster through a chain of steps, and an attacker can enter at any of them. This topic covers the curriculum's supply chain items: understanding the chain (SBOM, CI/CD, artifact repositories) and securing it (permitted registries, signed and validated artifacts).
 
@@ -104,5 +104,5 @@ Signing and verification are covered in [Image signing with Cosign](image-signin
 
 ---
 
-Prev: [Static analysis](static-analysis.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)  
+Prev: [Static analysis (Kubesec, KubeLinter)](static-analysis.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

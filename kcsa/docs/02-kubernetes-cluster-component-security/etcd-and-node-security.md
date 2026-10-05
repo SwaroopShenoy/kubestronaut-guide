@@ -1,6 +1,6 @@
 # etcd and Node Security
 
-Up: [KCSA hub](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [Control plane security](control-plane-security.md) · Next: [RBAC and ServiceAccounts](../03-kubernetes-security-fundamentals/rbac-and-serviceaccounts.md)
+Up: [KCSA hub](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [Control plane security](control-plane-security.md) · Next: [Runtime, networking, client and storage](components-runtime-networking-storage.md)
 
 etcd holds the cluster's secrets, and the nodes run its workloads. This topic explains how to protect both.
 
@@ -43,5 +43,5 @@ Runs on every node and programs Service routing rules. Keep it updated and restr
 
 ---
 
-Prev: [Control plane security](control-plane-security.md) · Next: [RBAC and ServiceAccounts](../03-kubernetes-security-fundamentals/rbac-and-serviceaccounts.md)  
+Prev: [Control plane security](control-plane-security.md) · Next: [Runtime, networking, client and storage](components-runtime-networking-storage.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

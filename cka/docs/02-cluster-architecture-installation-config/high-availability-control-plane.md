@@ -1,6 +1,6 @@
 # Highly Available Control Plane
 
-Up: [CKA README](../../README.md) · Domain 2 — Cluster Architecture, Installation and Configuration (25%) · Prev: [CRDs and operators](crds-and-operators.md) · Next: [Extension interfaces](extension-interfaces.md)
+Up: [CKA README](../../README.md) · Domain 2 — Cluster Architecture, Installation and Configuration (25%) · Prev: [CRDs and operators](crds-and-operators.md) · Next: [Extension interfaces (CNI, CSI, CRI)](extension-interfaces.md)
 
 A single control-plane node is a single point of failure. This topic explains how several control-plane nodes, a shared etcd quorum and a load balancer keep the API available when one of them fails.
 
@@ -54,5 +54,5 @@ Confirm that each control-plane node runs the API server and that etcd reports h
 
 ---
 
-Prev: [CRDs and operators](crds-and-operators.md) · Next: [Extension interfaces](extension-interfaces.md)  
+Prev: [CRDs and operators](crds-and-operators.md) · Next: [Extension interfaces (CNI, CSI, CRI)](extension-interfaces.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

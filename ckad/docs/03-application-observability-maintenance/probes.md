@@ -1,6 +1,6 @@
 # Probes
 
-Up: [CKAD hub](../../README.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and deprecations](logs-debugging-and-deprecations.md)
+Up: [CKAD hub](../../README.md) · Domain 3 — Application Observability and Maintenance (15%) · Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and API deprecations](logs-debugging-and-deprecations.md)
 
 Kubernetes cannot know whether an application is healthy unless you tell it how to check. This topic covers liveness, readiness and startup probes, and how to tune them so they help rather than hurt.
 
@@ -112,5 +112,5 @@ kubectl get pod <pod> -o jsonpath='{.status.containerStatuses[0].restartCount}{"
 
 ---
 
-Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and deprecations](logs-debugging-and-deprecations.md)  
+Prev: [Deployment strategies](../02-application-deployment/deployment-strategies.md) · Next: [Logs, debugging and API deprecations](logs-debugging-and-deprecations.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

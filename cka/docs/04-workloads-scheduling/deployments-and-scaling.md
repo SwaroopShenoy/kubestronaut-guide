@@ -1,6 +1,6 @@
 # Deployments and Scaling
 
-Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Next: [Workload types](workload-types.md)
+Up: [CKA hub](../../README.md) · Domain 4 — Workloads and Scheduling (15%) · Prev: [Ingress and Gateway API](../03-services-networking/ingress-and-gateway-api.md) · Next: [Workload types](workload-types.md)
 
 A Deployment keeps a set of identical pods running, updates them without downtime, and rolls them back when an update goes wrong. This topic covers how to create, scale, update and recover a Deployment.
 
@@ -109,5 +109,5 @@ kubectl rollout undo deploy/<n> [--to-revision=<r>]
 
 ---
 
-Next: [Workload types](workload-types.md)  
+Prev: [Ingress and Gateway API](../03-services-networking/ingress-and-gateway-api.md) · Next: [Workload types](workload-types.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

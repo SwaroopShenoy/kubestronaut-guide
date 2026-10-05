@@ -1,6 +1,6 @@
 # Services and DNS
 
-Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Prev: [Extension interfaces](../02-cluster-architecture-installation-config/extension-interfaces.md) · Next: [NetworkPolicy](network-policy.md)
+Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Prev: [Extension interfaces (CNI, CSI, CRI)](../02-cluster-architecture-installation-config/extension-interfaces.md) · Next: [NetworkPolicy](network-policy.md)
 
 Pods come and go, and their addresses change with them. Services give them a stable name and address, and cluster DNS makes those names usable. This topic explains how the two work together.
 
@@ -165,5 +165,5 @@ kubectl run t --rm -it --image=busybox:1.36 --restart=Never -- nslookup <svc>
 
 ---
 
-Prev: [Extension interfaces](../02-cluster-architecture-installation-config/extension-interfaces.md) · Next: [NetworkPolicy](network-policy.md)  
+Prev: [Extension interfaces (CNI, CSI, CRI)](../02-cluster-architecture-installation-config/extension-interfaces.md) · Next: [NetworkPolicy](network-policy.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

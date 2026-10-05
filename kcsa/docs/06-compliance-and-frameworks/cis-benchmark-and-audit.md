@@ -1,6 +1,6 @@
 # CIS Benchmark and Audit Logging
 
-Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [Runtime security](../05-platform-security/runtime-security.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)
+Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [Mesh, PKI, connectivity and observability](../05-platform-security/mesh-pki-connectivity-observability.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)
 
 Security standards give teams a shared language and a checklist. This topic covers the CIS Kubernetes Benchmark and the audit logs that prove what happened.
 
@@ -39,5 +39,5 @@ Caution: request bodies can contain secrets. Use `RequestResponse` for a narrow 
 
 ---
 
-Prev: [Runtime security](../05-platform-security/runtime-security.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)  
+Prev: [Mesh, PKI, connectivity and observability](../05-platform-security/mesh-pki-connectivity-observability.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

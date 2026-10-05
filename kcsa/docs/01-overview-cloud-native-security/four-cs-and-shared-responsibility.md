@@ -1,6 +1,6 @@
 # The 4Cs and Shared Responsibility
 
-Up: [KCSA hub](../../README.md) · Domain 1 — Overview of Cloud Native Security (14%) · Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)
+Up: [KCSA hub](../../README.md) · Domain 1 — Overview of Cloud Native Security (14%) · Next: [Isolation and workload security](isolation-and-workload-security.md)
 
 Security is not one wall but a set of layers. This topic introduces the four layers of cloud native security and the line between what the provider and what you are responsible for.
 
@@ -56,5 +56,5 @@ Verify every request (authenticate every identity), grant least privilege, and d
 
 ---
 
-Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)  
+Next: [Isolation and workload security](isolation-and-workload-security.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

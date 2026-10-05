@@ -1,6 +1,6 @@
 # Frameworks and Regulations
 
-Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [CIS benchmark and audit](cis-benchmark-and-audit.md)
+Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [CIS benchmark and audit logging](cis-benchmark-and-audit.md) · Next: [Threat modeling frameworks and automation](threat-modeling-and-automation.md)
 
 Regulations and frameworks describe what an organisation must show, not just what it does. This topic maps the main ones to the controls covered earlier in the guide.
 
@@ -29,5 +29,5 @@ A framework is a set of requirements; a Kubernetes setting is evidence that you 
 
 ---
 
-Prev: [CIS benchmark and audit](cis-benchmark-and-audit.md)  
+Prev: [CIS benchmark and audit logging](cis-benchmark-and-audit.md) · Next: [Threat modeling frameworks and automation](threat-modeling-and-automation.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

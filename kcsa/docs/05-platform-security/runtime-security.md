@@ -1,6 +1,6 @@
 # Runtime Security
 
-Up: [KCSA hub](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Admission and policy](admission-and-policy.md) · Next: [CIS benchmark and audit](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)
+Up: [KCSA hub](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Admission and policy](admission-and-policy.md) · Next: [Mesh, PKI, connectivity and observability](mesh-pki-connectivity-observability.md)
 
 Some threats only show themselves while the workload runs. This topic covers runtime detection, with Falco as the main example.
 
@@ -38,5 +38,5 @@ A rule has a condition (what to match), an output message, and a priority. Teams
 
 ---
 
-Prev: [Admission and policy](admission-and-policy.md) · Next: [CIS benchmark and audit](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)  
+Prev: [Admission and policy](admission-and-policy.md) · Next: [Mesh, PKI, connectivity and observability](mesh-pki-connectivity-observability.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

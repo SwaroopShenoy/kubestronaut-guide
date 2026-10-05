@@ -1,6 +1,6 @@
 # Security Basics
 
-Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)
+Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [Troubleshooting and debugging](troubleshooting-and-debugging.md)
 
 Security in Kubernetes is layered: who you are, what you may do, and what your workloads may touch. This topic introduces each layer at the concept level.
 
@@ -49,5 +49,5 @@ Base64 is encoding, not protection. Enable encryption at rest and limit who can 
 
 ---
 
-Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)  
+Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [Troubleshooting and debugging](troubleshooting-and-debugging.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

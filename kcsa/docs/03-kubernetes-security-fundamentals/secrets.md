@@ -1,6 +1,6 @@
 # Secrets
 
-Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)
+Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Authentication, isolation and segmentation](authentication-isolation-segmentation.md)
 
 Secrets are the most sought-after objects in a cluster. This topic explains what protects them and what does not.
 
@@ -33,5 +33,5 @@ Environment variables are visible through `kubectl describe` output, to child pr
 
 ---
 
-Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)  
+Prev: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md) · Next: [Authentication, isolation and segmentation](authentication-isolation-segmentation.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

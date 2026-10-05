@@ -1,6 +1,6 @@
 # CI/CD and GitOps
 
-Up: [KCNA hub](../../README.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [Security basics](../02-container-orchestration/security-basics.md) · Next: [Packaging with Helm and Kustomize](packaging-helm-kustomize.md)
+Up: [KCNA hub](../../README.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [Troubleshooting and debugging](../02-container-orchestration/troubleshooting-and-debugging.md) · Next: [Packaging with Helm and Kustomize](packaging-helm-kustomize.md)
 
 Software reaches a cluster through a pipeline, and in GitOps the pipeline's destination is Git itself. This topic covers continuous integration, delivery and deployment, and how GitOps tools reconcile a cluster from a repository.
 
@@ -47,5 +47,5 @@ Benefits: audit trail through Git history, easy rollback (revert a commit), and 
 
 ---
 
-Prev: [Security basics](../02-container-orchestration/security-basics.md) · Next: [Packaging with Helm and Kustomize](packaging-helm-kustomize.md)  
+Prev: [Troubleshooting and debugging](../02-container-orchestration/troubleshooting-and-debugging.md) · Next: [Packaging with Helm and Kustomize](packaging-helm-kustomize.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

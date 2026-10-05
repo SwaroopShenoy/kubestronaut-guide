@@ -1,6 +1,6 @@
 # Runtime Sandboxes (RuntimeClass)
 
-Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md) · Next: [Image scanning with Trivy](../05-supply-chain-security/image-scanning-trivy.md)
+Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md) · Next: [Pod-to-pod encryption (Cilium, Istio)](pod-to-pod-encryption.md)
 
 Containers share the host kernel, which is convenient and risky. This topic covers sandboxed runtimes such as gVisor and Kata, how to select them with RuntimeClass, and how to isolate tenants on a shared cluster.
 
@@ -92,5 +92,5 @@ The curriculum asks for isolation techniques such as multi-tenancy and sandboxed
 
 ---
 
-Prev: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md) · Next: [Image scanning with Trivy](../05-supply-chain-security/image-scanning-trivy.md)  
+Prev: [Secrets and encryption at rest](secrets-and-encryption-at-rest.md) · Next: [Pod-to-pod encryption (Cilium, Istio)](pod-to-pod-encryption.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

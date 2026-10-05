@@ -1,6 +1,6 @@
 # API Objects and Workloads
 
-Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [Kubernetes architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)
+Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [Architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)
 
 Everything in Kubernetes is an object described in YAML. This topic explains the shape of an object, the workload objects that run applications, and how labels connect them.
 
@@ -53,5 +53,5 @@ Virtual partitions inside a cluster. Default namespaces: `default`, `kube-system
 
 ---
 
-Prev: [Kubernetes architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)  
+Prev: [Architecture](kubernetes-architecture.md) · Next: [Services, storage and configuration](services-storage-config.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

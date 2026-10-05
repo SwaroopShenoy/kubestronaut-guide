@@ -1,6 +1,6 @@
 # Control Plane Security
 
-Up: [KCSA hub](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [The 4Cs](../01-overview-cloud-native-security/four-cs-and-shared-responsibility.md) · Next: [etcd and node security](etcd-and-node-security.md)
+Up: [KCSA hub](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [Isolation and workload security](../01-overview-cloud-native-security/isolation-and-workload-security.md) · Next: [etcd and node security](etcd-and-node-security.md)
 
 The control plane decides what happens in a cluster, so it is the most valuable thing to protect. This topic follows a request through the API server and explains how to secure each step.
 
@@ -40,5 +40,5 @@ The API server records requests according to an audit policy. Levels, from least
 
 ---
 
-Prev: [The 4Cs](../01-overview-cloud-native-security/four-cs-and-shared-responsibility.md) · Next: [etcd and node security](etcd-and-node-security.md)  
+Prev: [Isolation and workload security](../01-overview-cloud-native-security/isolation-and-workload-security.md) · Next: [etcd and node security](etcd-and-node-security.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

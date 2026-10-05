@@ -1,6 +1,6 @@
 # Secrets and Encryption at Rest
 
-Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes](runtime-sandboxes.md)
+Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes and isolation](runtime-sandboxes.md)
 
 Secrets are encoded by default, not encrypted. This topic explains what that means in practice, how to consume secrets more safely, and how to encrypt them in etcd.
 
@@ -180,5 +180,5 @@ grep encryption-provider-config /etc/kubernetes/manifests/kube-apiserver.yaml
 
 ---
 
-Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes](runtime-sandboxes.md)  
+Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes and isolation](runtime-sandboxes.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

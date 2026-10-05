@@ -1,6 +1,6 @@
 # ConfigMaps and Secrets
 
-Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)
+Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Prev: [Logs, debugging and API deprecations](../03-application-observability-maintenance/logs-debugging-and-deprecations.md) · Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)
 
 Configuration should live outside the image. This topic shows how to supply settings and secrets to an application as environment variables and as files, and what happens when they change.
 
@@ -95,5 +95,5 @@ kubectl rollout restart deploy/<n>
 
 ---
 
-Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)  
+Prev: [Logs, debugging and API deprecations](../03-application-observability-maintenance/logs-debugging-and-deprecations.md) · Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -1,6 +1,6 @@
 # Ingress TLS, Node Metadata and Binary Verification
 
-Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)
+Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)
 
 Three things define a cluster's outer edge: the encryption on incoming traffic, the metadata endpoint that cloud instances expose, and the binaries the cluster runs. This topic covers how to secure all three.
 
@@ -137,5 +137,5 @@ echo "$(cat X.sha256)  X" | sha256sum --check
 
 ---
 
-Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)  
+Prev: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

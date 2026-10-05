@@ -1,6 +1,6 @@
 # Network Policy
 
-Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Next: [CIS benchmark](cis-benchmark-kube-bench.md)
+Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Next: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md)
 
 Network policy is the first line of defence between workloads. This topic goes deeper than the CKA version: default-deny for security, selector logic that can accidentally widen access, and blocking cloud metadata from pods.
 
@@ -285,5 +285,5 @@ kubectl label ns <ns> <key>=<value>        # only if you cannot use kubernetes.i
 
 ---
 
-Next: [CIS benchmark](cis-benchmark-kube-bench.md)  
+Next: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

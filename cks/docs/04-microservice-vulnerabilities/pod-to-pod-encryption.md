@@ -1,6 +1,6 @@
 # Pod-to-Pod Encryption
 
-Up: [CKS README](../../README.md) · Domain 2 — Minimize Microservice Vulnerabilities (20%) · Prev: [Runtime sandboxes](runtime-sandboxes.md) · Next: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md)
+Up: [CKS README](../../README.md) · Domain 2 — Minimize Microservice Vulnerabilities (20%) · Prev: [Runtime sandboxes and isolation](runtime-sandboxes.md) · Next: [Image scanning with Trivy](../05-supply-chain-security/image-scanning-trivy.md)
 
 Network policy decides which pods may talk; it does not hide what they say. This topic covers encrypting pod-to-pod traffic with Cilium and with Istio's mutual TLS.
 
@@ -117,5 +117,5 @@ Once an ALLOW policy selects a workload, requests that match no rule are denied.
 
 ---
 
-Prev: [Runtime sandboxes](runtime-sandboxes.md) · Next: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md)  
+Prev: [Runtime sandboxes and isolation](runtime-sandboxes.md) · Next: [Image scanning with Trivy](../05-supply-chain-security/image-scanning-trivy.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

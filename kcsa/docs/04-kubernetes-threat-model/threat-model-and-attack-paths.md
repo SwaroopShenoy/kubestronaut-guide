@@ -1,6 +1,6 @@
 # Threat Model and Attack Paths
 
-Up: [KCSA hub](../../README.md) · Domain 4 — Kubernetes Threat Model (16%) · Prev: [Secrets](../03-kubernetes-security-fundamentals/secrets.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)
+Up: [KCSA hub](../../README.md) · Domain 4 — Kubernetes Threat Model (16%) · Prev: [Authentication, isolation and segmentation](../03-kubernetes-security-fundamentals/authentication-isolation-segmentation.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)
 
 To defend a system, first picture how it would be attacked. This topic introduces STRIDE, the trust boundaries of a cluster, and the attack paths that connect them.
 
@@ -71,5 +71,5 @@ Forensics sources: API audit log, container logs, runtime alerts, network flow r
 
 ---
 
-Prev: [Secrets](../03-kubernetes-security-fundamentals/secrets.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)  
+Prev: [Authentication, isolation and segmentation](../03-kubernetes-security-fundamentals/authentication-isolation-segmentation.md) · Next: [Supply chain and images](../05-platform-security/supply-chain-and-images.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

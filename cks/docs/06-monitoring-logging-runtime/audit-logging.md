@@ -1,6 +1,6 @@
 # Audit Logging
 
-Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [SBOM and the software supply chain](../05-supply-chain-security/sbom-and-supply-chain.md) · Next: [Falco](falco.md)
+Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [SBOM and the supply chain](../05-supply-chain-security/sbom-and-supply-chain.md) · Next: [Falco](falco.md)
 
 The API server keeps a record of who asked for what. This topic covers how to write an audit policy, enable it, read the log, and use it to follow an attack.
 
@@ -204,5 +204,5 @@ Group events by user and time window with `jq`, then check which identity perfor
 
 ---
 
-Prev: [SBOM and the software supply chain](../05-supply-chain-security/sbom-and-supply-chain.md) · Next: [Falco](falco.md)  
+Prev: [SBOM and the supply chain](../05-supply-chain-security/sbom-and-supply-chain.md) · Next: [Falco](falco.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

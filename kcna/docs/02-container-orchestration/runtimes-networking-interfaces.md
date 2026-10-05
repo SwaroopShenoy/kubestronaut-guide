@@ -1,6 +1,6 @@
 # Runtimes, Networking and Interfaces
 
-Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Containerization and administration basics](../01-kubernetes-fundamentals/containerization-and-administration.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)
+Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Containerization and administration](../01-kubernetes-fundamentals/containerization-and-administration.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)
 
 Kubernetes does not run containers itself, and it does not build the network. It relies on pluggable interfaces for each job. This topic explains the runtime, network and storage interfaces.
 
@@ -44,5 +44,5 @@ A CNI plugin that supports NetworkPolicy (Calico, Cilium) enforces policy rules.
 
 ---
 
-Prev: [Containerization and administration basics](../01-kubernetes-fundamentals/containerization-and-administration.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)  
+Prev: [Containerization and administration](../01-kubernetes-fundamentals/containerization-and-administration.md) · Next: [Scheduling and scaling](scheduling-and-scaling.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

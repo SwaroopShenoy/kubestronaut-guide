@@ -1,6 +1,6 @@
 # Observability
 
-Up: [KCNA hub](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Principles and patterns](principles-and-patterns.md)
+Up: [KCNA hub](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Principles and patterns](principles-and-patterns.md) · Next: [Ecosystem and community](cloud-native-community.md)
 
 A running system has to be seen to be understood. This topic introduces metrics, logs and traces, and the tools that collect each one.
 
@@ -49,5 +49,5 @@ The official KCNA curriculum places observability under Cloud Native Architectur
 
 ---
 
-Prev: [Principles and patterns](principles-and-patterns.md)  
+Prev: [Principles and patterns](principles-and-patterns.md) · Next: [Ecosystem and community](cloud-native-community.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

@@ -1,6 +1,6 @@
 # Image Scanning with Trivy
 
-Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Runtime sandboxes](../04-microservice-vulnerabilities/runtime-sandboxes.md) · Next: [Image signing with Cosign](image-signing-cosign.md)
+Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Pod-to-pod encryption (Cilium, Istio)](../04-microservice-vulnerabilities/pod-to-pod-encryption.md) · Next: [Image signing with Cosign](image-signing-cosign.md)
 
 Scanning finds known vulnerabilities before an image reaches production. This topic shows how to scan with Trivy, read the output, and make findings fail a build.
 
@@ -118,5 +118,5 @@ trivy image --format cyclonedx -o sbom.json <image>
 
 ---
 
-Prev: [Runtime sandboxes](../04-microservice-vulnerabilities/runtime-sandboxes.md) · Next: [Image signing with Cosign](image-signing-cosign.md)  
+Prev: [Pod-to-pod encryption (Cilium, Istio)](../04-microservice-vulnerabilities/pod-to-pod-encryption.md) · Next: [Image signing with Cosign](image-signing-cosign.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

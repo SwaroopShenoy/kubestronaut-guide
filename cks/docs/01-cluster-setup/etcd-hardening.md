@@ -1,6 +1,6 @@
 # etcd Hardening
 
-Up: [CKS README](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [Ingress TLS, node metadata and binary verification](ingress-tls-and-node-metadata.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
+Up: [CKS README](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [Ingress TLS, node metadata, binary verification](ingress-tls-and-node-metadata.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
 
 etcd holds every object in the cluster, including Secrets. Whoever can read or write etcd controls the cluster, so it is secured separately from the API server.
 
@@ -106,5 +106,5 @@ Snapshots contain every Secret in plain form unless encryption at rest is enable
 
 ---
 
-Prev: [Ingress TLS, node metadata and binary verification](ingress-tls-and-node-metadata.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)  
+Prev: [Ingress TLS, node metadata, binary verification](ingress-tls-and-node-metadata.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

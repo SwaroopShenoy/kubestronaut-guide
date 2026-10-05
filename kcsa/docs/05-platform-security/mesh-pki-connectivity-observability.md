@@ -1,6 +1,6 @@
 # Service Mesh, PKI, Connectivity and Observability
 
-Up: [KCSA README](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Runtime security](runtime-security.md) · Next: [CIS benchmark and audit](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)
+Up: [KCSA README](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Runtime security](runtime-security.md) · Next: [CIS benchmark and audit logging](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)
 
 Trust in a cluster is built from certificates, and traffic between services can be encrypted and authorised. This topic covers service meshes, the certificate hierarchy behind the cluster, and observability as a security tool.
 
@@ -32,5 +32,5 @@ Official curriculum topics covered here: service mesh, PKI, connectivity and obs
 
 ---
 
-Prev: [Runtime security](runtime-security.md) · Next: [CIS benchmark and audit](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)  
+Prev: [Runtime security](runtime-security.md) · Next: [CIS benchmark and audit logging](../06-compliance-and-frameworks/cis-benchmark-and-audit.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

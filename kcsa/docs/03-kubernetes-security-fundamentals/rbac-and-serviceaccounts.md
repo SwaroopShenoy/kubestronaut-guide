@@ -1,6 +1,6 @@
 # RBAC and ServiceAccounts
 
-Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [etcd and node security](../02-kubernetes-cluster-component-security/etcd-and-node-security.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)
+Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [Runtime, networking, client and storage](../02-kubernetes-cluster-component-security/components-runtime-networking-storage.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)
 
 Permissions are how Kubernetes decides what an identity may do. This topic covers roles, bindings, built-in roles and the identities that pods carry.
 
@@ -41,5 +41,5 @@ RBAC is additive. There are no deny rules, so the sum of all bindings is the eff
 
 ---
 
-Prev: [etcd and node security](../02-kubernetes-cluster-component-security/etcd-and-node-security.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)  
+Prev: [Runtime, networking, client and storage](../02-kubernetes-cluster-component-security/components-runtime-networking-storage.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>
