@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [RBAC and ServiceAccounts](rbac-and-serviceaccounts.md) · Next: [Secrets](secrets.md)
 
+A pod can be secure or dangerous depending on a few settings. This chapter covers Pod Security Standards and admission, and how NetworkPolicy limits what pods can reach.
+
 ## Pod Security Standards
 
 Three levels, applied per namespace with labels (`pod-security.kubernetes.io/enforce`, `audit`, `warn`):

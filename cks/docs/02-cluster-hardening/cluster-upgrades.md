@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [Service accounts and API access](service-accounts-and-api-access.md) · Next: [Host hardening](../03-system-hardening/host-hardening.md)
 
-This doc is **new**. Keeping control-plane and node components patched is part of cluster hardening in the curriculum summaries we checked; confirm the exact scope against the official curriculum.
+Old versions carry known vulnerabilities. This chapter covers upgrading a cluster in the order that keeps it safe, and what to check afterward.
 
 ## Why it matters
 

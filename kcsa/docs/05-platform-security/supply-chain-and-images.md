@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md) · Next: [Admission and policy](admission-and-policy.md)
 
+Software reaches a cluster through a chain of builds, registries and deployments, and any link can be attacked. This chapter covers the supply chain and the images that travel along it.
+
 ## Software supply chain
 
 The path from source to running workload: code, dependencies, build, package, registry, deploy. An attacker who compromises any step can ship code you trust.

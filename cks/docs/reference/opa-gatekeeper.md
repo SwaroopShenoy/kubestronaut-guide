@@ -4,7 +4,7 @@ Up: [CKS hub](../../README.md) · Reference · Prev: [Rego basics](rego-basics.m
 
 ## Scope
 
-Gatekeeper is not explicitly listed in the curriculum summaries we checked. Treat it as useful background for admission control; confirm against the official curriculum before investing study time in it.
+Gatekeeper is not named in the official CKS curriculum. Treat it as useful background for admission control; confirm against the official curriculum before investing study time in it.
 
 ## Model
 

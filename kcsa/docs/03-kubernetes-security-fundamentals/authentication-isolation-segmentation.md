@@ -2,6 +2,8 @@
 
 Up: [KCSA README](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [Secrets](secrets.md) · Next: [Threat model and attack paths](../04-kubernetes-threat-model/threat-model-and-attack-paths.md)
 
+Authentication answers who is asking. Isolation and segmentation limit what happens after they arrive. This chapter covers both.
+
 Official curriculum topics covered here: authentication, isolation and segmentation. Other fundamentals topics (Pod Security Standards and Admission, secrets, audit logging, NetworkPolicy) are in their own docs in this folder.
 
 ## Authentication

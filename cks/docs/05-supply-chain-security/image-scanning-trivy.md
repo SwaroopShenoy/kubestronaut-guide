@@ -2,11 +2,13 @@
 
 Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Runtime sandboxes](../04-microservice-vulnerabilities/runtime-sandboxes.md) · Next: [Image signing with Cosign](image-signing-cosign.md)
 
+Scanning finds known vulnerabilities before an image reaches production. This chapter shows how to scan with Trivy, read the output, and make findings fail a build.
+
 ## Exam scope
 
 **In scope:** running Trivy against an image, reading severities and fixed versions, failing a build on findings, and scanning Kubernetes manifests for misconfigurations.
 
-The earlier course stated that Trivy exits non-zero on any finding by default. That is wrong: it exits 0 unless you pass `--exit-code 1`.
+Trivy exits 0 by default, even when it finds vulnerabilities. Pass `--exit-code 1` to make findings fail the command.
 
 ## Install
 
@@ -32,7 +34,7 @@ Reading the table:
 - Fixed Version empty: no upstream fix yet. Mitigate (remove the package, change the base image, or accept with a documented exception).
 - Fixed Version present: upgrade to at least that version by rebuilding the image.
 
-The output of real scans will not match any example in this course; the CVE IDs and counts change daily. Read the columns, not memorized results.
+The output of real scans will not match any example in this book; the CVE IDs and counts change daily. Read the columns, not memorized results.
 
 ## Gate a build on findings
 

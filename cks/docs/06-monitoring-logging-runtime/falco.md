@@ -2,13 +2,15 @@
 
 Up: [CKS hub](../../README.md) · Domain 6 — Monitoring, Logging and Runtime Security (20%) · Prev: [Audit logging](audit-logging.md) · Next: [jq for audit data](jq-for-audit-data.md)
 
+Some attacks happen inside a running container, where no scanner looks. This chapter covers Falco, which watches system calls and raises alerts, and how to read what it reports.
+
 ## Exam scope
 
 **In scope:** confirming Falco is running and producing alerts, and reading an alert. Understanding rule structure is useful for reading.
 
 **Not expected:** writing or editing Falco rules from scratch. The rule examples here are for reading.
 
-The earlier course suggested installing Falco with `apt-key` and a daemonset URL. Both are outdated. Use the official chart or package from falco.org and follow its install docs for the installed version.
+Install Falco from the official chart or package at falco.org and follow the install documentation for the version you run.
 
 ## What Falco does
 

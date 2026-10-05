@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 2 — Kubernetes Cluster Component Security (22%) · Prev: [The 4Cs](../01-overview-cloud-native-security/four-cs-and-shared-responsibility.md) · Next: [etcd and node security](etcd-and-node-security.md)
 
+The control plane decides what happens in a cluster, so it is the most valuable thing to protect. This chapter follows a request through the API server and explains how to secure each step.
+
 ## API request path
 
 Every request to the API server passes through:
@@ -24,7 +26,7 @@ The order matters: authentication, then authorization, then admission.
 | `--profiling=false` on control-plane components | Profiling endpoints expose internals |
 | TLS between components | Prevents interception and impersonation |
 
-The old `--insecure-port` flag was removed from the API server; if a source says to set it to 0, the flag is obsolete.
+The old `--insecure-port` flag was removed from the API server; older guidance that sets it to 0 refers to a flag that no longer exists.
 
 ## Controller manager and scheduler
 

@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [CIS benchmark and audit](cis-benchmark-and-audit.md)
 
+Regulations and frameworks describe what an organisation must show, not just what it does. This chapter maps the main ones to the controls covered earlier in the book.
+
 The exam tests recognition: what each framework is for and which Kubernetes controls map to it. It does not expect legal detail.
 
 | Framework | Scope | Kubernetes-relevant themes |

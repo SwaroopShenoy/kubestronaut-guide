@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 5 — Platform Security (16%) · Prev: [Supply chain and images](supply-chain-and-images.md) · Next: [Runtime security](runtime-security.md)
 
+Admission is where a cluster decides whether a change is acceptable. This chapter covers the built-in admission controls and the policy engines that extend them.
+
 ## Where policy runs
 
 After authentication and authorization, the API server runs admission. Admission can:

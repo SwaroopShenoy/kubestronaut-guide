@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 3 — Kubernetes Security Fundamentals (22%) · Prev: [etcd and node security](../02-kubernetes-cluster-component-security/etcd-and-node-security.md) · Next: [Pod security and NetworkPolicy](pod-security-and-networkpolicy.md)
 
+Permissions are how Kubernetes decides what an identity may do. This chapter covers roles, bindings, built-in roles and the identities that pods carry.
+
 For hands-on RBAC work see the [CKA RBAC doc](../../../cka/docs/02-cluster-architecture-installation-config/rbac.md); for auditing see the [CKS RBAC doc](../../../cks/docs/02-cluster-hardening/rbac.md).
 
 ## RBAC objects

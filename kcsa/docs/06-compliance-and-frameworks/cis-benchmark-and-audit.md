@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [Runtime security](../05-platform-security/runtime-security.md) · Next: [Frameworks and regulations](frameworks-and-regulations.md)
 
+Security standards give teams a shared language and a checklist. This chapter covers the CIS Kubernetes Benchmark and the audit logs that prove what happened.
+
 ## CIS Kubernetes Benchmark
 
 A consensus set of hardening recommendations for Kubernetes, organized by component:
@@ -14,7 +16,7 @@ A consensus set of hardening recommendations for Kubernetes, organized by compon
 
 Checks are scored (should be met) or not scored (advisory). kube-bench is an open-source tool that runs the checks against a node and reports PASS, FAIL, WARN or INFO with remediation text.
 
-Check IDs differ between benchmark versions; read the remediation printed for your version. The CKS hub has the hands-on fixes: [CIS benchmark and kube-bench](../../../cks/docs/01-cluster-setup/cis-benchmark-kube-bench.md).
+Check IDs differ between benchmark versions; read the remediation printed for your version. The CKS section of this book has the hands-on fixes: [CIS benchmark and kube-bench](../../../cks/docs/01-cluster-setup/cis-benchmark-kube-bench.md).
 
 ## Audit logging
 

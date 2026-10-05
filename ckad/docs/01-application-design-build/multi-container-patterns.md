@@ -2,7 +2,9 @@
 
 Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Next: [Jobs and CronJobs](jobs-and-cronjobs.md)
 
-Four patterns cover most multi-container questions. Each container in a pod shares the network namespace (same IP, `localhost`) and any volumes you mount into both.
+A pod can hold more than one container, and that is a design choice. This chapter covers the four classic patterns (sidecar, init, adapter and ambassador) and the native sidecar form.
+
+Four patterns cover most multi-container designs. Each container in a pod shares the network namespace (same IP, `localhost`) and any volumes you mount into both.
 
 ## Sidecar
 
@@ -80,7 +82,7 @@ spec:
     emptyDir: {}
 ```
 
-Native sidecars are not new in the current release. Check the feature state for the cluster version in use; the 2026 source guide called this "new in v1.35" and that label is not confirmed.
+Native sidecars are established in current Kubernetes releases. Check the feature state for the cluster version in use.
 
 ## Adapter
 

@@ -2,6 +2,8 @@
 
 Up: [CKA hub](../../README.md) · Domain 2 — Cluster Architecture (25%) · Prev: [kubeadm install and upgrade](kubeadm-install-and-upgrade.md) · Next: [etcd backup and restore](etcd-backup-restore.md)
 
+Every request to a Kubernetes cluster carries an identity, and most identities are certificates. This chapter explains where the cluster keeps its certificates, how they expire, and how a kubeconfig file turns them into access.
+
 ## Where kubeadm keeps certificates
 
 ```
@@ -91,7 +93,7 @@ kubectl config set-cluster kubernetes --server=https://<api-server>:6443 --certi
 kubectl config set-context jane@kubernetes --cluster=kubernetes --user=jane
 ```
 
-The user has no permissions until a RoleBinding exists. See [RBAC](rbac.md).
+The subject has no permissions until a RoleBinding exists. See [RBAC](rbac.md).
 
 ## Troubleshooting kubeconfig
 

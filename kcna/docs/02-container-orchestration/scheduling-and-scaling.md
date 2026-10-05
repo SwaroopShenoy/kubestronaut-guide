@@ -2,6 +2,8 @@
 
 Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Runtimes, networking and interfaces](runtimes-networking-interfaces.md) · Next: [Security basics](security-basics.md)
 
+Scheduling answers where a pod runs; scaling answers how many run. This chapter covers both, including requests, limits and the autoscalers.
+
 ## How a pod gets a node
 
 1. The pod is created without a node.

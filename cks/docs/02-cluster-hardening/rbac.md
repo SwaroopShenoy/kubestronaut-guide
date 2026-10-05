@@ -2,6 +2,8 @@
 
 Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [Ingress, TLS and node metadata](../01-cluster-setup/ingress-tls-and-node-metadata.md) · Next: [Service accounts and API access](service-accounts-and-api-access.md)
 
+Permissions accumulate quietly. This chapter shows how to find the over-broad bindings, recognise the verbs that give away the cluster, and tighten access without breaking the workloads that depend on it.
+
 ## Exam scope
 
 **In scope:** finding over-permissioned subjects, tightening Roles and RoleBindings, recognizing dangerous verbs and resources, and verifying with `kubectl auth can-i`.

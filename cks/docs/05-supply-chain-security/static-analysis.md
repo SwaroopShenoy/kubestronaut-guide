@@ -2,6 +2,8 @@
 
 Up: [CKS README](../../README.md) · Domain 4 — Supply Chain Security (20%) · Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)
 
+Some problems are visible in a manifest before anything runs. This chapter covers static analysis of workloads and images with Kubesec and KubeLinter.
+
 Official curriculum topic: "Perform static analysis of user workloads and container images (e.g. Kubesec, KubeLinter)". Static analysis reads manifests and images without running them.
 
 ## What static analysis checks

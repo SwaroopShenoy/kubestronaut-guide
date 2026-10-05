@@ -2,6 +2,8 @@
 
 Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Prev: [ConfigMaps and Secrets](configmaps-and-secrets.md) · Next: [ServiceAccounts and RBAC](serviceaccounts-and-rbac.md)
 
+Security starts with what a container is allowed to do, and resources decide what it can consume. This chapter covers the securityContext settings, ResourceQuota and LimitRange, and resource requests and limits.
+
 The security depth is in [CKS security context and PSS](../../../cks/docs/04-microservice-vulnerabilities/security-context-and-pss.md). This page covers what CKAD asks you to set.
 
 ## SecurityContext

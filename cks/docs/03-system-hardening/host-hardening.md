@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 3 — System Hardening (10%) · Prev: [Cluster upgrades](../02-cluster-hardening/cluster-upgrades.md) · Next: [AppArmor and seccomp](apparmor-and-seccomp.md)
 
-This doc is **new**. The original course had only SSH and kernel module snippets; this fills in the host-footprint and access items.
+A node runs more software than it needs, and each extra service is an opening. This chapter covers reducing that attack surface: services, ports, SSH access, kernel modules and patching.
 
 ## Exam scope
 

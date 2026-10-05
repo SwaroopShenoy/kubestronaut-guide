@@ -2,6 +2,8 @@
 
 Up: [CKAD hub](../../README.md) · Domain 1 — Application Design and Build (20%) · Prev: [Multi-container patterns](multi-container-patterns.md) · Next: [Container images](container-images.md)
 
+Not every workload runs forever. Jobs run work to completion, and CronJobs run it on a schedule. This chapter covers completions, parallelism, retries and cron syntax.
+
 ## Job
 
 Runs pods until a set number of completions succeed.

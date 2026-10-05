@@ -4,7 +4,7 @@ Up: [CKS hub](../../README.md) · Reference · Prev: [jq for audit data](../06-m
 
 ## Scope
 
-Rego is the policy language used by OPA and Gatekeeper. The course assumption is:
+Rego is the policy language used by OPA and Gatekeeper. The scope is:
 
 - **Reading** a Rego rule and understanding what it rejects: expected.
 - **Writing or editing** a policy, including a ConstraintTemplate: not expected. The examples here are reading material. Confirm with the official curriculum.

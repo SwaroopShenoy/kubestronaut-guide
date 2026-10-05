@@ -2,6 +2,8 @@
 
 Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Image scanning with Trivy](image-scanning-trivy.md) · Next: [Admission control](admission-control.md)
 
+A signature proves who built an image and that it has not changed since. This chapter covers signing and verifying images with Cosign, both with keys and without.
+
 ## Exam scope
 
 **In scope:** signing an image, verifying a signature, understanding why verification should use a digest, and recognizing the failure modes. Enforcement at admission is covered in [Admission control](admission-control.md).

@@ -2,6 +2,8 @@
 
 Up: [KCNA README](../../README.md) · Domain 2 — Container Orchestration (28%, Troubleshooting) · Prev: [Security basics](security-basics.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)
 
+Most problems announce themselves with a status. This chapter explains what the common statuses mean and where the evidence for each one lives.
+
 Official curriculum topics covered here: troubleshooting (listed under Container Orchestration) and debugging (listed under Application Delivery). KCNA tests concepts, so this page is about what each signal means, not command syntax.
 
 ## Start from the symptom

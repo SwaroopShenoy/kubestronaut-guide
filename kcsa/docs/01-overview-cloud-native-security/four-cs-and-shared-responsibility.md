@@ -2,6 +2,8 @@
 
 Up: [KCSA hub](../../README.md) · Domain 1 — Overview of Cloud Native Security (14%) · Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)
 
+Security is not one wall but a set of layers. This chapter introduces the four layers of cloud native security and the line between what the provider and what you are responsible for.
+
 ## The 4Cs
 
 Security is layered. Each layer relies on the layers beneath it.

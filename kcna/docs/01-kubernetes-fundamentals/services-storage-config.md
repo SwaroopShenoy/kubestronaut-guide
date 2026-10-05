@@ -2,6 +2,8 @@
 
 Up: [KCNA hub](../../README.md) · Domain 1 — Kubernetes Fundamentals (44%) · Prev: [API objects and workloads](api-objects-and-workloads.md) · Next: [Runtimes, networking and interfaces](../02-container-orchestration/runtimes-networking-interfaces.md)
 
+Applications need to be reached, need somewhere to keep data, and need configuration. This chapter covers Services, volumes and storage objects, and ConfigMaps and Secrets.
+
 ## Services
 
 A Service gives a stable address to a set of pods chosen by label.

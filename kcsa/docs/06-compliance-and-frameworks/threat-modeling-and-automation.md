@@ -2,6 +2,8 @@
 
 Up: [KCSA README](../../README.md) · Domain 6 — Compliance and Security Frameworks (10%) · Prev: [Frameworks and regulations](frameworks-and-regulations.md)
 
+Threat modelling gives structure to security thinking, and automation keeps that thinking running. This chapter covers the frameworks, supply chain compliance and the tooling that enforces policy.
+
 Official curriculum topics covered here: threat modeling frameworks, supply chain compliance, and automation and tooling. Compliance frameworks are in [frameworks and regulations](frameworks-and-regulations.md).
 
 ## Threat modeling frameworks

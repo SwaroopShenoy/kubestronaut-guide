@@ -2,6 +2,8 @@
 
 Up: [KCNA hub](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Packaging with Helm and Kustomize](../03-cloud-native-application-delivery/packaging-helm-kustomize.md) · Next: [Observability](observability.md)
 
+Cloud native design is a set of habits: small services, declared configuration, and systems built to be replaced. This chapter covers the principles and the patterns that follow from them.
+
 ## What cloud native means
 
 The CNCF definition describes technologies that let organizations build and run scalable applications in modern, dynamic environments (public, private and hybrid clouds). Containers, service meshes, microservices, immutable infrastructure and declarative APIs are examples.

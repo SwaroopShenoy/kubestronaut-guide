@@ -1,18 +1,18 @@
-# CKAD Complete Crash Course
+# Part IV: CKAD — Certified Kubernetes Application Developer
+
+CKAD is the developer exam. It is about building, configuring, deploying and debugging applications on Kubernetes, using the resources developers touch every day: pods, deployments, jobs, probes, configuration and services. Like CKA, it is performance-based on a live cluster.
 
 > **Read first: status and limits**
 >
-> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
-> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Reading aid, not a substitute for practice.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
 > - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
 > - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
 
 Certified Kubernetes Application Developer — hub document. Start here; each domain links to topic docs.
-
-Source material: the 2026 guide and the 2025 crash course (archived in [_archive](_archive/)). This hub supersedes both.
 
 Many CKAD topics are shared with CKA. Those link to the CKA docs rather than repeating them.
 
@@ -22,7 +22,7 @@ Many CKAD topics are shared with CKA. Those link to the CKA docs rather than rep
 |---|---|
 | Format | Performance-based, online, proctored; tasks run on the command line in live clusters |
 | Duration | 2 hours |
-| Passing score | 66% (stated in both source guides; not on the CNCF page checked) |
+| Passing score | 66% (not stated on the official CNCF page; verify) |
 | Cost | $445, includes one free retake (CNCF page) |
 | Prerequisite | None |
 | Kubernetes version | Not verified; check the version the exam runs |
@@ -48,18 +48,18 @@ Shared with CKA (read those docs too):
 - [CRDs and operators](../cka/docs/02-cluster-architecture-installation-config/crds-and-operators.md)
 - [kubectl speed and vim](../cka/reference/kubectl-speed-and-vim.md)
 
-## Pre-exam checklist
+## Key ideas at a glance
 
-- [ ] Add a sidecar sharing an emptyDir to an existing Pod
-- [ ] Add an init container that waits for a Service
-- [ ] Add liveness, readiness and startup probes with correct paths and timings
-- [ ] Create a Job with completions and parallelism; create a CronJob with a correct schedule
-- [ ] Mount a ConfigMap as files and a Secret as env
-- [ ] Set container securityContext so the app runs as a non-root UID
-- [ ] Create a ResourceQuota and show a pod rejected by it
-- [ ] Do a rolling update, roll back, and do a blue/green switch with a Service selector
-- [ ] Fix a NetworkPolicy egress rule that forgot DNS
-- [ ] Fix a deprecated apiVersion in a manifest
+- Add a sidecar sharing an emptyDir to an existing Pod
+- Add an init container that waits for a Service
+- Add liveness, readiness and startup probes with correct paths and timings
+- Create a Job with completions and parallelism; create a CronJob with a correct schedule
+- Mount a ConfigMap as files and a Secret as env
+- Set container securityContext so the app runs as a non-root UID
+- Create a ResourceQuota and show a pod rejected by it
+- Do a rolling update, roll back, and do a blue/green switch with a Service selector
+- Fix a NetworkPolicy egress rule that forgot DNS
+- Fix a deprecated apiVersion in a manifest
 
 ## Quick command reference
 
@@ -83,6 +83,5 @@ docs/02-application-deployment/          strategies (Helm and Kustomize shared w
 docs/03-application-observability-.../   probes, logs, deprecations
 docs/04-application-environment-.../     ConfigMaps, Secrets, security context, quotas, RBAC
 docs/05-services-networking/             services, NetworkPolicy, ingress
-notes/                                   scope, corrections, open questions
-_archive/                                original 2025 and 2026 guides, unmodified
+notes/                                   sources and verification
 ```

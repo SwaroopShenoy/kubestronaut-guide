@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark](cis-benchmark-kube-bench.md) · Next: [RBAC](../02-cluster-hardening/rbac.md)
 
-This doc is **new** — the original course covered these only in passing. The three items are listed as cluster-setup concerns in the curriculum summaries we checked; confirm wording against the official curriculum before relying on it.
+Three things define a cluster's outer edge: the encryption on incoming traffic, the metadata endpoint that cloud instances expose, and the binaries the cluster runs. This chapter covers how to secure all three.
 
 ## 1. TLS on Ingress
 

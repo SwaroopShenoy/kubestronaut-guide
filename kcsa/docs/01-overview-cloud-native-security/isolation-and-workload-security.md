@@ -2,6 +2,8 @@
 
 Up: [KCSA README](../../README.md) · Domain 1 — Overview of Cloud Native Security (14%) · Prev: [The 4Cs and shared responsibility](four-cs-and-shared-responsibility.md) · Next: [Control plane security](../02-kubernetes-cluster-component-security/control-plane-security.md)
 
+Isolation decides how far a compromise can travel. This chapter covers the layers of isolation, workload hardening, and how images and artifacts should be handled.
+
 Official curriculum topics covered here: isolation techniques, artifact repository and image security, and workload and application code security.
 
 ## Isolation techniques

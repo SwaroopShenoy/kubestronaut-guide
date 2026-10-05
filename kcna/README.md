@@ -1,33 +1,33 @@
-# KCNA Crash Course
+# Part I: KCNA — Kubernetes and Cloud Native Associate
+
+KCNA is the entry point. It tests whether you understand what Kubernetes is, how its parts fit together, and the wider cloud native ecosystem around it. There are no terminal tasks; the exam is multiple choice, so the work here is building a clear mental model of each concept.
 
 > **Read first: status and limits**
 >
-> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
-> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Reading aid, not a substitute for practice.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
 > - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
 > - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
 
 Kubernetes and Cloud Native Associate — hub document. Start here; each domain links to topic docs.
-
-Source material: the 2025 weekend crash course (archived in [_archive](_archive/)). This hub supersedes it.
 
 ## Exam at a glance
 
 | Item | Value |
 |---|---|
 | Format | Online, proctored, multiple choice; no terminal tasks |
-| Duration | 90 minutes (source guide; not verified on the CNCF page) |
-| Questions | 60 (source guide; not verified) |
-| Passing score | 75% (source guide; not verified) |
+| Duration | Not stated on the official CNCF page; verify |
+| Questions | Not stated on the official CNCF page; verify |
+| Passing score | Not stated on the official CNCF page; verify |
 | Cost | $250, includes one free retake (CNCF page) |
 | Prerequisite | None |
 
 ## Domains and weights
 
-Weights from the official CNCF exam curriculum PDF. The 2025 guide used a different five-domain split (46/22/16/8/8) that does not match the official page; this hub follows the official four domains.
+Weights from the official CNCF exam curriculum PDF.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
@@ -40,17 +40,17 @@ Reference:
 
 - [CNCF project map](reference/cncf-project-map.md)
 
-## Pre-exam checklist
+## Key ideas at a glance
 
-- [ ] Name the control-plane and node components and what each does
-- [ ] Explain the difference between Deployment, StatefulSet, DaemonSet, Job and CronJob
-- [ ] Choose the right Service type for a scenario
-- [ ] Explain the CRI, CNI and CSI interfaces with an example each
-- [ ] Describe RBAC: Role, ClusterRole, RoleBinding, ClusterRoleBinding, subjects
-- [ ] Name the three Pod Security Standards levels
-- [ ] Explain GitOps in terms of desired state and reconciliation
-- [ ] Map common CNCF projects to their purpose (see the project map)
-- [ ] Explain metrics, logs and traces, and which tool serves each
+- Name the control-plane and node components and what each does
+- Explain the difference between Deployment, StatefulSet, DaemonSet, Job and CronJob
+- Choose the right Service type for a scenario
+- Explain the CRI, CNI and CSI interfaces with an example each
+- Describe RBAC: Role, ClusterRole, RoleBinding, ClusterRoleBinding, subjects
+- Name the three Pod Security Standards levels
+- Explain GitOps in terms of desired state and reconciliation
+- Map common CNCF projects to their purpose (see the project map)
+- Explain metrics, logs and traces, and which tool serves each
 
 ## Document map
 
@@ -61,6 +61,5 @@ docs/02-container-orchestration/   runtimes and networking, scheduling, security
 docs/03-cloud-native-application-delivery/   CI/CD and GitOps, Helm and Kustomize
 docs/04-cloud-native-architecture/ principles, observability
 reference/                         CNCF project map
-notes/                             scope, corrections, open questions
-_archive/                          original 2025 guide, unmodified
+notes/                             sources and verification
 ```

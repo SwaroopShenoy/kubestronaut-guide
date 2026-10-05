@@ -2,6 +2,8 @@
 
 Up: [CKAD hub](../../README.md) · Domain 5 — Services and Networking (20%) · Prev: [ServiceAccounts and RBAC](../04-application-environment-config-security/serviceaccounts-and-rbac.md)
 
+An application is only useful if other services can reach it. This chapter brings together services, NetworkPolicy and Ingress from the developer's side, with the checks that find a broken path.
+
 Full treatments are in the CKA docs. This page lists the CKAD checks, with links.
 
 - Service types, endpoints and DNS: [Services and DNS](../../../cka/docs/03-services-networking/services-and-dns.md)

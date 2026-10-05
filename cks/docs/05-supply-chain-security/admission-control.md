@@ -2,6 +2,8 @@
 
 Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Image signing with Cosign](image-signing-cosign.md) · Next: [Base images and Dockerfiles](base-images-and-dockerfiles.md)
 
+Admission control is the last checkpoint before an object is stored. This chapter covers the built-in admission options, ImagePolicyWebhook, and where policy engines fit.
+
 Admission control runs after authentication and authorization, before an object is persisted. It is where policies that reject bad pods (unsigned images, root containers, forbidden registries) actually get enforced.
 
 ## Options, in order of how often you will meet them

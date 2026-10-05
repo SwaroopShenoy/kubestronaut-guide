@@ -2,6 +2,8 @@
 
 Up: [KCNA README](../../README.md) · Domain 4 — Cloud Native Architecture (12%) · Prev: [Observability](observability.md)
 
+Kubernetes is open source, and so is the ecosystem around it. This chapter covers the foundation that hosts those projects, how they mature, and how the community works.
+
 Official curriculum topics covered here: cloud native ecosystem and principles, and cloud native community and collaboration.
 
 ## The ecosystem

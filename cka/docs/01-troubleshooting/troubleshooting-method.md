@@ -2,6 +2,8 @@
 
 Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Next: [Control plane and nodes](control-plane-and-nodes.md)
 
+Good troubleshooters share one habit: they read the evidence before they change anything. This chapter sets out a method that works on every failure in this part.
+
 Troubleshooting is the largest CKA domain. Use one method every time instead of guessing.
 
 ## The loop

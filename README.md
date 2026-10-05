@@ -1,49 +1,33 @@
-# Kubestronaut Crash Course
+# Kubestronaut: A Field Guide to the Five CNCF Kubernetes Certifications
 
-> **Read first: status and limits**
->
-> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
->
-> - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
-> - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
-> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
-> - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
-> - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
+*Five certifications, five parts, one path from first cluster to securing production.*
 
-Root document for the five CNCF Kubernetes certifications. Each certification has its own folder with a hub document, topic docs by exam domain, reference material, and scope notes.
+Kubestronaut is the title held by people who have earned all five CNCF Kubernetes certifications: KCNA, KCSA, CKA, CKAD and CKS. This book takes each one in turn. Every part is organised by the official exam domains, and every chapter explains the concepts, the commands and the reasoning behind them.
 
-Kubestronaut is the designation for holding all five: KCNA, KCSA, CKA, CKAD and CKS. CKS requires that you have passed the CKA at some point before registering; the CKA does not need to be active (CNCF page).
+## About this book
 
-## Certifications
+- **Independent.** This book is not produced by, affiliated with, or endorsed by the Cloud Native Computing Foundation, The Linux Foundation, or the Kubernetes project.
+- **Checked against official curricula.** Domain names and weights come from the official CNCF exam curriculum PDFs, checked on 2026-10-05. Each part has a *Sources and verification* page with the links and a list of what was not verified.
+- **Facts change.** Exam formats, passing scores, allowed documentation and Kubernetes versions change over time. Check the official pages before you rely on any of them.
+- **Test before you trust.** Commands and manifests are based on documented behaviour and have not all been run on a live cluster. Try them in a lab first.
+- **Not a replacement.** This book does not replace the official documentation or hands-on practice.
+- **No warranty.** The author accepts no responsibility for exam results, for changes made to any system, or for decisions taken on the basis of this content.
 
-| Cert | Hub | Domains and weights |
-|---|---|---|
-| KCNA — Kubernetes and Cloud Native Associate | [kcna/README.md](kcna/README.md) | Fundamentals 44% · Container Orchestration 28% · Application Delivery 16% · Cloud Native Architecture 12% |
-| KCSA — Kubernetes and Cloud Native Security Associate | [kcsa/README.md](kcsa/README.md) | Cloud Native Security 14% · Cluster Component Security 22% · Security Fundamentals 22% · Threat Model 16% · Platform Security 16% · Compliance 10% |
-| CKA — Certified Kubernetes Administrator | [cka/README.md](cka/README.md) | Troubleshooting 30% · Cluster Architecture 25% · Services and Networking 20% · Workloads and Scheduling 15% · Storage 10% |
-| CKAD — Certified Kubernetes Application Developer | [ckad/README.md](ckad/README.md) | Application Design and Build 20% · Application Deployment 20% · Observability and Maintenance 15% · Environment, Configuration and Security 25% · Services and Networking 20% |
-| CKS — Certified Kubernetes Security Specialist | [cks/README.md](cks/README.md) | Cluster Setup 15% · Cluster Hardening 15% · System Hardening 10% · Minimize Microservice Vulnerabilities 20% · Supply Chain 20% · Monitoring, Logging and Runtime 20% |
+## Contents
 
-Weights are from the official CNCF exam curriculum PDFs. Exam facts such as passing scores and question counts are marked as unverified inside each hub where the official page did not state them.
+- [Part I: KCNA, Kubernetes and Cloud Native Associate](kcna/README.md)
+- [Part II: KCSA, Kubernetes and Cloud Native Security Associate](kcsa/README.md)
+- [Part III: CKA, Certified Kubernetes Administrator](cka/README.md)
+- [Part IV: CKAD, Certified Kubernetes Application Developer](ckad/README.md)
+- [Part V: CKS, Certified Kubernetes Security Specialist](cks/README.md)
 
-## Shared material
+## Reading paths
 
-Several certs overlap heavily:
+- **From the beginning:** KCNA, then KCSA, then CKA, then CKAD, then CKS. Each part builds on the ones before it.
+- **Administrator track:** KCNA, CKA, then CKS.
+- **Developer track:** KCNA, then CKAD.
+- **Security track:** KCNA, KCSA, then CKS.
 
-- CKA and CKAD share Deployments, Services, NetworkPolicy, Ingress, Helm and Kustomize. The CKAD docs link to the CKA docs for these.
-- CKA, CKAD and CKS share RBAC and NetworkPolicy. CKS goes deeper into hardening; CKA and CKAD cover the everyday use.
-- KCNA and KCSA are conceptual; their topics are the same ideas CKA, CKAD and CKS test hands-on.
+## Requirements to note
 
-## Suggested order
-
-One common order is KCNA, then CKA, CKAD, KCSA, and CKS last. This is a suggestion, not a requirement, except that CKS needs CKA passed first. Check current prerequisites before booking.
-
-## Folder layout
-
-Each cert folder follows the same structure:
-
-- `<CERT>_Crash_Course.md` — hub: exam facts, domain table, reading order, checklist
-- `docs/` — one folder per exam domain, with topic docs that each link up to the hub and to the previous and next topic
-- `reference/` — tool and command references
-- `notes/` — what was confirmed, what the source guides got wrong, and what remains open
-- `_archive/` — the original guides, unmodified
+The CKS certification requires that you have passed the CKA at some point before you register. The CKA does not need to be active. This is stated on the CNCF CKS certification page.

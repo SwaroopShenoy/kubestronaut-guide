@@ -2,6 +2,8 @@
 
 Up: [CKA hub](../../README.md) · Domain 3 — Services and Networking (20%) · Prev: [Services and DNS](services-and-dns.md) · Next: [Ingress and Gateway API](ingress-and-gateway-api.md)
 
+By default, every pod in a cluster can reach every other pod. This chapter shows how NetworkPolicy turns that open network into one where only the flows you name are allowed.
+
 The full security treatment (selector semantics, debugging, zero-trust patterns) is in [CKS NetworkPolicy](../../../cks/docs/01-cluster-setup/network-policy.md). This page covers what the CKA task usually asks for.
 
 ## Behavior

@@ -2,6 +2,8 @@
 
 Up: [CKA hub](../../README.md) · Domain 1 — Troubleshooting (30%) · Prev: [Troubleshooting method](troubleshooting-method.md) · Next: [Services, DNS and networking](services-dns-and-networking.md)
 
+When the cluster's brain stops, everything stops with it. This chapter follows the control plane and the nodes from first symptom to working state, using the tools that still work when the API server does not.
+
 ## Model
 
 Control-plane components (kube-apiserver, kube-controller-manager, kube-scheduler, etcd) run as **static pods**. The kubelet on the control-plane node reads manifests from `/etc/kubernetes/manifests/` and runs them. The kubelet itself is a systemd service, so a broken kubelet means nothing runs on that node.

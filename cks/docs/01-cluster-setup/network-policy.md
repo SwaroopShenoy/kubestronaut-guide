@@ -2,6 +2,8 @@
 
 Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Next: [CIS benchmark](cis-benchmark-kube-bench.md)
 
+Network policy is the first line of defence between workloads. This chapter goes deeper than the CKA version: default-deny for security, selector logic that can accidentally widen access, and blocking cloud metadata from pods.
+
 ## Exam scope
 
 **In scope:** writing ingress and egress policies, default-deny patterns, namespace and pod selectors, DNS egress, debugging a policy that blocks traffic.

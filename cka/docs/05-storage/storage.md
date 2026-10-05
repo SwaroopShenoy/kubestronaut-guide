@@ -2,6 +2,8 @@
 
 Up: [CKA hub](../../README.md) · Domain 5 — Storage (10%) · Prev: [Helm and Kustomize](../04-workloads-scheduling/helm-and-kustomize.md)
 
+Containers forget everything when they stop, so data needs somewhere to live. This chapter covers how Kubernetes describes storage with volumes, persistent volumes, claims and storage classes.
+
 ## Objects
 
 - **PersistentVolume (PV)**: a piece of storage in the cluster, created by an admin or dynamically.

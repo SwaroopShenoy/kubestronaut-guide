@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 5 — Supply Chain Security (20%) · Prev: [Admission control](admission-control.md) · Next: [Audit logging](../06-monitoring-logging-runtime/audit-logging.md)
 
-This doc is **new**. The original course said Dockerfile security is out of scope. The curriculum summaries we checked list minimizing base image footprint under Supply Chain Security, so this topic is probably in scope. Confirm against the official curriculum.
+The fewer packages an image contains, the fewer vulnerabilities it can carry. This chapter covers how to choose a small base image, build in stages, and run as a non-root user.
 
 ## Why it matters
 

@@ -1,18 +1,18 @@
-# CKA Complete Crash Course
+# Part III: CKA — Certified Kubernetes Administrator
+
+CKA is the hands-on administration exam. You run tasks on live clusters: fixing broken nodes and control-plane components, configuring access, networking workloads and storage, and installing and upgrading clusters. Troubleshooting carries the largest weight, so the chapters on diagnosis come first.
 
 > **Read first: status and limits**
 >
-> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
-> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Reading aid, not a substitute for practice.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
 > - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
 > - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
 
 Certified Kubernetes Administrator — hub document. Start here; each domain links to topic docs.
-
-Source material: the 2026 guide and the 2025 crash course (archived in [_archive](_archive/)). This hub supersedes both.
 
 ## Exam at a glance
 
@@ -20,10 +20,10 @@ Source material: the 2026 guide and the 2025 crash course (archived in [_archive
 |---|---|
 | Format | Performance-based, online, proctored; tasks run on the command line in live clusters |
 | Duration | 2 hours |
-| Passing score | 66% (confirmed by the 2025 and 2026 guides; not on the CNCF page checked) |
+| Passing score | 66% (not stated on the official CNCF page; verify) |
 | Cost | $445, includes one free retake (CNCF page) |
 | Prerequisite | None |
-| Kubernetes version | Not verified. The 2026 guide targets v1.35; check the version the exam currently runs |
+| Kubernetes version | Not stated on the official pages. Chapters target current stable releases; check the version the exam runs |
 | Allowed documentation | Not verified. Check the current exam resources page before exam day |
 
 ## Domains and weights
@@ -50,18 +50,18 @@ Reference material (not a domain):
 - Verify every change with a command that proves the behavior, not just that `apply` succeeded.
 - Flag hard tasks and return; partial credit is per task.
 
-## Pre-exam checklist
+## Key ideas at a glance
 
-- [ ] Walk a node from NotReady to Ready (kubelet, swap, certs, disk)
-- [ ] Find and fix a broken static pod manifest
-- [ ] Create Role/RoleBinding and prove it with `kubectl auth can-i`
-- [ ] Take an etcd snapshot and verify it
-- [ ] Upgrade a kubeadm control plane and one worker in order
-- [ ] Create a Service, find why it has no endpoints, fix the selector
-- [ ] Create a default-deny NetworkPolicy and an allow rule, with DNS
-- [ ] Create a Deployment with resources, scale it, roll it back
-- [ ] Create a PV/PVC pair and a Pod that mounts it
-- [ ] Install a Helm chart, upgrade it, roll it back
+- Walk a node from NotReady to Ready (kubelet, swap, certs, disk)
+- Find and fix a broken static pod manifest
+- Create Role/RoleBinding and prove it with `kubectl auth can-i`
+- Take an etcd snapshot and verify it
+- Upgrade a kubeadm control plane and one worker in order
+- Create a Service, find why it has no endpoints, fix the selector
+- Create a default-deny NetworkPolicy and an allow rule, with DNS
+- Create a Deployment with resources, scale it, roll it back
+- Create a PV/PVC pair and a Pod that mounts it
+- Install a Helm chart, upgrade it, roll it back
 
 ## Quick command reference
 
@@ -85,6 +85,5 @@ docs/03-services-networking/        services and DNS, NetworkPolicy, ingress and
 docs/04-workloads-scheduling/       deployments, workload types, scheduling, Helm and Kustomize
 docs/05-storage/                    PV, PVC, StorageClass
 reference/                          kubectl speed, API discovery
-notes/                              scope, corrections, open questions
-_archive/                           original 2025 and 2026 guides, unmodified
+notes/                              sources and verification
 ```

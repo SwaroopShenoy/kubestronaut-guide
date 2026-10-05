@@ -2,6 +2,8 @@
 
 Up: [KCNA hub](../../README.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [Security basics](../02-container-orchestration/security-basics.md) · Next: [Packaging with Helm and Kustomize](packaging-helm-kustomize.md)
 
+Software reaches a cluster through a pipeline, and in GitOps the pipeline's destination is Git itself. This chapter covers continuous integration, delivery and deployment, and how GitOps tools reconcile a cluster from a repository.
+
 ## Continuous integration, delivery and deployment
 
 - **Continuous integration (CI)**: developers merge small changes often; each merge builds and runs automated tests.

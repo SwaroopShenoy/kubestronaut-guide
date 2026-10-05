@@ -2,6 +2,8 @@
 
 Up: [KCNA hub](../../README.md) · Domain 3 — Cloud Native Application Delivery (16%) · Prev: [CI/CD and GitOps](cicd-and-gitops.md) · Next: [Principles and patterns](../04-cloud-native-architecture/principles-and-patterns.md)
 
+Applications need to be packaged and customised. Helm and Kustomize take two different approaches, and this chapter explains both.
+
 ## Helm
 
 Helm is the package manager for Kubernetes. A chart is a package of templated manifests; a release is one installed instance of a chart.

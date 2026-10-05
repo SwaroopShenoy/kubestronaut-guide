@@ -1,18 +1,20 @@
-# CKS Complete Crash Course
+# Part V: CKS — Certified Kubernetes Security Specialist
+
+CKS is the advanced security exam. It assumes the CKA and goes deeper into hardening clusters, securing workloads, protecting the supply chain and detecting threats at runtime. Like CKA, it is performance-based on a live cluster.
 
 > **Read first: status and limits**
 >
-> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
-> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Reading aid, not a substitute for practice.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
 > - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
 > - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
 
 Certified Kubernetes Security Specialist — hub document. Start here; each domain links to a topic doc with full detail.
 
-Last reviewed: 2026-10-05. Exam facts confirmed against the CNCF certification page. See [scope and review notes](docs/notes/scope-and-review-notes.md) for what is confirmed, what is assumed, and what was corrected from the earlier version.
+Last reviewed: 2026-10-05 against the official CNCF curriculum. See [sources and verification](docs/notes/sources-and-verification.md) for the official sources, what was checked, and what is not verified from the earlier version.
 
 ## Exam at a glance
 
@@ -22,12 +24,12 @@ Last reviewed: 2026-10-05. Exam facts confirmed against the CNCF certification p
 | Duration | 2 hours |
 | Prerequisite | CKA passed at any time before registering (CKA need not be active) |
 | Validity | 2 years |
-| Passing score | Not verified in this review (course earlier stated 67%; confirm) |
-| Task count | Not verified (course earlier stated 15–20; confirm) |
+| Passing score | Not stated on the official pages checked; verify |
+| Task count | Not stated on the official pages checked; verify |
 
 ## Domains and weights
 
-Weights are from the official CNCF CKS exam curriculum PDF (v1.34). The CNCF certification page checked earlier showed different Cluster Setup and System Hardening weights; see the notes.
+Weights are from the official CNCF CKS exam curriculum PDF (v1.34). The CNCF certification page lists different weights for two domains; see the sources page.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
@@ -45,7 +47,7 @@ Supporting references (read as needed, not separate exam domains):
 
 ## Scope summary
 
-Your question about Rego, seccomp and AppArmor is answered in full in the notes. Short version:
+The official curriculum sets the scope for Rego, seccomp and AppArmor:
 
 - **Use** seccomp and AppArmor profiles on pods, and confirm they are loaded and working: expected.
 - **Author** them from scratch, or write Rego from scratch: not expected under exam time. Read and adapt them.
@@ -60,22 +62,21 @@ Pod-to-pod encryption with Cilium or Istio is named in the official curriculum a
 - Verify every change with a command that proves the behavior, not just that the YAML applied.
 - Keep a short written record of what you changed when a task has several parts.
 
-## Pre-exam checklist
+## Key ideas at a glance
 
-
-- [ ] NetworkPolicy: ingress, egress, selector AND vs OR, DNS egress, default-deny
-- [ ] PSA labels, the three modes, restricted requirements, reading a rejection
-- [ ] SecurityContext fields and what each one blocks
-- [ ] RBAC: Role vs ClusterRole, bindings, `auth can-i`, dangerous verbs
-- [ ] Service account auto-mount and TokenRequest
-- [ ] kube-bench targets and reading remediations; kubelet config field names
-- [ ] Encryption at rest: provider order, mount, re-encryption
-- [ ] Audit policy levels, rule order, log format, jq filters
-- [ ] Trivy severity gating with `--exit-code 1`
-- [ ] Cosign: sign and verify by digest
-- [ ] AppArmor and seccomp: apply, load, verify
-- [ ] Falco: check running, read an alert, edit a rule in `rules.d/`
-- [ ] Upgrade order: control plane, then nodes
+- NetworkPolicy: ingress, egress, selector AND vs OR, DNS egress, default-deny
+- PSA labels, the three modes, restricted requirements, reading a rejection
+- SecurityContext fields and what each one blocks
+- RBAC: Role vs ClusterRole, bindings, `auth can-i`, dangerous verbs
+- Service account auto-mount and TokenRequest
+- kube-bench targets and reading remediations; kubelet config field names
+- Encryption at rest: provider order, mount, re-encryption
+- Audit policy levels, rule order, log format, jq filters
+- Trivy severity gating with `--exit-code 1`
+- Cosign: sign and verify by digest
+- AppArmor and seccomp: apply, load, verify
+- Falco: check running, read an alert, edit a rule in `rules.d/`
+- Upgrade order: control plane, then nodes
 
 ## Common mistakes (summary)
 
@@ -148,6 +149,5 @@ docs/
   05-supply-chain-security/                Trivy, Cosign, admission control, base images
   06-monitoring-logging-runtime/           audit logging, Falco, jq
   reference/                               Rego basics, OPA Gatekeeper
-  notes/                                   scope, corrections and open questions
-_archive/                                  the original 12 files, unmodified
+  notes/                                   sources and verification
 ```

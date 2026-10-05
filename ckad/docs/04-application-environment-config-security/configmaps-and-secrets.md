@@ -2,6 +2,8 @@
 
 Up: [CKAD hub](../../README.md) · Domain 4 — Application Environment, Configuration and Security (25%) · Next: [SecurityContext, quotas and limits](security-context-quotas-limits.md)
 
+Configuration should live outside the image. This chapter shows how to supply settings and secrets to an application as environment variables and as files, and what happens when they change.
+
 ## Create
 
 ```bash

@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 2 — Cluster Hardening (15%) · Prev: [RBAC](rbac.md) · Next: [Cluster upgrades](cluster-upgrades.md)
 
-This doc is **new**. The original course had no coverage of service-account token handling or API server access restriction.
+Every pod can carry an identity, and an identity can call the API. This chapter covers how to stop unneeded tokens from being mounted, keep the tokens short-lived, and restrict who can reach the API at all.
 
 ## 1. Stop auto-mounting tokens you do not need
 

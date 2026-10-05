@@ -2,7 +2,7 @@
 
 Up: [CKS hub](../../README.md) · Domain 4 — Minimize Microservice Vulnerabilities (20%) · Prev: [Security context and PSS](security-context-and-pss.md) · Next: [Runtime sandboxes](runtime-sandboxes.md)
 
-This doc is **new as a standalone page**. Its content was previously scattered across the original CKS file.
+Secrets are encoded by default, not encrypted. This chapter explains what that means in practice, how to consume secrets more safely, and how to encrypt them in etcd.
 
 ## 1. Base64 is not encryption
 

@@ -1,33 +1,33 @@
-# KCSA Crash Course
+# Part II: KCSA — Kubernetes and Cloud Native Security Associate
+
+KCSA moves from how Kubernetes works to how it can be attacked and defended. It asks you to reason about trust boundaries, identities, policies and threats across the cloud, the cluster and the workload. It is multiple choice, and the questions reward understanding over memorisation.
 
 > **Read first: status and limits**
 >
-> This is a personal study guide, written to organise notes for the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
+> This book is an independent guide to the CNCF Kubernetes certifications. It is **not** an official CNCF or Linux Foundation resource and is not endorsed by them.
 >
 > - **Not a complete or current source of truth.** Domains and weights were checked against the official CNCF curriculum PDFs as of 2026-10-05. Exam formats, passing scores, allowed resources, Kubernetes versions and tool behaviour change, and may already differ from what is written here.
 > - **Not all commands are tested.** Commands, flags and YAML were written from knowledge and have not all been run on a live cluster. Verify before you rely on them.
-> - **Reading aid, not a course.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
+> - **Reading aid, not a substitute for practice.** Use it alongside the official curriculum, the official documentation and hands-on practice. Do not use it as your only preparation material.
 > - **Open questions are marked.** Items labelled "not verified" or "unconfirmed" are open. Treat them as questions, not facts.
 > - **No warranty.** The author accepts no responsibility for exam results, production changes, or decisions made from this content. Check the official sources yourself.
 
 Kubernetes and Cloud Native Security Associate — hub document. Start here; each domain links to topic docs.
-
-Source material: the 2025 crash course (archived in [_archive](_archive/)). This hub supersedes it.
 
 ## Exam at a glance
 
 | Item | Value |
 |---|---|
 | Format | Online, proctored, multiple choice; no terminal tasks |
-| Duration | Not on the CNCF page checked (source guide says 90 minutes) |
-| Questions | Not on the CNCF page checked (source guide says 60) |
-| Passing score | Not on the CNCF page checked (source guide says 75%) |
+| Duration | Not stated on the official CNCF page; verify |
+| Questions | Not stated on the official CNCF page; verify |
+| Passing score | Not stated on the official CNCF page; verify |
 | Cost | $250, includes one free retake (CNCF page) |
 | Prerequisite | None |
 
 ## Domains and weights
 
-Weights from the official CNCF exam curriculum PDF. The 2025 guide's estimated weights were wrong and have been replaced.
+Weights from the official CNCF exam curriculum PDF.
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
@@ -42,18 +42,18 @@ Reference:
 
 - [Security tools map](reference/security-tools-map.md)
 
-## Pre-exam checklist
+## Key ideas at a glance
 
-- [ ] Explain the 4Cs in order and give one control per layer
-- [ ] Apply STRIDE to a Kubernetes example
-- [ ] Name the API server's authentication, authorization and admission steps, in order
-- [ ] List the kubelet and etcd hardening settings the benchmark asks for
-- [ ] Explain why RBAC wildcards and `cluster-admin` bindings are risks
-- [ ] Name the three Pod Security Standards levels and what restricted requires
-- [ ] Explain why base64 is not encryption and what etcd encryption at rest does
-- [ ] Describe image signing and why verification must check the digest
-- [ ] State what Falco detects and what a scanner like Trivy does instead
-- [ ] Explain what the audit log records and at which levels
+- Explain the 4Cs in order and give one control per layer
+- Apply STRIDE to a Kubernetes example
+- Name the API server's authentication, authorization and admission steps, in order
+- List the kubelet and etcd hardening settings the benchmark asks for
+- Explain why RBAC wildcards and `cluster-admin` bindings are risks
+- Name the three Pod Security Standards levels and what restricted requires
+- Explain why base64 is not encryption and what etcd encryption at rest does
+- Describe image signing and why verification must check the digest
+- State what Falco detects and what a scanner like Trivy does instead
+- Explain what the audit log records and at which levels
 
 ## Document map
 
@@ -66,6 +66,5 @@ docs/04-kubernetes-threat-model/              STRIDE, attack paths, response
 docs/05-platform-security/                    supply chain, admission, runtime
 docs/06-compliance-and-frameworks/            CIS, audit, regulations
 reference/                                    security tools map
-notes/                                        scope, corrections, open questions
-_archive/                                     original 2025 guide, unmodified
+notes/                                        sources and verification
 ```

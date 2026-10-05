@@ -2,6 +2,8 @@
 
 Up: [KCNA hub](../../README.md) · Domain 2 — Container Orchestration (28%) · Prev: [Scheduling and scaling](scheduling-and-scaling.md) · Next: [CI/CD and GitOps](../03-cloud-native-application-delivery/cicd-and-gitops.md)
 
+Security in Kubernetes is layered: who you are, what you may do, and what your workloads may touch. This chapter introduces each layer at the concept level.
+
 KCNA covers security at the concept level. The deeper treatment is in the [KCSA hub](../../../kcsa/README.md) and the [CKS hub](../../../cks/README.md).
 
 ## Authentication and authorization

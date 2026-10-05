@@ -2,6 +2,8 @@
 
 Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [Network policy](network-policy.md) · Next: [Ingress, TLS and node metadata](ingress-tls-and-node-metadata.md)
 
+Security benchmarks turn good intentions into checkable settings. This chapter explains the CIS Kubernetes Benchmark, how kube-bench runs its checks, and how to read and fix the results.
+
 ## Exam scope
 
 **In scope:** running kube-bench, reading PASS/FAIL/WARN/INFO, and fixing a small number of failing checks by editing the component's configuration (static pod manifests and the kubelet config file).
@@ -55,7 +57,7 @@ Static pod manifests are picked up automatically by the kubelet once saved. Do n
 
 ## Control-plane fixes worth knowing
 
-These are settings that CIS-style checks and the exam commonly target. The examples show the flag form; verify against the remediation text kube-bench prints for your version.
+These settings appear frequently in CIS checks. The examples show the flag form; verify against the remediation text kube-bench prints for your version.
 
 ```yaml
 # kube-apiserver.yaml, under spec.containers[0].command

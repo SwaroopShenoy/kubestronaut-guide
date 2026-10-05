@@ -2,7 +2,9 @@
 
 Up: [CKS README](../../README.md) · Domain 2 — Minimize Microservice Vulnerabilities (20%) · Prev: [Runtime sandboxes](runtime-sandboxes.md) · Next: [Base images and Dockerfiles](../05-supply-chain-security/base-images-and-dockerfiles.md)
 
-Official curriculum topic: "Implement Pod-to-Pod encryption (Cilium, Istio)". This topic was previously marked as not confirmed in this guide; the official CKS curriculum names it.
+Network policy decides which pods may talk; it does not hide what they say. This chapter covers encrypting pod-to-pod traffic with Cilium and with Istio's mutual TLS.
+
+Official curriculum topic: "Implement Pod-to-Pod encryption (Cilium, Istio)".
 
 ## Why encrypt pod-to-pod traffic
 
