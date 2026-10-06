@@ -1,6 +1,6 @@
 # Ingress TLS, Node Metadata and Binary Verification
 
-Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)
+Up: [CKS hub](../../README.md) · Domain 1 — Cluster Setup (15%) · Prev: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md) · Next: [Gateway API and TLS](gateway-api-tls.md)
 
 Three things define a cluster's outer edge: the encryption on incoming traffic, the metadata endpoint that cloud instances expose, and the binaries the cluster runs. This topic covers how to secure all three.
 
@@ -55,7 +55,7 @@ Pitfalls:
 
 ### NGINX Ingress annotations for TLS
 
-The NGINX Ingress Controller documentation is on the exam's allowed-resources list. Settings are mostly annotations on the Ingress:
+The NGINX Ingress Controller documentation is on the exam's allowed-resources list. Note that the `kubernetes/ingress-nginx` controller was retired on 2026-03-24 and no longer receives security fixes, so new clusters should use another controller or Gateway API (see [Gateway API and TLS](gateway-api-tls.md)). The Ingress API itself is frozen, not removed. Settings are mostly annotations on the Ingress:
 
 ```yaml
 metadata:
@@ -137,5 +137,5 @@ echo "$(cat X.sha256)  X" | sha256sum --check
 
 ---
 
-Prev: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md) · Next: [etcd hardening](etcd-hardening.md)  
+Prev: [CIS benchmark and kube-bench](cis-benchmark-kube-bench.md) · Next: [Gateway API and TLS](gateway-api-tls.md)  
 <sub>© 2026 Swaroop Shenoy · Licensed under [CC BY 4.0](../../../LICENSE)</sub>

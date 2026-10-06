@@ -44,6 +44,10 @@ kubectl get ingressclass
 
 Common failures: wrong `ingressClassName`, backend Service name or port wrong, no controller running.
 
+### Status of Ingress
+
+The Kubernetes documentation describes the Ingress API as stable but frozen: it stays available, receives no further changes, and the project recommends Gateway API for new work. The `kubernetes/ingress-nginx` controller was retired on 2026-03-24 and gets no further fixes. That affects one controller, not the Ingress API; other Ingress controllers continue.
+
 ## Gateway API
 
 Gateway API is a separate set of CRDs (not built into Kubernetes) that is more expressive than Ingress. Check whether the cluster has it:

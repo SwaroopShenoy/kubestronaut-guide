@@ -133,6 +133,38 @@ kubectl run test --image=nginx --dry-run=server -n production \
 
 The error text names the rule that fails.
 
+### Cluster-wide defaults and exemptions
+
+Namespace labels set the level per namespace. To set a default for namespaces that have no label, and to exempt certain users, runtime classes or namespaces, configure the PodSecurity plugin in an admission configuration file:
+
+```yaml
+apiVersion: apiserver.config.k8s.io/v1
+kind: AdmissionConfiguration
+plugins:
+- name: PodSecurity
+  configuration:
+    apiVersion: pod-security.admission.config.k8s.io/v1
+    kind: PodSecurityConfiguration
+    defaults:
+      enforce: baseline
+      enforce-version: latest
+      audit: restricted
+      audit-version: latest
+      warn: restricted
+      warn-version: latest
+    exemptions:
+      usernames: []
+      runtimeClasses: []
+      namespaces:
+      - kube-system
+```
+
+The API server reads the file through `--admission-control-config-file`, with the file mounted into the static pod like the other configuration files. That flag takes one file for all admission plugins, so if another plugin such as ImagePolicyWebhook is already configured, add the PodSecurity entry to the same `plugins` list.
+
+The `-version` fields pin the Pod Security Standards to a Kubernetes version, for example `v1.35`, so a cluster upgrade does not tighten enforcement unexpectedly. `latest` follows the installed version. Namespace labels such as `pod-security.kubernetes.io/enforce-version` do the same per namespace.
+
+An exemption removes a namespace or user from checking entirely, so keep the list short and review it.
+
 ## 3. Fixing a non-compliant Deployment
 
 Typical PSA failures and the field to add:

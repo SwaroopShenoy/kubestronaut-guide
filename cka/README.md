@@ -49,7 +49,7 @@ Reference material (not a domain):
 - Set the context and namespace from each task before typing (`kubectl config use-context`).
 - Generate YAML with `--dry-run=client -o yaml`, then edit. Do not write everything from scratch.
 - Verify every change with a command that proves the behavior, not just that `apply` succeeded.
-- Flag hard tasks and return; partial credit is per task.
+- Flag hard tasks and return to them.
 
 ## Key ideas at a glance
 

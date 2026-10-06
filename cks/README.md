@@ -36,7 +36,7 @@ Weights are from the official CNCF CKS exam curriculum PDF (v1.34). The CNCF cer
 
 | # | Domain | Weight | Topic docs |
 |---|---|---|---|
-| 1 | Cluster Setup | 15% | [Network policy](docs/01-cluster-setup/network-policy.md) · [CIS benchmark and kube-bench](docs/01-cluster-setup/cis-benchmark-kube-bench.md) · [Ingress TLS, node metadata, binary verification](docs/01-cluster-setup/ingress-tls-and-node-metadata.md) · [etcd hardening](docs/01-cluster-setup/etcd-hardening.md) |
+| 1 | Cluster Setup | 15% | [Network policy](docs/01-cluster-setup/network-policy.md) · [CIS benchmark and kube-bench](docs/01-cluster-setup/cis-benchmark-kube-bench.md) · [Ingress TLS, node metadata, binary verification](docs/01-cluster-setup/ingress-tls-and-node-metadata.md) · [Gateway API and TLS](docs/01-cluster-setup/gateway-api-tls.md) · [etcd hardening](docs/01-cluster-setup/etcd-hardening.md) |
 | 2 | Cluster Hardening | 15% | [RBAC](docs/02-cluster-hardening/rbac.md) · [Service accounts and API access](docs/02-cluster-hardening/service-accounts-and-api-access.md) · [Cluster upgrades](docs/02-cluster-hardening/cluster-upgrades.md) |
 | 3 | System Hardening | 10% | [Host hardening](docs/03-system-hardening/host-hardening.md) · [AppArmor and seccomp](docs/03-system-hardening/apparmor-and-seccomp.md) |
 | 4 | Minimize Microservice Vulnerabilities | 20% | [Security context and PSS](docs/04-microservice-vulnerabilities/security-context-and-pss.md) · [Secrets and encryption at rest](docs/04-microservice-vulnerabilities/secrets-and-encryption-at-rest.md) · [Runtime sandboxes and isolation](docs/04-microservice-vulnerabilities/runtime-sandboxes.md) · [Pod-to-pod encryption (Cilium, Istio)](docs/04-microservice-vulnerabilities/pod-to-pod-encryption.md) |
@@ -62,7 +62,7 @@ Pod-to-pod encryption with Cilium or Istio, SBOMs, and static analysis are named
 
 - Read each task fully; note the cluster context and namespace before typing.
 - Use `kubectl config use-context <ctx>` when a task names one, and check which node you are on before editing a manifest.
-- Flag hard tasks and return; partial credit is per task.
+- Flag hard tasks and return to them.
 - Verify every change with a command that proves the behavior, not just that the YAML applied.
 - Keep a short written record of what you changed when a task has several sections.
 
@@ -127,7 +127,7 @@ kubectl exec <pod> -- id
 grep Seccomp /proc/self/status        # inside the container
 
 # CIS
-sudo kube-bench run --targets control-plane
+sudo kube-bench run --targets master
 sudo kube-bench run --targets node
 
 # Images
@@ -150,7 +150,7 @@ docs/
   02-cluster-hardening/                    RBAC, service accounts, upgrades
   03-system-hardening/                     host hardening, AppArmor and seccomp
   04-microservice-vulnerabilities/         security context and PSS, secrets, sandboxes
-  05-supply-chain-security/                Trivy, Cosign, admission control, base images, static analysis, SBOM, static analysis, SBOM
+  05-supply-chain-security/                Trivy, Cosign, admission control, base images, static analysis, SBOM, static analysis, SBOM, static analysis, SBOM
   06-monitoring-logging-runtime/           audit logging, Falco, jq
   reference/                               Rego basics, OPA Gatekeeper
   notes/                                   sources and verification

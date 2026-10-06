@@ -16,20 +16,44 @@ The CIS Kubernetes Benchmark is a community-agreed list of hardening checks for 
 
 ## Running kube-bench
 
-```bash
-# Check the built-in target names for your version first
-kube-bench run --help
+kube-bench groups its checks into targets, and each target is a file in the benchmark directory. These are the valid target names:
 
+| Target | What it checks |
+|---|---|
+| `master` | Control-plane components: kube-apiserver, kube-controller-manager, kube-scheduler and their files |
+| `controlplane` | Control-plane configuration: authentication, authorization and logging (benchmark section 3) |
+| `etcd` | etcd (benchmark section 2) |
+| `node` | Worker node components: the kubelet and its files (section 4) |
+| `policies` | RBAC, Pod Security, NetworkPolicy and secrets practices (section 5) |
+
+There is no target called `control-plane`; with a hyphen kube-bench reports an invalid target. Managed-service benchmarks (EKS, GKE, AKS) have a different set, such as `managedservices`.
+
+```bash
 # Run on a control-plane node
-sudo kube-bench run --targets control-plane
+sudo kube-bench run --targets master,controlplane,etcd,policies
 
 # Run on a worker node
 sudo kube-bench run --targets node
 
+# With no --targets, kube-bench detects the components running on the node
+sudo kube-bench run
+
 # Save results for review
-sudo kube-bench run --targets control-plane > bench.txt
+sudo kube-bench run --targets master > bench.txt
 grep -E "\[FAIL\]|\[WARN\]" bench.txt
+
+# Machine-readable output
+sudo kube-bench run --targets master --json
 ```
+
+kube-bench detects the Kubernetes version and picks the matching CIS benchmark version. To override this:
+
+```bash
+sudo kube-bench run --benchmark cis-1.12
+sudo kube-bench run --version 1.33          # not together with --benchmark
+```
+
+Useful filters: `--check 1.2.1` runs one check, `--group 1.2` runs a group, and `--skip` leaves checks out. Run `kube-bench run --help` for the flags in the installed version.
 
 Status meanings:
 
@@ -150,11 +174,11 @@ sudo grep -E 'anonymous|mode|readOnlyPort|protectKernelDefaults|rotateCertificat
 
 ## Workflow for an exam task
 
-1. `kube-bench run --targets <target>` and capture FAILs.
+1. `kube-bench run --targets master` (or the target the task names) and capture FAILs.
 2. Pick the two or three that are quick (anonymous auth, authorization mode, readOnlyPort, file permissions).
 3. For each: open the config file, change one thing, save.
 4. Wait for the component to restart, then rerun kube-bench and grep for the check.
-5. Do not chase every FAIL. Partial credit is per task, not per check, so fix what the task asks for.
+5. Do not chase every FAIL. Fix the checks the task asks for.
 
 ## Common mistakes
 
@@ -166,7 +190,7 @@ sudo grep -E 'anonymous|mode|readOnlyPort|protectKernelDefaults|rotateCertificat
 ## Quick reference
 
 ```bash
-sudo kube-bench run --targets control-plane
+sudo kube-bench run --targets master
 sudo kube-bench run --targets node
 grep -n "authorization-mode\|anonymous-auth" /etc/kubernetes/manifests/kube-apiserver.yaml
 sudo grep -n "anonymous\|authorization\|readOnlyPort" /var/lib/kubelet/config.yaml

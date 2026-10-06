@@ -67,6 +67,35 @@ kubectl exec <pod> -- sh -c 'cat /proc/self/status | grep Seccomp'
 
 The status field `Seccomp: 0` means no filtering; `2` means a filter is attached.
 
+### Logging syscalls to see what a workload needs
+
+A profile whose default action is `SCMP_ACT_LOG` allows every syscall and records each one, which shows what an application actually uses before you restrict anything:
+
+```json
+{
+  "defaultAction": "SCMP_ACT_LOG"
+}
+```
+
+Save it under `/var/lib/kubelet/seccomp/profiles/audit.json`, reference it with `type: Localhost` and `localhostProfile: profiles/audit.json`, run the workload, and read the node's system log or journal:
+
+```bash
+sudo journalctl -k | grep -i audit | tail
+```
+
+The `SCMP_ACT_ERRNO` action blocks a call and returns an error instead.
+
+### Making RuntimeDefault the default
+
+Without a `seccompProfile`, a pod runs unconfined. The kubelet can instead apply `RuntimeDefault` to every pod that does not set a profile, using the `seccompDefault` field in the kubelet configuration:
+
+```yaml
+# /var/lib/kubelet/config.yaml
+seccompDefault: true
+```
+
+Restart the kubelet after changing it. The same setting exists as the `--seccomp-default` kubelet flag. The feature's maturity depends on the Kubernetes version, so check the Kubernetes documentation for the version in use. Pods that explicitly set `type: Unconfined` still run unconfined, and the Pod Security `baseline` level rejects that.
+
 ### Pitfalls
 
 - Missing `profiles/` directory or wrong relative path. The pod stays in a pending or error state with a seccomp-related event. Check with `kubectl describe pod`.

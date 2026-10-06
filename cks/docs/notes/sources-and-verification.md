@@ -42,7 +42,7 @@ The CNCF certification page lists Cluster Setup at 10% and System Hardening at 1
 |---|---|
 | Network security policies to restrict cluster level access | [Network policy](../01-cluster-setup/network-policy.md) |
 | CIS benchmark for etcd, kubelet, kubedns, kubeapi | [CIS benchmark](../01-cluster-setup/cis-benchmark-kube-bench.md), [etcd hardening](../01-cluster-setup/etcd-hardening.md) |
-| Ingress objects with TLS | [Ingress TLS](../01-cluster-setup/ingress-tls-and-node-metadata.md) |
+| Ingress objects with TLS | [Ingress TLS](../01-cluster-setup/ingress-tls-and-node-metadata.md); supporting: [Gateway API and TLS](../01-cluster-setup/gateway-api-tls.md) |
 | Protect node metadata and endpoints | [Ingress TLS, node metadata](../01-cluster-setup/ingress-tls-and-node-metadata.md) |
 | Verify platform binaries before deploying | [Ingress TLS, node metadata](../01-cluster-setup/ingress-tls-and-node-metadata.md) |
 | RBAC to minimise exposure | [RBAC](../02-cluster-hardening/rbac.md) |
@@ -74,7 +74,15 @@ Tools on the allowed-resources list and where they appear: Falco ([Falco](../06-
 - It does not name Trivy, kube-bench, Cosign, OPA Gatekeeper or Kyverno. They appear in this guide as common examples of the outcomes it describes.
 - It does not state that writing Rego policies is required, and OPA documentation is not on the allowed-resources list.
 - It does not state that writing AppArmor or seccomp profiles from scratch is required. It says to "appropriately use" them.
+- Gateway API is not named in the CKS curriculum, and its documentation site is not on the CKS allowed-resources list. The curriculum item is Ingress with TLS. Gateway API is covered as supporting material because the Kubernetes documentation calls Ingress frozen and recommends Gateway.
+- The Kubernetes documentation says the Ingress API is stable but frozen, with no plans for removal. The ingress-nginx controller was retired on 2026-03-24.
 - Falco documentation is on the allowed-resources list, so Falco is used in the exam. The curriculum says "detect" and does not describe how far rule editing goes.
+
+## Tool details checked against upstream sources
+
+- kube-bench target names (`master`, `controlplane`, `etcd`, `node`, `policies`) were checked against the project's documentation and benchmark directory.
+- Falco configuration keys, default rule sets and rule names were checked against Falco 0.45.0 and its rules repository.
+- Cosign's behaviour with tag references was checked against cosign v3.1.3 source.
 
 ## Not verified
 

@@ -76,14 +76,19 @@ kubectl exec immutable-app -- sh                     # expect: no shell in a dis
 
 ## Detecting changes
 
-Falco watches system calls and can alert when something modifies a container that should be immutable. The default rule set includes rules in these areas (rule names vary between versions):
+Falco watches system calls and can alert when something modifies a container that should be immutable. Which rules exist depends on the rule sets installed (see the rule tiers in [Falco](falco.md)). In Falco 0.45.0:
 
-- Writes below binary directories or below `/etc`
-- Package management programs launched inside a container
-- A new executable dropped and run inside a container
-- A terminal shell started in a container
+- The **stable** set, installed by default, includes "Drop and execute new binary in container" (an executable that was not part of the image is run), "Terminal shell in container", "Execution from /dev/shm", "Fileless execution via memfd_create", and "Read sensitive file untrusted".
+- The **incubating** set includes "Launch Package Management Process in Container".
+- The **sandbox** set includes the "Write below etc", "Write below binary dir" and "Modify binary dirs" rules.
 
-See [Falco](falco.md) for how to read an alert and where rules live.
+Incubating and sandbox rules are not loaded unless they were added, so confirm what is running before relying on one:
+
+```bash
+sudo grep -rh '^- rule:' /etc/falco/ | sort
+```
+
+See [Falco](falco.md) for how to read an alert, where rules live, and how to adjust them.
 
 ## Immutable infrastructure
 
